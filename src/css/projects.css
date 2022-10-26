@@ -1,0 +1,59 @@
+.projects {
+    height: auto;
+}
+
+.list__projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container__card {
+    margin: 2rem 0;
+    background-color: tomato;
+    border-radius: 10%;
+    width: 90%;
+}
+
+.title, .container__img, .container__link {
+    margin: 1rem 0;
+    color: black;
+    font-weight: bold;
+}
+
+.img__projects {
+    width: 90%;
+    border-radius: 20px;
+}
+
+.img__projects:hover {
+    transform: scale(1.11);
+}
+
+.container__link {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background: salmon;
+    border-radius: 20px;
+    width: 40%;
+}
+
+a:hover {
+    color: inherit !important;
+}
+
+
+
+.link__img {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+}

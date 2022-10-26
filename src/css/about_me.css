@@ -1,0 +1,47 @@
+.container__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    height: calc(100vh + 11vh);
+    margin: 1rem;
+}
+
+.title__div {
+    display: block;
+    font-weight: bold;
+    margin: 2rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.container__review__about_me {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img__about_me {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.button__up {
+    display: flex;
+    position: fixed;
+    z-index: 110;
+    top: calc(100vh - 4rem);
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    animation: zoom 1.5s linear 1s infinite alternate;
+}
+
+@keyframes zoom {
+    from {}
+    to {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,8 @@
+.carousel__combination {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80vh;
+}
