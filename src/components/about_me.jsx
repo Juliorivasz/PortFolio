@@ -24,9 +24,10 @@ function AboutMe(props) {
                     </p>
                 </div>
             </div>
-            <a href='#top'><div className={`button__up ${props.dissemble ? '' : 'dissemble'} ${active}`.trimEnd()}>
-                <img src={up} alt="up" title='up' />
-            </div>
+            <a href='#top' className='a'>
+                <div className={`button__up ${props.dissemble ? '' : 'dissemble'} ${active}`.trimEnd()}>
+                    <img src={up} alt="up" title='up' />
+                </div>
             </a>
         </section>
     );
