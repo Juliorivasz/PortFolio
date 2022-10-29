@@ -58,15 +58,15 @@ function App() {
         <Contact/>
       </main>
       <footer className='footer'>
-        <section className=''>
-          <div>
-
+          <div className='div__footer'>
+            <p className='text__footer'>Julio A. Rivas Garcia. ©Copyright 2022 - Todos los derechos reservados</p>
           </div>
-        </section>
       </footer>
       <a href='#top' className='a'>
                 <div className={`button__up ${dissemble ? '' : 'dissemble'} ${active}`.trimEnd()}>
+                  <div className='button__up__2'>
                     <img src={up} alt="up" title='up' />
+                  </div>
                 </div>
             </a>
     </div>

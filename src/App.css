@@ -10,6 +10,7 @@
 html,
 body {
     scroll-behavior: smooth;
+    height: 100vh;
 }
 
 .App__header {
@@ -120,4 +121,16 @@ a {
 
 .footer {
     background-color: #ff6347;
+}
+
+.div__footer {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.text__footer {
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
