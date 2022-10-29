@@ -1,14 +1,8 @@
-import { React, useState } from 'react';
+import React from 'react';
 import '../css/about_me.css';
 import profile from '../img/svg/foto_de_perfil.svg';
-import up from '../img/svg/bxs-chevrons-up.svg';
 
-
-function AboutMe(props) {
-
-    const [active, setActive ] = useState('');
-    document.addEventListener("scroll",(function(){window.scrollY>=window.innerHeight/2? setActive('') : setActive('dissemble')}));
-
+function AboutMe() {
     return (
         <section className='container__section' id='about-me'>
             <div className='title__div'>
@@ -24,11 +18,6 @@ function AboutMe(props) {
                     </p>
                 </div>
             </div>
-            <a href='#top' className='a'>
-                <div className={`button__up ${props.dissemble ? '' : 'dissemble'} ${active}`.trimEnd()}>
-                    <img src={up} alt="up" title='up' />
-                </div>
-            </a>
         </section>
     );
 }

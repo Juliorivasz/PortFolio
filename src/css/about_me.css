@@ -35,17 +35,16 @@
     right: 2rem;
     width: 50px;
     height: 50px;
-    bottom: 0;
-    opacity: 1;
+    animation: zoom 1.5s linear 1s infinite alternate;
 }
 
-/* @keyframes zoom {
+@keyframes zoom {
     from {}
     to {
         transform: scale(0.8);
         opacity: 0;
     }
-} */
+}
 
 .a{
     z-index: 110;
