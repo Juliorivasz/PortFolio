@@ -15,7 +15,7 @@ body {
 
 .App__header {
     animation: presentation 1s linear 0s normal;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 @keyframes presentation {
