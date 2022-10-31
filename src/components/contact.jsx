@@ -14,14 +14,13 @@ function Contact(){
                 <p>juliorivasdev@gmail.com</p>
                 <p>(+54) 261-575-2890</p>
             </div>
-            <form className="form__contact">
-                <input type="text" className="input__form" id="name" placeholder="Name" required/>
-                <input type="email" className="input__form" id="email" placeholder="Email" required/>
-                <input type="text" className="input__form" id="subject" placeholder="Subject" required/>
-                <textarea type="textarea" className="input__form" id="message" placeholder="Message" required />
-                <input type="submit" className="input__form" id="submit" required/>
+            <form className="form__contact" action="https://formsubmit.co/juliorivasdev@email.com" method="POST" >
+                <input type="text" className="input__form" name="name" id="name" placeholder="Name" required/>
+                <input type="email" className="input__form" name="email" id="email" placeholder="Email" required/>
+                <input type="text" className="input__form" name="subject" id="subject" placeholder="Subject" required/>
+                <textarea type="textarea" className="input__form" name="message" id="message" placeholder="Message" required />
+                <input type="submit" className="input__form" name="submit" id="submit" required/>
             </form>
-
         </section>
     );
 }
