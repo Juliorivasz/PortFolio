@@ -7,12 +7,13 @@ import Projects from './components/projects';
 import Skills from './components/skills';
 import down from './img/svg/bxs-chevron-down.svg';
 import pitching from './img/svg/pitching.png';
-import up from './img/svg/bxs-chevrons-up.svg';
+import up from './img/svg/bxs-chevron-up.svg';
+
 
 function App() {
 
   const [dissemble, setDissemble] = useState('dissemble');
-  const [active, setActive ] = useState('');
+  const [active, setActive ] = useState('dissemble');
     document.addEventListener("scroll",(function(){window.scrollY>=window.innerHeight/2? setActive('') : setActive('dissemble')}));
 
   const swap = () => {
@@ -66,6 +67,13 @@ function App() {
                 <div className={`button__up ${dissemble ? '' : 'dissemble'} ${active}`.trimEnd()}>
                   <div className='button__up__2'>
                     <img src={up} alt="up" title='up' />
+                  </div>
+                </div>
+            </a>
+      <a href='#top' className='a'>
+                <div className={`button__down ${dissemble ? '' : 'dissemble'} ${active}`.trimEnd()}>
+                  <div className='button__down__2'>
+                    <img src={down} alt="down" title='down' />
                   </div>
                 </div>
             </a>
