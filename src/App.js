@@ -29,6 +29,8 @@ function App() {
   const [sectorUp,setsectorUp] = useState('');
   const [sectorDown,setsectorDown] = useState('');
 
+  
+  // is a function used to move up or down the section
   const sectorU = () => {
     if(window.scrollY > 300 & window.scrollY <= 588){
       setsectorUp(urlLink+'#main');
@@ -56,6 +58,7 @@ function App() {
     }
   }
 
+  // is a function used to move up or down the section
   const sectorD = () => {
     if(window.scrollY > 300 & window.scrollY <= 588){
       setsectorDown(urlLink+'#skills');
@@ -80,6 +83,7 @@ function App() {
     <div className='App'>
       <header className='App__header' id='main'>
         <Nav
+        diss = {dissemble}
         dissemble = {swap}/>
         <div className='container__title'>
           <h1 className='title__portfolio'>Julio Rivas<br/> Front End Developer</h1>
