@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import './css/animate.css';
 import AboutMe from './components/about_me';
 import Contact from './components/contact';
 import Nav from './components/nav';
@@ -14,7 +15,8 @@ function App() {
 
   const [dissemble, setDissemble] = useState('dissemble');
   const [active, setActive ] = useState('dissemble');
-    document.addEventListener("scroll",(function(){window.scrollY>=window.innerHeight/2? setActive('') : setActive('dissemble')}));
+  const urlLink = window.location.pathname;
+  document.addEventListener("scroll",(function(){window.scrollY>=window.innerHeight/2? setActive('') : setActive('dissemble')}));
 
   const swap = () => {
     if(dissemble === 'dissemble'){
@@ -23,6 +25,55 @@ function App() {
       setDissemble('dissemble');
     }
   } 
+  
+  const [sectorUp,setsectorUp] = useState('');
+  const [sectorDown,setsectorDown] = useState('');
+
+  const sectorU = () => {
+    if(window.scrollY > 300 & window.scrollY <= 588){
+      setsectorUp(urlLink+'#main');
+      return sectorUp;
+    }
+    else if(window.scrollY > 510 & window.scrollY <= 1400){
+      setsectorUp(urlLink+'#about-me');
+      return sectorUp;
+    }
+    else if(window.scrollY > 1400 & window.scrollY <= 2081){
+      setsectorUp(urlLink+'#skills');
+      return sectorUp;
+    }
+    else if(window.scrollY > 2081 & window.scrollY <= 4000){
+      setsectorUp(urlLink+'#projects');
+      return sectorUp;
+    }
+    else if(window.scrollY > 4000 & window.scrollY <= 4776){
+      setsectorUp(urlLink+'#projects');
+      return sectorUp;
+    }
+    else if(window.scrollY > 4776 & window.scrollY <= 4900){
+      setsectorUp(urlLink+'#contact');
+      return sectorUp;
+    }
+  }
+
+  const sectorD = () => {
+    if(window.scrollY > 300 & window.scrollY <= 588){
+      setsectorDown(urlLink+'#skills');
+      return sectorUp;
+    }
+    else if(window.scrollY > 510 & window.scrollY <= 1400){
+      setsectorDown(urlLink+'#projects');
+      return sectorUp;
+    }
+    else if(window.scrollY > 1400 & window.scrollY <= 2081){
+      setsectorDown(urlLink+'#contact');
+      return sectorUp;
+    }
+    else if(window.scrollY > 2081 & window.scrollY <= 4900){
+      setsectorDown(urlLink+'#footer');
+      return sectorUp;
+    }
+  }
 
 
   return (
@@ -47,7 +98,7 @@ function App() {
               <a href={`${window.location.pathname+'#about-me'}`} onClick={swap} ><li className="item__list">About Me</li></a>
               <a href={`${window.location.pathname+'#skills'}`} onClick={swap}><li className="item__list">Skills</li></a>
               <a href={`${window.location.pathname+'#projects'}`} onClick={swap}><li className="item__list">Projects</li></a>
-              <a href={`${window.location.pathname+'#contact'}`} onClick={swap}><li className="item__list">Contact</li></a>
+              <a href={`${window.location.pathname+'#contact'}`} onClick={swap}><li className="item__list">Contact me</li></a>
           </ul>
         </section>
       </header>
@@ -58,19 +109,19 @@ function App() {
         <Projects/>
         <Contact/>
       </main>
-      <footer className='footer'>
+      <footer className='footer' id='footer'>
           <div className='div__footer'>
             <p className='text__footer'>Julio A. Rivas Garcia. ©Copyright 2022 - Todos los derechos reservados</p>
           </div>
       </footer>
-      <a href='#top' className='a'>
+      <a href={sectorUp} className='a' onClick={sectorU}>
                 <div className={`button__up ${dissemble ? '' : 'dissemble'} ${active}`.trimEnd()}>
                   <div className='button__up__2'>
                     <img src={up} alt="up" title='up' />
                   </div>
                 </div>
             </a>
-      <a href='#top' className='a'>
+      <a href={sectorDown} className='a' onClick={sectorD}>
                 <div className={`button__down ${dissemble ? '' : 'dissemble'} ${active}`.trimEnd()}>
                   <div className='button__down__2'>
                     <img src={down} alt="down" title='down' />

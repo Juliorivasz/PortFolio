@@ -5,7 +5,7 @@ function Contact(){
     return (
         <section className="container__section" id="contact">
             <div className="title__div">
-                <h2 className="title">Contact</h2>
+                <h2 className="title">Contact me</h2>
             </div>
             <div className="title__div extra">
                 <h3 className="sub">! Contact your favorite developer ¡</h3>
