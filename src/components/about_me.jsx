@@ -5,9 +5,10 @@ import profile from '../img/julio.png';
 function AboutMe() {
     return (
         <section className='container__section' id='about-me'>
-            <div className='title__div'>
+            <a href={window.location.pathname+'#about-me'}><div className='title__div'>
                 <h2 className='title'>About Me</h2>
             </div>
+            </a>
             <div className='container__review__about_me'>
                 <img className='img__about_me' src={profile} alt='profile' title='profile'/>
                 <div className='section__about_me'>

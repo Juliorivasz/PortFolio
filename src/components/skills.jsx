@@ -8,9 +8,10 @@ import CarouselSecond from './carousel_second';
 function Skills() {
     return (
         <section className='container__section' id='skills'>
-            <div className='title__div'>
+            <a href={window.location.pathname+'#skills'}><div className='title__div'>
                 <h2 className='title'>Skills</h2>
             </div>
+            </a>
             <div className='carousel__combination'>
                 <CarouselFirst/>
                 <CarouselSecond/>

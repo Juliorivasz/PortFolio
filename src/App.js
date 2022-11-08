@@ -32,7 +32,7 @@ function App() {
   
   // is a function used to move up or down the section
   const sectorU = () => {
-    if(window.scrollY > 300 & window.scrollY <= 590){
+    if(window.scrollY > 300 & window.scrollY <= 631){
       setsectorUp(urlLink+'#main');
       return sectorUp;
     }
@@ -40,31 +40,31 @@ function App() {
       setsectorUp(urlLink+'#about-me');
       return sectorUp;
     }
-    else if(window.scrollY > 1400 & window.scrollY <= 2090){
+    else if(window.scrollY > 1400 & window.scrollY <= 2128){
       setsectorUp(urlLink+'#skills');
       return sectorUp;
     }
-    else if(window.scrollY > 2081 & window.scrollY <= 2670){
+    else if(window.scrollY > 2081 & window.scrollY <= 2703){
       setsectorUp(urlLink+'#projects');
       return sectorUp;
     }
-    else if(window.scrollY > 2670 & window.scrollY <= 3092){
+    else if(window.scrollY > 2670 & window.scrollY <= 3134){
       setsectorUp(urlLink+'#task-pointer');
       return sectorUp;
     }
-    else if(window.scrollY > 3092 & window.scrollY <= 3514){
+    else if(window.scrollY > 3092 & window.scrollY <= 3565){
       setsectorUp(urlLink+'#calculator');
       return sectorUp;
     }
-    else if(window.scrollY > 3514 & window.scrollY <= 3936){
+    else if(window.scrollY > 3514 & window.scrollY <= 3996){
       setsectorUp(urlLink+'#form');
       return sectorUp;
     }
-    else if(window.scrollY > 3936 & window.scrollY <= 4359){
+    else if(window.scrollY > 3936 & window.scrollY <= 4427){
       setsectorUp(urlLink+'#regex');
       return sectorUp;
     }
-    else if(window.scrollY > 4359 & window.scrollY <= 4765){
+    else if(window.scrollY > 4359 & window.scrollY <= 4842){
       setsectorUp(urlLink+'#click-counter');
       return sectorUp;
     }
@@ -76,44 +76,45 @@ function App() {
 
   // is a function used to move up or down the section
   const sectorD = () => {
-    if(window.scrollY > 300 & window.scrollY <= 590){
+    if(window.scrollY > 300 & window.scrollY <= 631){
       setsectorDown(urlLink+'#skills');
       return sectorDown;
     }
-    else if(window.scrollY > 510 & window.scrollY <= 1400){
+    else if(window.scrollY > 631 & window.scrollY <= 1859){
       setsectorDown(urlLink+'#projects');
       return sectorDown;
     }
-    else if(window.scrollY > 1400 & window.scrollY <= 2081){
-      setsectorDown(urlLink+'#contact');
-      return sectorDown;
-    }
-    else if(window.scrollY > 2081 & window.scrollY <= 2610){
+    // else if(window.scrollY > 1400 & window.scrollY <= 2081){
+    //   setsectorDown(urlLink+'#contact');
+    //   return sectorDown;
+    // }
+    else if(window.scrollY > 1859 & window.scrollY <= 2416){
       setsectorDown(urlLink+'#task-pointer');
       return sectorDown;
     }
-    else if(window.scrollY > 2610 & window.scrollY <= 3000){
+    else if(window.scrollY > 2416 & window.scrollY <= 2830){
       setsectorDown(urlLink+'#calculator');
       return sectorDown;
     }
-    else if(window.scrollY > 3000 & window.scrollY <= 3510){
+    else if(window.scrollY > 2830 & window.scrollY <= 3244){
       setsectorDown(urlLink+'#form');
       return sectorDown;
     }
-    else if(window.scrollY > 3510 & window.scrollY <= 3935){
+    else if(window.scrollY > 3244 & window.scrollY <= 3658){
       setsectorDown(urlLink+'#regex');
       return sectorDown;
     }
-    else if(window.scrollY > 3935 & window.scrollY <= 4358){
+    else if(window.scrollY > 3658 & window.scrollY <= 4071){
       setsectorDown(urlLink+'#click-counter');
       return sectorDown;
     }
-    else if(window.scrollY > 4358 & window.scrollY <= 4764){
+    else if(window.scrollY > 4071 & window.scrollY <= 4469){
       setsectorDown(urlLink+'#contact');
       return sectorDown;
     }
-    else if(window.scrollY > 4764 & window.scrollY <= 5000){
+    else if(window.scrollY > 4469 & window.scrollY <= 5000){
       setsectorDown(urlLink+'#footer');
+      setActive();
       return sectorDown;
     }
   }

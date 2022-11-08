@@ -4,9 +4,10 @@ import "../css/contact.css";
 function Contact(){    
     return (
         <section className="container__section" id="contact">
-            <div className="title__div">
+            <a href={window.location.pathname+'#contact'}><div className="title__div">
                 <h2 className="title">Contact me</h2>
             </div>
+            </a>
             <div className="title__div extra">
                 <h3 className="sub">! Contact your favorite developer ¡</h3>
                 <br />

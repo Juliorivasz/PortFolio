@@ -18,6 +18,13 @@
     height: 33px;
 }
 
+.cv {
+    margin: 0;
+    padding: 2px 6px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
 .name__portfolio {
     font-size: 20px;
     text-transform: uppercase;

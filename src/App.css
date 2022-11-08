@@ -13,6 +13,8 @@ body {
     height: 100vh;
 }
 
+
+
 .App__header {
     animation: presentation 1s linear 0s normal;
     /* height: 100vh; */
@@ -30,8 +32,12 @@ body {
     height: 75%;
     text-align: center;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 10px;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+    
 }
 
 .title__portfolio {
@@ -40,10 +46,28 @@ body {
     width: 100%;
     color: black;
     font-weight: bold;
+    font-size: 2.5rem;
+    overflow: hidden;
+    animation: typewriter 1.5s ease-out 1s 1 normal both,
+    blinkTextCursor 500ms ease-out infinite normal;
+    position: relative;
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+
 }
+
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 100%;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
 
 .pitch {
     width: 100%;
+    display: block;
 }
 
 .container__button__down {
@@ -134,3 +158,4 @@ a {
     font-weight: bold;
     font-size: 1.1rem;
 }
+

@@ -13,12 +13,13 @@ import clickCounter from '../img/projects/click-counter.png';
 function Projects() {
     return (
         <section className="container__section projects" id="projects">
-            <div className="title__div">
+            <a href={window.location.pathname+'#projects'}><div className="title__div">
                <h2 className="title">Projects</h2>
             </div>
+            </a>
             <div className="list__projects">
                 <div className="container__card" id="encryptor">
-                    <h2 className="title">Encryptor</h2>
+                    <h2 className="subtitle">Encryptor</h2>
                     <div className="container__img">
                         <img className="img__projects" src={encryptor} alt="encryptor" />
                     </div>
@@ -28,7 +29,7 @@ function Projects() {
                     </div>
                 </div>
                 <div className="container__card" id="task-pointer">
-                    <h2 className="title">Task Pointer</h2>
+                    <h2 className="subtitle">Task Pointer</h2>
                     <div className="container__img">
                         <img className="img__projects" src={task} alt="task pointer" />
                     </div>
@@ -38,7 +39,7 @@ function Projects() {
                     </div>
                 </div>
                 <div className="container__card" id="calculator">
-                    <h2 className="title">Calculator</h2>
+                    <h2 className="subtitle">Calculator</h2>
                     <div className="container__img">
                         <img className="img__projects" src={calculator} alt="calculator" />
                     </div>
@@ -48,7 +49,7 @@ function Projects() {
                     </div>
                 </div>
                 <div className="container__card" id="form">
-                    <h2 className="title">Aplication Form</h2>
+                    <h2 className="subtitle">Aplication Form</h2>
                     <div className="container__img">
                         <img className="img__projects" src={form} alt="form" />
                     </div>
@@ -58,7 +59,7 @@ function Projects() {
                     </div>
                 </div>
                 <div className="container__card" id="regex">
-                    <h2 className="title">Regex</h2>
+                    <h2 className="subtitle">Regex</h2>
                     <div className="container__img">
                         <img className="img__projects" src={regex} alt="regex" />
                     </div>
@@ -68,7 +69,7 @@ function Projects() {
                     </div>
                 </div>
                 <div className="container__card" id="click-counter">
-                    <h2 className="title">Click Counter</h2>
+                    <h2 className="subtitle">Click Counter</h2>
                     <div className="container__img">
                         <img className="img__projects" src={clickCounter} alt="click counter" />
                     </div>

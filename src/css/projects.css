@@ -16,10 +16,24 @@
     width: 90%;
 }
 
-.title, .container__img, .container__link {
+.subtitle {
     margin: 1rem 0;
     color: black;
     font-weight: bold;
+}
+
+.title{
+    margin: 1rem 0;
+    color: black;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.container__img, .container__link {
+    margin: 1rem 0;
+    color: black;
+    font-weight: bold;
+
 }
 
 .img__projects {
