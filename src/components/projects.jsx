@@ -17,7 +17,7 @@ function Projects() {
                <h2 className="title">Projects</h2>
             </div>
             <div className="list__projects">
-                <div className="container__card">
+                <div className="container__card" id="encryptor">
                     <h2 className="title">Encryptor</h2>
                     <div className="container__img">
                         <img className="img__projects" src={encryptor} alt="encryptor" />
@@ -27,7 +27,7 @@ function Projects() {
                         <a className="link" href="https://github.com/Juliorivasz/Encriptador" target='_blank'><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                 </div>
-                <div className="container__card">
+                <div className="container__card" id="task-pointer">
                     <h2 className="title">Task Pointer</h2>
                     <div className="container__img">
                         <img className="img__projects" src={task} alt="task pointer" />
@@ -37,7 +37,7 @@ function Projects() {
                         <a className="link" href="https://github.com/Juliorivasz/Apuntador-de-Tareas" target='_blank'><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                 </div>
-                <div className="container__card">
+                <div className="container__card" id="calculator">
                     <h2 className="title">Calculator</h2>
                     <div className="container__img">
                         <img className="img__projects" src={calculator} alt="calculator" />
@@ -47,8 +47,8 @@ function Projects() {
                         <a className="link" href="https://github.com/Juliorivasz/calculator" target='_blank'><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                 </div>
-                <div className="container__card">
-                    <h2 className="title">Form</h2>
+                <div className="container__card" id="form">
+                    <h2 className="title">Aplication Form</h2>
                     <div className="container__img">
                         <img className="img__projects" src={form} alt="form" />
                     </div>
@@ -57,7 +57,7 @@ function Projects() {
                         <a className="link" href="https://github.com/Juliorivasz/Formulario" target='_blank'><img className="link__img"  src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                 </div>
-                <div className="container__card">
+                <div className="container__card" id="regex">
                     <h2 className="title">Regex</h2>
                     <div className="container__img">
                         <img className="img__projects" src={regex} alt="regex" />
@@ -67,7 +67,7 @@ function Projects() {
                         <a className="link" href="https://github.com/Juliorivasz/Regex" target='_blank'><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                 </div>
-                <div className="container__card">
+                <div className="container__card" id="click-counter">
                     <h2 className="title">Click Counter</h2>
                     <div className="container__img">
                         <img className="img__projects" src={clickCounter} alt="click counter" />
