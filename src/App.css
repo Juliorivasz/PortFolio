@@ -166,11 +166,13 @@ a {
     }
 }
 
-@media screen and (min-width: 975px) {
+@media screen and (min-width: 600px) {
     .a {
         display: none;
     }
+}
 
+@media screen and (min-width: 968px) {
     .App__header {
         height: 100vh;
     }
