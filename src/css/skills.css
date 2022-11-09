@@ -27,3 +27,22 @@
         padding: 0 20%;
     }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .carousel__combination {
+        padding: 0 25%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .carousel__combination {
+        padding: 0 28%;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    .carousel__combination {
+        padding: 0 33%;
+    }
+}

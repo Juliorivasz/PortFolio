@@ -105,7 +105,28 @@
     }
 }
 
-@media screen and (min-width:975px) {
+@media screen and (min-width:992px) and (max-width: 1400px) {
+    .container__section{
+        height: 100vh;
+    }
+
+    .container__review__about_me {
+        display: flex;
+        margin: 2rem;
+    }
+
+    .img__about_me {
+        margin-left: 10rem;
+    }
+
+    .text__about_me {
+        width: 70%;
+        padding: 5rem;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1400px) {
     .container__section{
         height: 100vh;
     }
@@ -125,3 +146,4 @@
         text-align: left;
     }
 }
+
