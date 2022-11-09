@@ -84,10 +84,6 @@ function App() {
       setsectorDown(urlLink+'#projects');
       return sectorDown;
     }
-    // else if(window.scrollY > 1400 & window.scrollY <= 2081){
-    //   setsectorDown(urlLink+'#contact');
-    //   return sectorDown;
-    // }
     else if(window.scrollY > 1859 & window.scrollY <= 2416){
       setsectorDown(urlLink+'#task-pointer');
       return sectorDown;
@@ -127,9 +123,13 @@ function App() {
         urlLink={urlLink}
         diss = {dissemble}
         dissemble = {swap}/>
-        <div className='container__title'>
-          <h1 className='title__portfolio'>Julio Rivas<br/> Front End Developer</h1>
-          <img className='pitch' src={pitching} />
+        <div className='container__presentation'>
+          <div className='container__title'>
+            <h1 className='title__portfolio'>Julio Rivas<br/> Front End Developer</h1>
+          </div>
+          <div className='container__img__pitch'>
+            <img className='pitch' src={pitching} />
+          </div>
         </div>
         <div className='container__button__down'>
           <a href={window.location.pathname+'#about-me'}>

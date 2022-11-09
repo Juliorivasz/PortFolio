@@ -34,7 +34,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 0 10px 10px 10px;
     font-family: 'Oswald', sans-serif;
     overflow: hidden;
     
@@ -48,12 +48,11 @@ body {
     font-weight: bold;
     font-size: 2.5rem;
     overflow: hidden;
-    animation: typewriter 1.5s ease-out 1s 1 normal both,
+    animation: typewriter 10s ease-out 1s 1 normal both,
     blinkTextCursor 500ms ease-out infinite normal;
     position: relative;
     border-right: 2px solid rgba(255,255,255,.75);
     white-space: nowrap;
-
 }
 
 @keyframes typewriter{
@@ -170,5 +169,28 @@ a {
 @media screen and (min-width: 975px) {
     .a {
         display: none;
+    }
+
+    .App__header {
+        height: 100vh;
+    }
+
+    .container__presentation {
+        margin: 0 1rem 1rem 1rem;
+        padding: 3rem 3rem 0 3rem;
+    }
+
+    .container__img__pitch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pitch {
+        width: 50%;
+    }
+
+    .circle:hover {
+        background-color: #ff9900;
     }
 }

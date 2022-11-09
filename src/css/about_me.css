@@ -26,7 +26,6 @@
 
 .img__about_me {
     width: 50%;
-    margin-bottom: 1rem;
     border: 3px solid tomato;
     border-radius: 100%;
 }
@@ -99,9 +98,30 @@
         width: 25%;
     }
 
-    .section__about_me {
+    .text__about_me {
         margin: 1rem;
         padding: 1rem;
         font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:975px) {
+    .container__section{
+        height: 100vh;
+    }
+
+    .container__review__about_me {
+        display: flex;
+        margin: 2rem;
+    }
+
+    .img__about_me {
+        margin-left: 20rem;
+    }
+
+    .text__about_me {
+        width: 70%;
+        padding: 10rem;
+        text-align: left;
     }
 }
