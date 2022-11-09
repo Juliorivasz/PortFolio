@@ -30,6 +30,17 @@
     border: 2px solid black;
 }
 
+.navegation__bar:hover {
+    border-bottom: 2px solid #ffe600;
+    color: #fff;
+}
+
+.cv:hover{
+    border: none;
+    background-color: #ff9900;
+    color: #fff;
+}
+
 .desktop {
     display: none;
 }
@@ -56,7 +67,7 @@
 @media screen and (min-width: 975px) {
 
     .container__img__perfil {
-        height: 33px;
+        width: 66px;
     }
 
     .link__perfil {
@@ -67,6 +78,10 @@
         display: none;
     }
 
+    .container__bar {
+        display: flex;
+    }
+
     .desktop {
         display: flex;
     }
@@ -75,6 +90,16 @@
         border: none;
         margin: 0 4px;
         height: 33px;
+    }
+
+    .navegation__bar:hover {
+        border-bottom: 2px solid #ffe600;
+        color: #fff;
+    }
+
+    .cv:hover{
+        border: none;
+        border-radius: 10px;
     }
 
     .container__nav {
