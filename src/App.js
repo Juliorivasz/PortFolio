@@ -124,6 +124,7 @@ function App() {
     <div className='App'>
       <header className='App__header' id='main'>
         <Nav
+        urlLink={urlLink}
         diss = {dissemble}
         dissemble = {swap}/>
         <div className='container__title'>

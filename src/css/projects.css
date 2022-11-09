@@ -74,10 +74,11 @@ a:hover {
 
 /* mobile */
 
-@media screen and (min-width: 700px) and (max-width: 800px) {
+@media screen and (min-width: 700px) and (max-width: 900px) {
     .list__projects {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .container__card {
@@ -86,14 +87,15 @@ a:hover {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     .list__projects {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .container__card {
         margin: 2rem;
-        width: 42.7%;
+        width: 42.6%;
     }
 }

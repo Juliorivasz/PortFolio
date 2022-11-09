@@ -166,3 +166,9 @@ a {
         font-size: 1.9rem;
     }
 }
+
+@media screen and (min-width: 975px) {
+    .a {
+        display: none;
+    }
+}
