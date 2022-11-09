@@ -86,3 +86,22 @@
 .a{
     z-index: 110;
 }
+
+
+/* mobile */
+
+@media (min-width: 700px) {
+    .title__div {
+        margin: 3rem 0;
+    }
+
+    .img__about_me{
+        width: 25%;
+    }
+
+    .section__about_me {
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+}

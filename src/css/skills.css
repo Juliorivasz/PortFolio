@@ -6,3 +6,24 @@
     width: 100%;
     height: 80vh;
 }
+
+/* mobile */
+
+@media screen and (min-width: 600px) {
+
+    .carousel__combination {
+        height: 100vh;
+        padding: 0 10%;
+    }
+
+    .carousel {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    .carousel__combination {
+        padding: 0 20%;
+    }
+}

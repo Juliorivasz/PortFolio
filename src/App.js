@@ -92,27 +92,27 @@ function App() {
       setsectorDown(urlLink+'#task-pointer');
       return sectorDown;
     }
-    else if(window.scrollY > 2416 & window.scrollY <= 2830){
+    else if(window.scrollY > 2416 & window.scrollY <= 2802){
       setsectorDown(urlLink+'#calculator');
       return sectorDown;
     }
-    else if(window.scrollY > 2830 & window.scrollY <= 3244){
+    else if(window.scrollY > 2802 & window.scrollY <= 3172){
       setsectorDown(urlLink+'#form');
       return sectorDown;
     }
-    else if(window.scrollY > 3244 & window.scrollY <= 3658){
+    else if(window.scrollY > 3172 & window.scrollY <= 3541){
       setsectorDown(urlLink+'#regex');
       return sectorDown;
     }
-    else if(window.scrollY > 3658 & window.scrollY <= 4071){
+    else if(window.scrollY > 3541 & window.scrollY <= 3911){
       setsectorDown(urlLink+'#click-counter');
       return sectorDown;
     }
-    else if(window.scrollY > 4071 & window.scrollY <= 4469){
+    else if(window.scrollY > 3911 & window.scrollY <= 4264){
       setsectorDown(urlLink+'#contact');
       return sectorDown;
     }
-    else if(window.scrollY > 4469 & window.scrollY <= 5000){
+    else if(window.scrollY > 4264 & window.scrollY <= 5000){
       setsectorDown(urlLink+'#footer');
       setActive();
       return sectorDown;

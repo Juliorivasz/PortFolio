@@ -159,3 +159,10 @@ a {
     font-size: 1.1rem;
 }
 
+/* mobile */
+
+@media screen and (max-width:365px) {
+    .title__portfolio {
+        font-size: 1.9rem;
+    }
+}
