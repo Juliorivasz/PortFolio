@@ -53,7 +53,6 @@ body {
     position: relative;
     border-right: 2px solid rgba(255,255,255,.75);
     white-space: nowrap;
-    letter-spacing: 0.2rem;
 }
 
 @keyframes typewriter{
@@ -171,8 +170,13 @@ a {
         font-size: 1.9rem;
     }
 }
+@media screen and (min-width: 425px) {
+    .title__portfolio {
+        letter-spacing: 0.2rem;
+    }
+}
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
     .a {
         display: none;
     }

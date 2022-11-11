@@ -4,7 +4,7 @@ import menu from '../img/svg/bx-menu.svg';
 import eks from '../img/eks.png';
 import profile from '../img/julio.png';
 
-function Nav(props) {
+function Nav({ urlLink, diss, dissemble }) {
   
 
     return (
@@ -17,16 +17,16 @@ function Nav(props) {
               </a>
             </div>
             <div className="container__bar">
-              <a className="desktop" href={props.urlLink+'#about-me'}><p className="navegation__bar">About me</p></a>
-              <a className="desktop" href={props.urlLink+'#skills'}><p className="navegation__bar">Skills</p></a>
-              <a className="desktop" href={props.urlLink+'#projects'}><p className="navegation__bar">Projects</p></a>
-              <a className="desktop" href={props.urlLink+'#contact'}><p className="navegation__bar">Contact me</p></a>
+              <a className="desktop" href={urlLink+'#about-me'}><p className="navegation__bar">About me</p></a>
+              <a className="desktop" href={urlLink+'#skills'}><p className="navegation__bar">Skills</p></a>
+              <a className="desktop" href={urlLink+'#projects'}><p className="navegation__bar">Projects</p></a>
+              <a className="desktop" href={urlLink+'#contact'}><p className="navegation__bar">Contact me</p></a>
               <a href="./CV English julio.pdf" download><p className="navegation__bar cv">Download CV</p></a>
             </div>
-            <img className={`img__menu ${props.diss === 'dissemble'? '' : 'dissemble'}`} src={menu} alt="menu" title="menu"
-             onClick={props.dissemble}/>
-            <img className={`img__menu x ${props.diss === 'dissemble'? 'dissemble' : ''}`} src={eks} alt="menu" title="menu"
-             onClick={props.dissemble}/>
+            <img className={`img__menu ${diss === 'dissemble'? '' : 'dissemble'}`} src={menu} alt="menu" title="menu"
+             onClick={dissemble}/>
+            <img className={`img__menu x ${diss === 'dissemble'? 'dissemble' : ''}`} src={eks} alt="menu" title="menu"
+             onClick={dissemble}/>
           </div>
         </nav>
     );
