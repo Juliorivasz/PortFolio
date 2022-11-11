@@ -170,7 +170,7 @@ a {
         font-size: 1.9rem;
     }
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 525px) {
     .title__portfolio {
         letter-spacing: 0.2rem;
     }
