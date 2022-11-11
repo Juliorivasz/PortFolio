@@ -53,6 +53,7 @@ body {
     position: relative;
     border-right: 2px solid rgba(255,255,255,.75);
     white-space: nowrap;
+    letter-spacing: 0.2rem;
 }
 
 @keyframes typewriter{
@@ -147,15 +148,20 @@ a {
 }
 
 .div__footer {
-    padding: 2rem 0;
+    padding: 2rem 0 1rem 0;
     text-align: center;
 }
 
 .text__footer {
-    margin: 0 1rem;
+    margin: 1rem;
     color: #fff;
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+.social__networks {
+    margin: 0 .5rem;
+    padding-bottom: 2rem;
 }
 
 /* mobile */

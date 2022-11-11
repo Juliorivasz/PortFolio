@@ -21,7 +21,7 @@ function Contact(){
                 <input type="email" className="input__form" name="email" id="email" placeholder="Email" required/>
                 <input type="text" className="input__form" name="subject" id="subject" placeholder="Subject" required/>
                 <textarea type="textarea" className="input__form" name="message" id="message" placeholder="Message" required />
-                <input type="submit" className="input__form" name="submit" id="submit" required/>
+                <input type="submit" className="input__form" name="submit" id="submit" value="SEND" required/>
                 <input type="hidden" name="_next" value="https://juliorivasz.github.io/PortFolio/" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />

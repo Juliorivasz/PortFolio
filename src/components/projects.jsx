@@ -26,7 +26,7 @@ function Projects() {
                         </div>
                     </a>
                     <div className="container__link">
-                        <a className="link" href="https://juliorivasz.github.io/Encriptador/" target='_blank'><img className="link__img" src={demo} alt="demo"/><p>Ver demo</p></a>
+                        <a className="link" href="https://juliorivasz.github.io/Encriptador/" target='_blank'><img className="link__img" src={demo} alt="demo"/><p>Watch</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Encriptador" target='_blank'><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ function Projects() {
                         </div>
                     </a>
                     <div className="container__link">
-                        <a className="link" href="https://juliorivasz.github.io/Apuntador-de-Tareas/" target='_blank'><img className="link__img" src={demo} alt="demo" /><p>Ver demo</p></a>
+                        <a className="link" href="https://juliorivasz.github.io/Apuntador-de-Tareas/" target='_blank'><img className="link__img" src={demo} alt="demo" /><p>Watch</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Apuntador-de-Tareas" target='_blank'><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ function Projects() {
                         </div>
                     </a>
                     <div className="container__link">
-                        <a className="link" href="https://juliorivasz.github.io/calculator/" target='_blank'><img className="link__img" src={demo} alt="demo" /><p>Ver demo</p></a>
+                        <a className="link" href="https://juliorivasz.github.io/calculator/" target='_blank'><img className="link__img" src={demo} alt="demo" /><p>Watch</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/calculator" target='_blank'><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ function Projects() {
                         </div>
                     </a>
                     <div className="container__link">
-                        <a className="link" href="https://juliorivasz.github.io/Formulario/" target='_blank'><img className="link__img"  src={demo} alt="demo" /><p>Ver demo</p></a>
+                        <a className="link" href="https://juliorivasz.github.io/Formulario/" target='_blank'><img className="link__img"  src={demo} alt="demo" /><p>Watch</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Formulario" target='_blank'><img className="link__img"  src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ function Projects() {
                         </div>
                     </a>
                     <div className="container__link">
-                        <a className="link" href="https://juliorivasz.github.io/Regex/" target='_blank'><img className="link__img" src={demo} alt="demo" /><p>Ver demo</p></a>
+                        <a className="link" href="https://juliorivasz.github.io/Regex/" target='_blank'><img className="link__img" src={demo} alt="demo" /><p>Watch</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Regex" target='_blank'><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                 </div>
@@ -86,7 +86,7 @@ function Projects() {
                         </div>
                     </a>
                     <div className="container__link">
-                        <a className="link" href="https://juliorivasz.github.io/Click-Counter/" target='_blank'><img className="link__img" src={demo} alt="demo" /><p>Ver demo</p></a>
+                        <a className="link" href="https://juliorivasz.github.io/Click-Counter/" target='_blank'><img className="link__img" src={demo} alt="demo" /><p>Watch</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Click-Counter" target='_blank'><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                 </div>
