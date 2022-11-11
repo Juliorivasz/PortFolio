@@ -106,9 +106,9 @@
 }
 
 @media screen and (min-width:992px) and (max-width: 1400px) {
-    .container__section{
+    /* .container__section{
         height: 100vh;
-    }
+    } */
 
     .container__review__about_me {
         display: flex;
@@ -127,9 +127,9 @@
 }
 
 @media screen and (min-width: 1400px) {
-    .container__section{
+    /* .container__section{
         height: 100vh;
-    }
+    } */
 
     .container__review__about_me {
         display: flex;

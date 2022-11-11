@@ -173,9 +173,9 @@ a {
 }
 
 @media screen and (min-width: 968px) {
-    .App__header {
+    /* .App__header {
         height: 100vh;
-    }
+    } */
 
     .container__presentation {
         margin: 0 1rem 1rem 1rem;
@@ -199,5 +199,6 @@ a {
 
     .circle:hover {
         background-color: #ff9900;
+        color: #fff;
     }
 }

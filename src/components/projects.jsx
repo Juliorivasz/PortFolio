@@ -20,9 +20,11 @@ function Projects() {
             <div className="list__projects">
                 <div className="container__card" id="encryptor">
                     <h2 className="subtitle">Encryptor</h2>
-                    <div className="container__img">
-                        <img className="img__projects" src={encryptor} alt="encryptor" />
-                    </div>
+                    <a className="link" href="https://juliorivasz.github.io/Encriptador/" target='_blank' title="watch project">
+                        <div className="container__img">
+                            <img className="img__projects" src={encryptor} alt="encryptor" />
+                        </div>
+                    </a>
                     <div className="container__link">
                         <a className="link" href="https://juliorivasz.github.io/Encriptador/" target='_blank'><img className="link__img" src={demo} alt="demo"/><p>Ver demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Encriptador" target='_blank'><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
@@ -30,9 +32,11 @@ function Projects() {
                 </div>
                 <div className="container__card" id="task-pointer">
                     <h2 className="subtitle">Task Pointer</h2>
-                    <div className="container__img">
-                        <img className="img__projects" src={task} alt="task pointer" />
-                    </div>
+                    <a className="link" href="https://juliorivasz.github.io/Apuntador-de-Tareas/" target='_blank' title="watch project">
+                        <div className="container__img">
+                            <img className="img__projects" src={task} alt="task pointer" />
+                        </div>
+                    </a>
                     <div className="container__link">
                         <a className="link" href="https://juliorivasz.github.io/Apuntador-de-Tareas/" target='_blank'><img className="link__img" src={demo} alt="demo" /><p>Ver demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Apuntador-de-Tareas" target='_blank'><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
@@ -40,9 +44,11 @@ function Projects() {
                 </div>
                 <div className="container__card" id="calculator">
                     <h2 className="subtitle">Calculator</h2>
-                    <div className="container__img">
-                        <img className="img__projects" src={calculator} alt="calculator" />
-                    </div>
+                    <a className="link" href="https://juliorivasz.github.io/calculator/" target='_blank' title="watch project">
+                        <div className="container__img">
+                            <img className="img__projects" src={calculator} alt="calculator" />
+                        </div>
+                    </a>
                     <div className="container__link">
                         <a className="link" href="https://juliorivasz.github.io/calculator/" target='_blank'><img className="link__img" src={demo} alt="demo" /><p>Ver demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/calculator" target='_blank'><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
@@ -50,9 +56,11 @@ function Projects() {
                 </div>
                 <div className="container__card" id="form">
                     <h2 className="subtitle">Aplication Form</h2>
-                    <div className="container__img">
-                        <img className="img__projects" src={form} alt="form" />
-                    </div>
+                    <a className="link" href="https://juliorivasz.github.io/Formulario/" target='_blank' title="watch project">
+                        <div className="container__img">
+                            <img className="img__projects" src={form} alt="form" />
+                        </div>
+                    </a>
                     <div className="container__link">
                         <a className="link" href="https://juliorivasz.github.io/Formulario/" target='_blank'><img className="link__img"  src={demo} alt="demo" /><p>Ver demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Formulario" target='_blank'><img className="link__img"  src={logogithub} alt="github" /><p>GitHub</p></a>
@@ -60,9 +68,11 @@ function Projects() {
                 </div>
                 <div className="container__card" id="regex">
                     <h2 className="subtitle">Regex</h2>
-                    <div className="container__img">
-                        <img className="img__projects" src={regex} alt="regex" />
-                    </div>
+                    <a className="link" href="https://juliorivasz.github.io/Regex/" target='_blank' title="watch project">
+                        <div className="container__img">
+                            <img className="img__projects" src={regex} alt="regex" />
+                        </div>
+                    </a>
                     <div className="container__link">
                         <a className="link" href="https://juliorivasz.github.io/Regex/" target='_blank'><img className="link__img" src={demo} alt="demo" /><p>Ver demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Regex" target='_blank'><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
@@ -70,9 +80,11 @@ function Projects() {
                 </div>
                 <div className="container__card" id="click-counter">
                     <h2 className="subtitle">Click Counter</h2>
-                    <div className="container__img">
-                        <img className="img__projects" src={clickCounter} alt="click counter" />
-                    </div>
+                    <a className="link" href="https://juliorivasz.github.io/Click-Counter/" target='_blank' title="watch project">
+                        <div className="container__img">
+                            <img className="img__projects" src={clickCounter} alt="click counter" />
+                        </div>
+                    </a>
                     <div className="container__link">
                         <a className="link" href="https://juliorivasz.github.io/Click-Counter/" target='_blank'><img className="link__img" src={demo} alt="demo" /><p>Ver demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Click-Counter" target='_blank'><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>

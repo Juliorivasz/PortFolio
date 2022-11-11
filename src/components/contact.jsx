@@ -8,6 +8,7 @@ function Contact(){
                 <h2 className="title">Contact me</h2>
             </div>
             </a>
+            <div className="container__contact">
             <div className="title__div extra">
                 <h3 className="sub">! Contact your favorite developer ¡</h3>
                 <br />
@@ -25,6 +26,7 @@ function Contact(){
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
             </form>
+            </div>
         </section>
     );
 }
