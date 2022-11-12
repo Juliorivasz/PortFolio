@@ -79,7 +79,7 @@ function Projects() {
                     </div>
                 </div>
                 <div className="container__card" id="click-counter">
-                    <h2 className="subtitle">Click Counter</h2>
+                    <h2 className="subtitle">Count Click</h2>
                     <a className="link" href="https://juliorivasz.github.io/Click-Counter/" target='_blank' title="watch project">
                         <div className="container__img">
                             <img className="img__projects" src={clickCounter} alt="click counter" />
