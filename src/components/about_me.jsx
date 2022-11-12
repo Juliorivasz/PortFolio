@@ -13,9 +13,9 @@ function AboutMe() {
                 <img className='img__about_me' src={profile} alt='profile' title='profile'/>
                 <div className='text__about_me'>
                     <p>
-                        " Hello, my name is Julio, I consider myself an enthusiastic, proactive, responsible, 
-                        detail-oriented person and open to receiving any type of feedback to continuously learn and improve. 
-                        I stand out in front end development, although my goal is to achieve excellence as a fullstack developer. "
+                        " Hello, my name is Julio, I consider myself enthusiastic, proactive, responsible, detail-oriented, 
+                        open to giving and receiving any type of feedback to continuously learn and improve. I manage my time efficiently, 
+                        I learn quickly on my own and as a team. "
                     </p>
                 </div>
             </div>
