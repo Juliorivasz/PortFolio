@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PortFolio/static/css/main.942f305e.css",
+    "main.css": "/PortFolio/static/css/main.611290e8.css",
     "main.js": "/PortFolio/static/js/main.2f9c6940.js",
     "static/js/787.1ed0c42c.chunk.js": "/PortFolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Encryptor.png": "/PortFolio/static/media/Encryptor.82150229784873c081f4.png",
@@ -29,12 +29,12 @@
     "static/media/bxs-chevron-down.svg": "/PortFolio/static/media/bxs-chevron-down.b4bc4ea9aeb046819c39f867b1e43e1a.svg",
     "static/media/bxs-chevron-up.svg": "/PortFolio/static/media/bxs-chevron-up.c4459aec6dadec825fb1faff7452d752.svg",
     "static/media/bx-menu.svg": "/PortFolio/static/media/bx-menu.5f798237d5148d61829aa41cfc4d7071.svg",
-    "main.942f305e.css.map": "/PortFolio/static/css/main.942f305e.css.map",
+    "main.611290e8.css.map": "/PortFolio/static/css/main.611290e8.css.map",
     "main.2f9c6940.js.map": "/PortFolio/static/js/main.2f9c6940.js.map",
     "787.1ed0c42c.chunk.js.map": "/PortFolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.942f305e.css",
+    "static/css/main.611290e8.css",
     "static/js/main.2f9c6940.js"
   ]
 }
