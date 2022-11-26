@@ -169,7 +169,7 @@ function App() {
             <a className='social__networks' href="https://github.com/Juliorivasz" target="_blank">
               <img align="center" width="40" heigth="40" title="Githuh" src="https://assets.ifttt.com/images/channels/2107379463/icons/monochrome_large.png"/>
             </a>
-            <p className='text__footer'>Julio A. Rivas Garcia. ©Copyright 2022 - All rights reserved</p>
+            <p className='text__footer'>Julio A. Rivas Garcia. © Copyright 2022 - All rights reserved</p>
           </div>
       </footer>
       <a href={sectorUp} className='a' onClick={sectorU}>

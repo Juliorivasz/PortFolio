@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/contact.css";
+import whatsapp from "../img/whatsapp-logo.png";
 
 function Contact(){    
     return (
@@ -14,7 +15,7 @@ function Contact(){
                 <br />
                 <p>Mendoza, Argentina</p>
                 <p>juliorivasdev@gmail.com</p>
-                <p>(+54) 261-575-2890</p>
+                <a href="https://bit.ly/Juliorivasdev" target="_blank"><img className="img__whatsapp" src={whatsapp} alt="Whatsapp"/></a>
             </div>
             <form className="form__contact" action="https://formsubmit.co/70add80e68d1397fe0f4ecc6de928421" method="POST" >
                 <input type="text" className="input__form" name="name" id="name" placeholder="Name" required/>

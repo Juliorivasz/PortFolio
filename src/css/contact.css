@@ -9,6 +9,11 @@
 .sub {
     font-weight: bold;
 }
+
+.img__whatsapp {
+    height: 6rem;
+}
+
 .form__contact {
     display: flex;
     flex-direction: column;
