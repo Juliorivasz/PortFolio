@@ -16,7 +16,6 @@ import { Themes } from './components/styled/themes';
 function App() {
 
   const [dissemble, setDissemble] = useState('dissemble');
-  const [active, setActive ] = useState('dissemble');
   const urlLink = window.location.pathname;
   document.addEventListener("scroll",(function(){window.scrollY>=window.innerHeight/2? setActive('') : setActive('dissemble')}));
 
