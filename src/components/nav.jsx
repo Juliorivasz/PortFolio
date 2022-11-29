@@ -21,7 +21,7 @@ function Nav({ urlLink, diss, dissemble,theme }) {
               <a className="desktop" href={urlLink+'#skills'}><p className="navegation__bar">Skills</p></a>
               <a className="desktop" href={urlLink+'#projects'}><p className="navegation__bar">Projects</p></a>
               <a className="desktop" href={urlLink+'#contact'}><p className="navegation__bar">Contact me</p></a>
-              <a href="./CV English julio.pdf" download><p className="navegation__bar cv">Download CV</p></a>
+              <a href="./CV Spanish julio.pdf" download><p className="navegation__bar cv">Download CV</p></a>
             </div>
             <img className={`img__menu ${diss === 'dissemble'? '' : 'dissemble'}`} src={menu} alt="menu" title="menu"
              onClick={dissemble}/>

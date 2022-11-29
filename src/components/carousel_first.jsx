@@ -7,6 +7,7 @@ import github from '../img/github.png';
 import photoshop from '../img/photoshop.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/carousel.css';
+import nodexpress from '../img/nodeExpress.png';
 
 function CarouselFirst() {
   return (
@@ -15,7 +16,7 @@ function CarouselFirst() {
         <img
           className="d-block w-100"
           src={html5}
-          alt="First slide"
+          alt="slide"
         />
         <Carousel.Caption>
           <h3></h3>
@@ -26,7 +27,7 @@ function CarouselFirst() {
         <img
           className="d-block w-100"
           src={css3}
-          alt="Second slide"
+          alt="slide"
         />
         <Carousel.Caption>
           <h3></h3>
@@ -37,7 +38,7 @@ function CarouselFirst() {
         <img
           className="d-block w-100"
           src={javascript}
-          alt="Third slide"
+          alt="slide"
         />
         <Carousel.Caption>
           <h3></h3>
@@ -49,7 +50,7 @@ function CarouselFirst() {
         <img
           className="d-block w-100"
           src={reactjs}
-          alt="First slide"
+          alt="slide"
         />
         <Carousel.Caption>
           <h3></h3>
@@ -60,7 +61,7 @@ function CarouselFirst() {
         <img
           className="d-block w-100"
           src={github}
-          alt="First slide"
+          alt="slide"
         />
         <Carousel.Caption>
           <h3></h3>
@@ -71,7 +72,18 @@ function CarouselFirst() {
         <img
           className="d-block w-100"
           src={photoshop}
-          alt="First slide"
+          alt="slide"
+        />
+        <Carousel.Caption>
+          <h3></h3>
+          <p></p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={nodexpress}
+          alt="slide"
         />
         <Carousel.Caption>
           <h3></h3>
