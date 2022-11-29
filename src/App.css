@@ -239,7 +239,7 @@ a {
     }
 
     .title__portfolio {
-        animation: typewriter 4s ease-in-out 0s infinite alternate both;
+        animation: typewriter 4s ease-in 0s infinite alternate both;
     }
 
     .container__img__pitch {

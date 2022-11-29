@@ -11,11 +11,12 @@ import pitching from './img/svg/pitching.png';
 import Switch from './components/switch';
 import { ThemeProvider } from 'styled-components';
 import { Themes } from './components/styled/themes';
-
+import up from './img/svg/bxs-chevron-up.svg';
 
 function App() {
 
   const [dissemble, setDissemble] = useState('dissemble');
+  const [active, setActive ] = useState('dissemble');
   const urlLink = window.location.pathname;
   document.addEventListener("scroll",(function(){window.scrollY>=window.innerHeight/2? setActive('') : setActive('dissemble')}));
 
@@ -96,6 +97,11 @@ function App() {
             <p className='text__footer'>Julio A. Rivas Garcia. © Copyright 2022 - All rights reserved</p>
           </div>
       </footer>
+      <a href='#top' className={active}>
+        <div className='button__up'>
+          <img className='button__up__2' src={up} alt="home up"/>
+        </div>
+      </a>
     </div>
   </ThemeProvider>
   );

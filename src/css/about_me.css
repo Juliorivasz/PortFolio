@@ -52,6 +52,7 @@
     justify-content: center;
 }
 
+/* code button down deleted */
 .button__down {
     position: fixed;
     z-index: 110;
