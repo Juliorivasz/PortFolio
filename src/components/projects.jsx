@@ -10,11 +10,11 @@ import regex from '../img/projects/regex.png';
 import clickCounter from '../img/projects/click-counter.png';
 
 
-function Projects() {
+function Projects({theme}) {
     return (
         <section className="container__section projects" id="projects">
             <a href={window.location.pathname+'#projects'}><div className="title__div">
-               <h2 className="title">Projects</h2>
+               <h2 className={`title ${theme == "LightTheme" ? "b":"w"}`}>Projects</h2>
             </div>
             </a>
             <div className="list__projects">

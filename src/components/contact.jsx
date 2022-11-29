@@ -2,11 +2,11 @@ import React from "react";
 import "../css/contact.css";
 import whatsapp from "../img/whatsapp-logo.png";
 
-function Contact(){    
+function Contact({theme}){    
     return (
         <section className="container__section" id="contact">
             <a href={window.location.pathname+'#contact'}><div className="title__div">
-                <h2 className="title">Contact me</h2>
+                <h2 className={`title ${theme == "LightTheme" ? "b":"w"}`}>Contact me</h2>
             </div>
             </a>
             <div className="container__contact">

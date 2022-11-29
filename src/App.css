@@ -27,6 +27,47 @@ body {
     opacity: 1;}
 }
 
+.container__bw {
+	width: 100%;
+    padding-top: 3rem;
+	background-color: white;
+	transition: 0.5s all ease-in;
+}
+
+.wraper {
+	width: 100%;
+	max-width: 1388px;
+	margin: auto;
+	padding-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+    padding-right: 1rem;
+}
+
+.switch {
+	position: relative;
+	width: 60px;
+	height: 35px;
+	border-radius: 38px;
+	background-color: #5e5e5e;
+	transition: 1s all ease-in;
+}
+
+.button__bw {
+	position: absolute;
+	cursor: pointer;
+	bottom: 5px;
+	left: 5px;
+	width: 25px;
+	height: 25px;
+	border:  none;
+	border-radius: 58%;
+	background-color: #fff;
+	transition: 0.4s all ease-in;
+	outline: none;
+}
+
 .container__title {
     display: flex;
     height: 75%;
@@ -48,8 +89,7 @@ body {
     font-weight: bold;
     font-size: 2.5rem;
     overflow: hidden;
-    animation: typewriter 1.5s ease-out 1s 1 normal both,
-    blinkTextCursor 500ms ease-out infinite normal;
+    animation: typewriter 2s ease-in 1s infinite alternate both;
     position: relative;
     border-right: 2px solid rgba(255,255,255,.75);
     white-space: nowrap;
@@ -59,10 +99,7 @@ body {
     from{width: 0;}
     to{width: 100%;}
   }
-  @keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
-  }
+
 
 .pitch {
     width: 100%;
@@ -139,7 +176,6 @@ body {
 
 a {
     text-decoration: none !important;
-    color: #000 !important;
 }
 
 .footer {
@@ -161,6 +197,14 @@ a {
 .social__networks {
     margin: 0 .5rem;
     padding-bottom: 2rem;
+}
+.b{
+    color: #000;
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+}
+
+.w {
+    color: #fff;
 }
 
 /* mobile */
@@ -186,6 +230,9 @@ a {
     /* .App__header {
         height: 100vh;
     } */
+    .container__bw {
+        padding-top: 0;
+    }
 
     .container__presentation {
         margin: 0 1rem 1rem 1rem;
@@ -193,8 +240,7 @@ a {
     }
 
     .title__portfolio {
-        animation: typewriter 10s ease-out 1s 1 normal both,
-    blinkTextCursor 500ms ease-out infinite normal;
+        animation: typewriter 4s ease-in-out 0s infinite alternate both;
     }
 
     .container__img__pitch {

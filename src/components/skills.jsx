@@ -5,11 +5,11 @@ import CarouselSecond from './carousel_second';
 
 
 
-function Skills() {
+function Skills({theme}) {
     return (
         <section className='container__section' id='skills'>
             <a href={window.location.pathname+'#skills'}><div className='title__div'>
-                <h2 className='title'>Skills</h2>
+                <h2 className={`title ${theme == "LightTheme" ? "b":"w"}`}>Skills</h2>
             </div>
             </a>
             <div className='carousel__combination'>

@@ -4,11 +4,11 @@ import menu from '../img/svg/bx-menu.svg';
 import eks from '../img/eks.png';
 import profile from '../img/julio.png';
 
-function Nav({ urlLink, diss, dissemble }) {
+function Nav({ urlLink, diss, dissemble,theme }) {
   
 
     return (
-        <nav className="mobile">
+        <nav className={`mobile ${theme}`}>
           <div className="container__nav">
             <div className="container__img__perfil">
               <a className="link__perfil" href={window.location.pathname+'#main'}>
