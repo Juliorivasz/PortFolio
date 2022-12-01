@@ -39,6 +39,7 @@ function App() {
         urlLink={urlLink}
         diss = {dissemble}
         dissemble = {swap}
+        setDissemble = {setDissemble}
         theme={switchTheme}/>
         <div className='container__presentation'>
           {/* button change of theme dark or light*/}

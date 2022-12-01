@@ -4,15 +4,13 @@ import menu from '../img/svg/bx-menu.svg';
 import eks from '../img/eks.png';
 import profile from '../img/julio.png';
 
-function Nav({ urlLink, diss, dissemble,theme }) {
-  
-
+function Nav({ urlLink, diss, dissemble,theme, setDissemble }) {
     return (
         <nav className={`mobile ${theme}`}>
           <div className="container__nav">
             <div className="container__img__perfil">
               <a className="link__perfil" href={window.location.pathname+'#main'}>
-                <img src={profile} className={`name__portfolio`} onClick={dissemble}/>
+                <img src={profile} className={`name__portfolio`} onClick={()=>setDissemble('dissemble')}/>
                 <p className="navegation__bar desktop">Home</p>
               </a>
             </div>
