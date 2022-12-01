@@ -12,7 +12,7 @@ function Nav({ urlLink, diss, dissemble,theme }) {
           <div className="container__nav">
             <div className="container__img__perfil">
               <a className="link__perfil" href={window.location.pathname+'#main'}>
-                <img src={profile} className='name__portfolio'/>
+                <img src={profile} className={`name__portfolio`} onClick={dissemble}/>
                 <p className="navegation__bar desktop">Home</p>
               </a>
             </div>
