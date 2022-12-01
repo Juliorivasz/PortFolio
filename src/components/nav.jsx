@@ -3,11 +3,8 @@ import '../css/nav.css';
 import menu from '../img/svg/bx-menu.svg';
 import eks from '../img/eks.png';
 import profile from '../img/julio.png';
-import { useState } from "react";
 
-function Nav({ urlLink, diss, dissemble,theme, setDissemble }) {
-
-  const [changes, setChanges] = useState("not-active")
+function Nav({ urlLink, diss, dissemble, theme, setDissemble, changes, setChanges }) {
 
   const changesMenu = ()=>{
     if(changes === "not-active" && diss==="dissemble"){
@@ -21,8 +18,7 @@ function Nav({ urlLink, diss, dissemble,theme, setDissemble }) {
 
   const changesImg = ()=>{
     setChanges("not-active");
-    setDissemble('dissemble')
-    
+    setDissemble('dissemble');
   }
     return (
         <nav className={`mobile ${theme}`}>
@@ -45,6 +41,7 @@ function Nav({ urlLink, diss, dissemble,theme, setDissemble }) {
               <span></span>
               <span></span>
             </div>
+            {/* menu with img */}
             {/* <img className={`img__menu ${diss === 'dissemble'? '' : 'dissemble'}`} src={menu} alt="menu" title="menu"
              onClick={dissemble}/>
             <img className={`img__menu x ${diss === 'dissemble'? 'dissemble' : ''}`} src={eks} alt="menu" title="menu"

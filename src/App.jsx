@@ -15,6 +15,7 @@ import up from './img/svg/bxs-chevron-up.svg';
 
 function App() {
 
+  const [changes, setChanges] = useState("not-active");
   const [dissemble, setDissemble] = useState('dissemble');
   const [active, setActive ] = useState('dissemble');
   const urlLink = window.location.pathname;
@@ -22,9 +23,11 @@ function App() {
 
   const swap = () => {
     if(dissemble === 'dissemble'){
+      setChanges('active');
       setDissemble('');
     }else{
       setDissemble('dissemble');
+      setChanges('not-active');
     }
   } 
 
@@ -40,7 +43,9 @@ function App() {
         diss = {dissemble}
         dissemble = {swap}
         setDissemble = {setDissemble}
-        theme={switchTheme}/>
+        theme={switchTheme}
+        changes={changes}
+        setChanges={setChanges} />
         <div className='container__presentation'>
           {/* button change of theme dark or light*/}
           <Switch 
