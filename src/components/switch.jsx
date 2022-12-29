@@ -29,7 +29,9 @@ function Switch(props){
                 <SwitchBw>
                     <ButtonBw 
                     onClick={()=>changesSwitch()}
-                    position={position} ></ButtonBw>
+                    position={position} >
+                        DL
+                    </ButtonBw>
                 </SwitchBw>
             </Wraper>
         </ContainerBw>

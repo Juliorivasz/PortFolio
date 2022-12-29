@@ -55,7 +55,7 @@ function App() {
             <h1 className={`title__portfolio ${switchTheme == "LightTheme" ? "b":"w"}`}>Julio Rivas<br/> Front End Developer</h1>
           </div>
           <div className='container__img__pitch'>
-            <img className='pitch' src={pitching} />
+            <img className='pitch' src={pitching} alt='pitching'/>
           </div>
         </div>
         <div className='container__button__down'>

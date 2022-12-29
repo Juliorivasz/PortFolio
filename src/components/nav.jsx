@@ -25,7 +25,7 @@ function Nav({ urlLink, diss, dissemble, theme, setDissemble, changes, setChange
           <div className="container__nav">
             <div className="container__img__perfil">
               <a className="link__perfil" href={window.location.pathname+'#main'}>
-                <img src={profile} className={`name__portfolio`} onClick={changesImg}/>
+                <img src={profile} className={`name__portfolio`} onClick={changesImg} alt='Home'/>
                 <p className="navegation__bar desktop">Home</p>
               </a>
             </div>
