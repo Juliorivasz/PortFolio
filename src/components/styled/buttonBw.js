@@ -18,6 +18,16 @@ export const Wraper = styled.div`
     padding-right: 1rem;
 `;
 
+export const Text = styled.p`
+	color: ${({theme})=>theme.bgc == "#161616"? "#fff" : "#000" };
+	font-size: 1.5rem;
+	font-family: Roboto,san-serif;
+	margin: 0;
+	display: flex;
+	justify-content: end;
+	padding-right: 11.5rem;
+`
+
 export const SwitchBw = styled.div`
     position: relative;
 	width: 60px;
@@ -39,6 +49,9 @@ export const ButtonBw = styled.button`
 	background-color: ${({theme})=>theme.toggle == "#fff"? "#000" : "#fff" };
 	transition: 0.4s all ease-in;
 	outline: none;
+	color: ${({theme})=>theme.bgc == "#161616"? "#fff" : "#000" };
+	font-family: Roboto,san-serif;
+	font-size: 1.1rem;
 `;
 
 
