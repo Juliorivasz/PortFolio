@@ -19,13 +19,16 @@ export const Wraper = styled.div`
 `;
 
 export const Text = styled.p`
-	color: ${({theme})=>theme.bgc == "#161616"? "#fff" : "#000" };
-	font-size: 1.5rem;
-	font-family: Roboto,san-serif;
-	margin: 0;
-	display: flex;
-	justify-content: end;
-	padding-right: 11.5rem;
+	display: none;
+	@media screen and (min-width:1880px) {
+		color: ${({theme})=>theme.bgc == "#161616"? "#fff" : "#000" };
+		font-size: 1.5rem;
+		font-family: Roboto,san-serif;
+		margin: 0;
+		display: flex;
+		justify-content: end;
+		padding-right: 11.5rem;
+	}
 `
 
 export const SwitchBw = styled.div`
@@ -53,5 +56,3 @@ export const ButtonBw = styled.button`
 	font-family: Roboto,san-serif;
 	font-size: 1.1rem;
 `;
-
-
