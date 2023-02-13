@@ -256,5 +256,6 @@ a {
     .circle:hover {
         background-color: #ff9900;
         color: #fff;
+        transition: all 0.3s ease-in-out;
     }
 }

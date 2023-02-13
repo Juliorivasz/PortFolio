@@ -1,7 +1,5 @@
 import React from "react";
 import '../css/nav.css';
-import menu from '../img/svg/bx-menu.svg';
-import eks from '../img/eks.png';
 import profile from '../img/julio.png';
 
 function Nav({ urlLink, diss, dissemble, theme, setDissemble, changes, setChanges }) {

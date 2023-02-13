@@ -1,21 +1,27 @@
 import React from "react";
 import "../css/contact.css";
-import whatsapp from "../img/whatsapp-logo.png";
+import location from '../img/svg/bx-map.svg';
+import email from '../img/svg/bx-envelope.svg';
 
 function Contact({theme}){    
     return (
         <section className="container__section" id="contact">
             <a href={window.location.pathname+'#contact'}><div className="title__div">
-                <h2 className={`title ${theme == "LightTheme" ? "b":"w"}`}>Contact me</h2>
+                <h2 className={`title ${theme === "LightTheme" ? "b":"w"}`}>Contact me</h2>
             </div>
             </a>
             <div className="container__contact">
             <div className="title__div extra">
                 <h3 className="sub">! Contact your favorite developer ¡</h3>
                 <br />
-                <p>Mendoza, Argentina</p>
-                <p>juliorivasdev@gmail.com</p>
-                <a href="https://bit.ly/Juliorivasdev" target="_blank"><img className="img__whatsapp" src={whatsapp} alt="Whatsapp"/></a>
+                <div className="container__location">
+                    <img src={location} alt="location" className="img__location"/>
+                    <p>Mendoza, Argentina</p>
+                </div>
+                <div className="container__email">
+                    <img src={email} alt="email" className="img__email"/>
+                    <p>juliorivasdev@gmail.com</p>
+                </div>
             </div>
             <form className="form__contact" action="https://formsubmit.co/70add80e68d1397fe0f4ecc6de928421" method="POST" >
                 <input type="text" className="input__form" name="name" id="name" placeholder="Name" required/>

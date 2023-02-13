@@ -18,10 +18,6 @@ function CarouselFirst() {
           src={html5}
           alt="slide"
         />
-        <Carousel.Caption>
-          <h3></h3>
-          <p></p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -29,10 +25,6 @@ function CarouselFirst() {
           src={css3}
           alt="slide"
         />
-        <Carousel.Caption>
-          <h3></h3>
-          <p></p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -40,11 +32,6 @@ function CarouselFirst() {
           src={javascript}
           alt="slide"
         />
-        <Carousel.Caption>
-          <h3></h3>
-          <p>
-          </p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -52,10 +39,6 @@ function CarouselFirst() {
           src={reactjs}
           alt="slide"
         />
-        <Carousel.Caption>
-          <h3></h3>
-          <p></p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -63,10 +46,6 @@ function CarouselFirst() {
           src={github}
           alt="slide"
         />
-        <Carousel.Caption>
-          <h3></h3>
-          <p></p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -74,10 +53,6 @@ function CarouselFirst() {
           src={photoshop}
           alt="slide"
         />
-        <Carousel.Caption>
-          <h3></h3>
-          <p></p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -85,10 +60,6 @@ function CarouselFirst() {
           src={nodexpress}
           alt="slide"
         />
-        <Carousel.Caption>
-          <h3></h3>
-          <p></p>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );

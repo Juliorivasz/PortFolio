@@ -21,7 +21,7 @@ export const Wraper = styled.div`
 export const Text = styled.p`
 	display: none;
 	@media screen and (min-width:1880px) {
-		color: ${({theme})=>theme.bgc == "#161616"? "#fff" : "#000" };
+		color: ${({theme})=>theme.bgc === "#161616"? "#fff" : "#000" };
 		font-size: 1.5rem;
 		font-family: Roboto,san-serif;
 		margin: 0;
@@ -36,7 +36,7 @@ export const SwitchBw = styled.div`
 	width: 60px;
 	height: 35px;
 	border-radius: 38px;
-	background-color: ${({theme})=>theme.bgc == "#161616"? "#fff" : "#161616" };
+	background-color: ${({theme})=>theme.bgc === "#161616"? "#fff" : "#161616" };
 	transition: 1s all ease-in;
 `;
 
@@ -49,10 +49,10 @@ export const ButtonBw = styled.button`
 	height: 25px;
 	border:  none;
 	border-radius: 58%;
-	background-color: ${({theme})=>theme.toggle == "#fff"? "#000" : "#fff" };
+	background-color: ${({theme})=>theme.toggle === "#fff"? "#000" : "#fff" };
 	transition: 0.4s all ease-in;
 	outline: none;
-	color: ${({theme})=>theme.bgc == "#161616"? "#fff" : "#000" };
+	color: ${({theme})=>theme.bgc === "#161616"? "#fff" : "#000" };
 	font-family: Roboto,san-serif;
 	font-size: 1.1rem;
 `;

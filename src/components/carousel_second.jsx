@@ -18,10 +18,6 @@ function CarouselSecond() {
           src={figma}
           alt="slide two"
         />
-        <Carousel.Caption>
-          <h3></h3>
-          <p></p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -29,10 +25,6 @@ function CarouselSecond() {
           src={bootstrap}
           alt="slide two"
         />
-        <Carousel.Caption>
-          <h3></h3>
-          <p></p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -40,11 +32,6 @@ function CarouselSecond() {
           src={ts}
           alt="slide two"
         />
-        <Carousel.Caption>
-          <h3></h3>
-          <p>
-          </p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -52,10 +39,6 @@ function CarouselSecond() {
           src={angularjs}
           alt="slide two"
         />
-        <Carousel.Caption>
-          <h3></h3>
-          <p></p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -63,10 +46,6 @@ function CarouselSecond() {
           src={git}
           alt="slide two"
         />
-        <Carousel.Caption>
-          <h3></h3>
-          <p></p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -74,10 +53,6 @@ function CarouselSecond() {
           src={java}
           alt="slide two"
         />
-        <Carousel.Caption>
-          <h3></h3>
-          <p></p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -85,10 +60,6 @@ function CarouselSecond() {
           src={mongodb}
           alt="slide two"
         />
-        <Carousel.Caption>
-          <h3></h3>
-          <p></p>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );

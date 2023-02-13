@@ -9,17 +9,17 @@ import Skills from './components/skills';
 import down from './img/svg/bxs-chevron-down.svg';
 import pitching from './img/svg/pitching.png';
 import Switch from './components/switch';
+import whatsapp from './img/whatsapp.png';
 import { ThemeProvider } from 'styled-components';
 import { Themes } from './components/styled/themes';
-import up from './img/svg/bxs-chevron-up.svg';
 
 function App() {
 
   const [changes, setChanges] = useState("not-active");
   const [dissemble, setDissemble] = useState('dissemble');
-  const [active, setActive ] = useState('dissemble');
+  // const [active, setActive ] = useState('dissemble');
   const urlLink = window.location.pathname;
-  document.addEventListener("scroll",(function(){window.scrollY>=window.innerHeight/2? setActive('') : setActive('dissemble')}));
+  // document.addEventListener("scroll",(function(){window.scrollY>=window.innerHeight/2? setActive('') : setActive('dissemble')}));
 
   const swap = () => {
     if(dissemble === 'dissemble'){
@@ -88,24 +88,24 @@ function App() {
       </main>
       <footer className='footer' id='footer'>
           <div className='div__footer'>
-            <a className='social__networks' href="https://www.linkedin.com/in/julio-rivas-frontend" target="_blank">
-              <img align="center" width="40" height="40" title="Linkedin" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"/>
+            <a className='social__networks' href="https://www.linkedin.com/in/julio-rivas-frontend" target="_blank" rel='noreferrer'>
+              <img align="center" width="40" height="40" title="Linkedin" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt='Linkedin'/>
             </a>
-            <a className='social__networks' href="https://www.instagram.com/julio_rivas17" target="_blank">
-              <img align="center" width="40" heigth="40" title="Instagram" src="https://eltallerdehector.com/wp-content/uploads/2022/06/cd939-logo-instagram-png.png"/>
+            <a className='social__networks' href="https://www.instagram.com/julio_rivas17" target="_blank" rel='noreferrer'>
+              <img align="center" width="40" heigth="40" title="Instagram" src="https://eltallerdehector.com/wp-content/uploads/2022/06/cd939-logo-instagram-png.png" alt='Instagram'/>
             </a>
-            <a className='social__networks' href="https://www.facebook.com/juliorivasz" target="_blank">
-              <img align="center" width="40" heigth="40" title="Facebook" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png"/>
+            <a className='social__networks' href="https://www.facebook.com/juliorivasz" target="_blank" rel='noreferrer'>
+              <img align="center" width="40" heigth="40" title="Facebook" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png" alt='Facebook'/>
             </a>
-            <a className='social__networks' href="https://github.com/Juliorivasz" target="_blank">
-              <img align="center" width="40" heigth="40" title="Githuh" src="https://assets.ifttt.com/images/channels/2107379463/icons/monochrome_large.png"/>
+            <a className='social__networks' href="https://github.com/Juliorivasz" target="_blank" rel='noreferrer'>
+              <img align="center" width="40" heigth="40" title="Githuh" src="https://assets.ifttt.com/images/channels/2107379463/icons/monochrome_large.png" alt='GitHub'/>
             </a>
             <p className='text__footer'>Julio A. Rivas Garcia. © Copyright 2022 - All rights reserved</p>
           </div>
       </footer>
-      <a href='#top' className={active}>
+      <a href='https://bit.ly/Juliorivasdev' target="_blank" rel="noreferrer">
         <div className='button__up'>
-          <img className='button__up__2' src={up} alt="home up"/>
+          <img className='button__up__2' src={whatsapp} alt="whatsapp"/>
         </div>
       </a>
     </div>

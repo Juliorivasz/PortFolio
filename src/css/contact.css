@@ -10,8 +10,15 @@
     font-weight: bold;
 }
 
-.img__whatsapp {
-    height: 6rem;
+.container__location, .container__email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__location, .img__email {
+    width: 2rem;
+    margin: 0 1rem 1rem 0;
 }
 
 .form__contact {

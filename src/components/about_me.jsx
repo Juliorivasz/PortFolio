@@ -6,7 +6,7 @@ function AboutMe({theme}) {
     return (
         <section className='container__section' id='about-me'>
             <a href={window.location.pathname+'#about-me'}><div className='title__div'>
-                <h2 className={`title ${theme == "LightTheme" ? "b":"w"}`}>About Me</h2>
+                <h2 className={`title ${theme === "LightTheme" ? "b":"w"}`}>About Me</h2>
             </div>
             </a>
             <div className='container__review__about_me'>

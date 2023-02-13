@@ -31,7 +31,7 @@
 }
 
 .link__perfil {
-    width: 33px;
+    width: auto;
     height: 33px;
 }
 
@@ -43,9 +43,22 @@
     color: #000;
 }
 
+
 .navegation__bar:hover {
+    animation: width  1s ease-out;
+    transition: all 0.3s ease-in-out;
     border-bottom: 2px solid #ffe600;
+    white-space: nowrap;
     color: #fff;
+}
+
+@keyframes width {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 .cv:hover{
@@ -61,7 +74,7 @@
 .name__portfolio {
     font-size: 20px;
     text-transform: uppercase;
-    width: 100%;
+    width: 33px;
     border-radius: 1rem;
 }
 
