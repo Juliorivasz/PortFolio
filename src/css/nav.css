@@ -237,6 +237,7 @@ span{
         border: none;
         margin: 0 4px;
         height: 33px;
+        width: 100%;
     }
 
     .navegation__bar:hover {
