@@ -32,7 +32,7 @@ function Nav({ urlLink, diss, dissemble, theme, setDissemble, changes, setChange
               <a className="desktop" href={urlLink+'#skills'}><p className="navegation__bar">Skills</p></a>
               <a className="desktop" href={urlLink+'#projects'}><p className="navegation__bar">Projects</p></a>
               <a className="desktop" href={urlLink+'#contact'}><p className="navegation__bar">Contact me</p></a>
-              <a href="./CV Spanish julio.pdf" download><p className="navegation__bar cv">Download CV</p></a>
+              <a href="/public/Julio Rivas Front End Developer.pdf" download><p className="navegation__bar cv">Download CV</p></a>
             </div>
             <div className={`btn__menu ${changes}`} onClick={changesMenu}>
               <span></span>
