@@ -37,13 +37,10 @@
 }
 
 .img__projects {
-    width: 90%;
-    border-radius: 20px;
+    width: 100%;
 }
 
-.img__projects:hover {
-    transform: scale(1.11);
-}
+
 
 .container__link {
     display: flex;
@@ -75,6 +72,47 @@ a:hover {
     display: flex;
     width: 100%;
     height: 3rem;
+}
+
+.invisible {
+    display: block;
+    width: 375px;
+    position: absolute;
+    top: 225.2rem;
+    background-color: orange;
+    border-radius: 30px;
+    visibility: visible !important;
+    transition: all 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);;
+}
+
+#playerzone {
+    padding: 2.5rem 2rem;
+    margin: 0;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.list__caracteristicas__playerzone {
+    margin-top: .5rem;
+}
+
+#gifApp {
+    padding: 3.3rem 2rem;
+    text-align: justify;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+#apuntadorDeTareas {
+    padding: 3.3rem 2rem;
+    text-align: justify;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+#formulario {
+    padding: 3.6rem 2rem;
+    margin: 0;
 }
 
 /* mobile */
