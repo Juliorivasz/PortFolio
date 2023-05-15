@@ -76,9 +76,9 @@ a:hover {
 
 .invisible {
     display: block;
-    width: 375px;
+    width: 309px;
     position: absolute;
-    top: 225.2rem;
+    top: 159.2rem;
     background-color: orange;
     border-radius: 30px;
     visibility: visible !important;
@@ -147,6 +147,11 @@ a:hover {
     .container__card {
         margin: 4rem;
         width: 20%;
+    }
+    
+    .invisible {
+        width: 375px;
+        top: 225.2rem;
     }
 }
 

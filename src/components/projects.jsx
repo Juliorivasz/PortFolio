@@ -21,76 +21,151 @@ function Projects({ theme }) {
             regex: 'http://'+window.location.host+regex
             
         }
-        if(e.target.src === imgSrc.playerzone){
-            const description = document.querySelectorAll('.invisible');
-            description[0].style.display = 'block';
-            description[0].style.opacity = '1';
-            description[0].style.top = '199.2rem';
-            description[0].style.setProperty('visibility', 'visible', 'important');
-        }else if(e.target.src === imgSrc.gifapp) {
-            const description = document.querySelectorAll('.invisible');
-            description[1].style.display = 'block';
-            description[1].style.opacity = '1';
-            description[1].style.top = '199.2rem';
-            description[1].style.setProperty('visibility', 'visible', 'important');
-        }else if(e.target.src === imgSrc.task) {
-            const description = document.querySelectorAll('.invisible');
-            description[2].style.display = 'block';
-            description[2].style.opacity = '1';
-            description[2].style.top = '199.2rem';
-            description[2].style.setProperty('visibility', 'visible', 'important');
-        }else if(e.target.src === imgSrc.rickyAndMorty) {
-            const description = document.querySelectorAll('.invisible');
-            description[3].style.display = 'block';
-            description[3].style.opacity = '1';
-            description[3].style.top = '233.2rem';
-            description[3].style.setProperty('visibility', 'visible', 'important');
-        }else if(e.target.src === imgSrc.form) {
-            const description = document.querySelectorAll('.invisible');
-            description[4].style.display = 'block';
-            description[4].style.opacity = '1';
-            description[4].style.top = '233.2rem';
-            description[4].style.setProperty('visibility', 'visible', 'important');
-        }else if(e.target.src === imgSrc.regex) {
-            const description = document.querySelectorAll('.invisible');
-            description[5].style.display = 'block';
-            description[5].style.opacity = '1';
-            description[5].style.top = '233.2rem';
-            description[5].style.setProperty('visibility', 'visible', 'important');
+        if(window.innerWidth > '900') {
+            if(e.target.src === imgSrc.playerzone){
+                const description = document.querySelectorAll('.invisible');
+                description[0].style.display = 'block';
+                description[0].style.opacity = '1';
+                description[0].style.top = '199.2rem';
+                description[0].style.setProperty('visibility', 'visible', 'important');
+            }else if(e.target.src === imgSrc.gifapp) {
+                const description = document.querySelectorAll('.invisible');
+                description[1].style.display = 'block';
+                description[1].style.opacity = '1';
+                description[1].style.top = '199.2rem';
+                description[1].style.setProperty('visibility', 'visible', 'important');
+            }else if(e.target.src === imgSrc.task) {
+                const description = document.querySelectorAll('.invisible');
+                description[2].style.display = 'block';
+                description[2].style.opacity = '1';
+                description[2].style.top = '199.2rem';
+                description[2].style.setProperty('visibility', 'visible', 'important');
+            }else if(e.target.src === imgSrc.rickyAndMorty) {
+                const description = document.querySelectorAll('.invisible');
+                description[3].style.display = 'block';
+                description[3].style.opacity = '1';
+                description[3].style.top = '233.2rem';
+                description[3].style.setProperty('visibility', 'visible', 'important');
+            }else if(e.target.src === imgSrc.form) {
+                const description = document.querySelectorAll('.invisible');
+                description[4].style.display = 'block';
+                description[4].style.opacity = '1';
+                description[4].style.top = '233.2rem';
+                description[4].style.setProperty('visibility', 'visible', 'important');
+            }else if(e.target.src === imgSrc.regex) {
+                const description = document.querySelectorAll('.invisible');
+                description[5].style.display = 'block';
+                description[5].style.opacity = '1';
+                description[5].style.top = '233.2rem';
+                description[5].style.setProperty('visibility', 'visible', 'important');
+            }else {
+                if(e.target.src === imgSrc.playerzone){
+                    const description = document.querySelectorAll('.invisible');
+                    description[0].style.display = 'block';
+                    description[0].style.opacity = '1';
+                    description[0].style.top = '159.2rem';
+                    description[0].style.setProperty('visibility', 'visible', 'important');
+                }else if(e.target.src === imgSrc.gifapp) {
+                    const description = document.querySelectorAll('.invisible');
+                    description[1].style.display = 'block';
+                    description[1].style.opacity = '1';
+                    description[1].style.top = '159.2rem';
+                    description[1].style.setProperty('visibility', 'visible', 'important');
+                }else if(e.target.src === imgSrc.task) {
+                    const description = document.querySelectorAll('.invisible');
+                    description[2].style.display = 'block';
+                    description[2].style.opacity = '1';
+                    description[2].style.top = '159.2rem';
+                    description[2].style.setProperty('visibility', 'visible', 'important');
+                }else if(e.target.src === imgSrc.rickyAndMorty) {
+                    const description = document.querySelectorAll('.invisible');
+                    description[3].style.display = 'block';
+                    description[3].style.opacity = '1';
+                    description[3].style.top = '200.2rem';
+                    description[3].style.setProperty('visibility', 'visible', 'important');
+                }else if(e.target.src === imgSrc.form) {
+                    const description = document.querySelectorAll('.invisible');
+                    description[4].style.display = 'block';
+                    description[4].style.opacity = '1';
+                    description[4].style.top = '200.2rem';
+                    description[4].style.setProperty('visibility', 'visible', 'important');
+                }else if(e.target.src === imgSrc.regex) {
+                    const description = document.querySelectorAll('.invisible');
+                    description[5].style.display = 'block';
+                    description[5].style.opacity = '1';
+                    description[5].style.top = '200.2rem';
+                    description[5].style.setProperty('visibility', 'visible', 'important');
+            }
         }
     }
+}
+    
     
     function normalidad(e) {
-        if(e.target.parentElement.className === 'invisible playerzone'){
-            const description = document.querySelectorAll('.invisible');
-            description[0].style.top = '207.2rem';
-            description[0].style.opacity = '0';
-            description[0].style.setProperty('visibility', 'hidden', 'important');
-        }else if(e.target.parentElement.className === 'invisible gifapp'){
-            const description = document.querySelectorAll('.invisible');
-            description[1].style.top = '207.2rem';
-            description[1].style.opacity = '0';
-            description[1].style.setProperty('visibility', 'hidden', 'important');
-        }else if(e.target.parentElement.className === 'invisible apuntadorDeTareas'){
-            const description = document.querySelectorAll('.invisible');
-            description[2].style.top = '207.2rem';
-            description[2].style.opacity = '0';
-            description[2].style.setProperty('visibility', 'hidden', 'important');
-        }else if(e.target.parentElement.className === 'invisible rickyandmorty'){
-            const description = document.querySelectorAll('.invisible');
-            description[3].style.top = '225.2rem';
-            description[3].style.opacity = '0';
-            description[3].style.setProperty('visibility', 'hidden', 'important');
-        }else if(e.target.parentElement.className === 'invisible formulario'){
-            const description = document.querySelectorAll('.invisible');
-            description[4].style.top = '225.2rem';
-            description[4].style.opacity = '0';
-            description[4].style.setProperty('visibility', 'hidden', 'important');
-        }else if(e.target.parentElement.className === 'invisible expresionesRegulares'){
-            const description = document.querySelectorAll('.invisible');
-            description[5].style.top = '225.2rem';
-            description[5].style.opacity = '0';
-            description[5].style.setProperty('visibility', 'hidden', 'important');
+        if(window.innerWidth > 900) {
+            if(e.target.parentElement.className === 'invisible playerzone'){
+                const description = document.querySelectorAll('.invisible');
+                description[0].style.top = '207.2rem';
+                description[0].style.opacity = '0';
+                description[0].style.setProperty('visibility', 'hidden', 'important');
+            }else if(e.target.parentElement.className === 'invisible gifapp'){
+                const description = document.querySelectorAll('.invisible');
+                description[1].style.top = '207.2rem';
+                description[1].style.opacity = '0';
+                description[1].style.setProperty('visibility', 'hidden', 'important');
+            }else if(e.target.parentElement.className === 'invisible apuntadorDeTareas'){
+                const description = document.querySelectorAll('.invisible');
+                description[2].style.top = '207.2rem';
+                description[2].style.opacity = '0';
+                description[2].style.setProperty('visibility', 'hidden', 'important');
+            }else if(e.target.parentElement.className === 'invisible rickyandmorty'){
+                const description = document.querySelectorAll('.invisible');
+                description[3].style.top = '225.2rem';
+                description[3].style.opacity = '0';
+                description[3].style.setProperty('visibility', 'hidden', 'important');
+            }else if(e.target.parentElement.className === 'invisible formulario'){
+                const description = document.querySelectorAll('.invisible');
+                description[4].style.top = '225.2rem';
+                description[4].style.opacity = '0';
+                description[4].style.setProperty('visibility', 'hidden', 'important');
+            }else if(e.target.parentElement.className === 'invisible expresionesRegulares'){
+                const description = document.querySelectorAll('.invisible');
+                description[5].style.top = '225.2rem';
+                description[5].style.opacity = '0';
+                description[5].style.setProperty('visibility', 'hidden', 'important');
+            }
+        }else {
+            if(e.target.parentElement.className === 'invisible playerzone'){
+                const description = document.querySelectorAll('.invisible');
+                description[0].style.top = '207.2rem';
+                description[0].style.opacity = '0';
+                description[0].style.setProperty('visibility', 'hidden', 'important');
+            }else if(e.target.parentElement.className === 'invisible gifapp'){
+                const description = document.querySelectorAll('.invisible');
+                description[1].style.top = '207.2rem';
+                description[1].style.opacity = '0';
+                description[1].style.setProperty('visibility', 'hidden', 'important');
+            }else if(e.target.parentElement.className === 'invisible apuntadorDeTareas'){
+                const description = document.querySelectorAll('.invisible');
+                description[2].style.top = '207.2rem';
+                description[2].style.opacity = '0';
+                description[2].style.setProperty('visibility', 'hidden', 'important');
+            }else if(e.target.parentElement.className === 'invisible rickyandmorty'){
+                const description = document.querySelectorAll('.invisible');
+                description[3].style.top = '225.2rem';
+                description[3].style.opacity = '0';
+                description[3].style.setProperty('visibility', 'hidden', 'important');
+            }else if(e.target.parentElement.className === 'invisible formulario'){
+                const description = document.querySelectorAll('.invisible');
+                description[4].style.top = '225.2rem';
+                description[4].style.opacity = '0';
+                description[4].style.setProperty('visibility', 'hidden', 'important');
+            }else if(e.target.parentElement.className === 'invisible expresionesRegulares'){
+                const description = document.querySelectorAll('.invisible');
+                description[5].style.top = '225.2rem';
+                description[5].style.opacity = '0';
+                description[5].style.setProperty('visibility', 'hidden', 'important');
+            }
         }
     }
 
@@ -104,11 +179,11 @@ function Projects({ theme }) {
             <div className="list__projects">
                 <div className="container__card" id="playerZone">
                     <h2 className="subtitle">PlayerZone</h2>
-                    <a className="link" href="https://playerzone.netlify.app/" target='_blank' rel="noreferrer" title="watch project">
-                        <div className="container__img">
-                            <img className="img__projects" src={playerzone} alt="encryptor" onMouseOver={mostrarImg}  />
+                    {/* <a className="link" href="https://playerzone.netlify.app/" target='_blank' rel="noreferrer" title="watch project"> */}
+                        <div className="container__img" onTouchStart={mostrarImg}>
+                            <img className="img__projects" src={playerzone} alt="encryptor" onMouseOver={mostrarImg} />
                         </div>
-                    </a>
+                    {/* </a> */}
                     <div className="container__link">
                         <a className="link" href="https://playerzone.netlify.app/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Watch</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/PlayerZone" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
