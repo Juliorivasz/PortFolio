@@ -10,165 +10,22 @@ import form from '../img/projects/form.png';
 import regex from '../img/projects/regex.png';
 
 function Projects({ theme }) {
-    
-    function mostrarImg(e) {
-        const imgSrc = {
-            playerzone: 'http://'+window.location.host+playerzone,
-            gifapp: 'http://'+window.location.host+gifapp,
-            task: 'http://'+window.location.host+task,
-            rickyAndMorty: 'http://'+window.location.host+rickyAndMorty,
-            form: 'http://'+window.location.host+form,
-            regex: 'http://'+window.location.host+regex
-            
-        }
-        if(window.innerWidth > '900') {
-            if(e.target.src === imgSrc.playerzone){
-                const description = document.querySelectorAll('.invisible');
-                description[0].style.display = 'block';
-                description[0].style.opacity = '1';
-                description[0].style.top = '199.2rem';
-                description[0].style.setProperty('visibility', 'visible', 'important');
-            }else if(e.target.src === imgSrc.gifapp) {
-                const description = document.querySelectorAll('.invisible');
-                description[1].style.display = 'block';
-                description[1].style.opacity = '1';
-                description[1].style.top = '199.2rem';
-                description[1].style.setProperty('visibility', 'visible', 'important');
-            }else if(e.target.src === imgSrc.task) {
-                const description = document.querySelectorAll('.invisible');
-                description[2].style.display = 'block';
-                description[2].style.opacity = '1';
-                description[2].style.top = '199.2rem';
-                description[2].style.setProperty('visibility', 'visible', 'important');
-            }else if(e.target.src === imgSrc.rickyAndMorty) {
-                const description = document.querySelectorAll('.invisible');
-                description[3].style.display = 'block';
-                description[3].style.opacity = '1';
-                description[3].style.top = '233.2rem';
-                description[3].style.setProperty('visibility', 'visible', 'important');
-            }else if(e.target.src === imgSrc.form) {
-                const description = document.querySelectorAll('.invisible');
-                description[4].style.display = 'block';
-                description[4].style.opacity = '1';
-                description[4].style.top = '233.2rem';
-                description[4].style.setProperty('visibility', 'visible', 'important');
-            }else if(e.target.src === imgSrc.regex) {
-                const description = document.querySelectorAll('.invisible');
-                description[5].style.display = 'block';
-                description[5].style.opacity = '1';
-                description[5].style.top = '233.2rem';
-                description[5].style.setProperty('visibility', 'visible', 'important');
-            }else {
-                if(e.target.src === imgSrc.playerzone){
-                    const description = document.querySelectorAll('.invisible');
-                    description[0].style.display = 'block';
-                    description[0].style.opacity = '1';
-                    description[0].style.top = '159.2rem';
-                    description[0].style.setProperty('visibility', 'visible', 'important');
-                }else if(e.target.src === imgSrc.gifapp) {
-                    const description = document.querySelectorAll('.invisible');
-                    description[1].style.display = 'block';
-                    description[1].style.opacity = '1';
-                    description[1].style.top = '159.2rem';
-                    description[1].style.setProperty('visibility', 'visible', 'important');
-                }else if(e.target.src === imgSrc.task) {
-                    const description = document.querySelectorAll('.invisible');
-                    description[2].style.display = 'block';
-                    description[2].style.opacity = '1';
-                    description[2].style.top = '159.2rem';
-                    description[2].style.setProperty('visibility', 'visible', 'important');
-                }else if(e.target.src === imgSrc.rickyAndMorty) {
-                    const description = document.querySelectorAll('.invisible');
-                    description[3].style.display = 'block';
-                    description[3].style.opacity = '1';
-                    description[3].style.top = '200.2rem';
-                    description[3].style.setProperty('visibility', 'visible', 'important');
-                }else if(e.target.src === imgSrc.form) {
-                    const description = document.querySelectorAll('.invisible');
-                    description[4].style.display = 'block';
-                    description[4].style.opacity = '1';
-                    description[4].style.top = '200.2rem';
-                    description[4].style.setProperty('visibility', 'visible', 'important');
-                }else if(e.target.src === imgSrc.regex) {
-                    const description = document.querySelectorAll('.invisible');
-                    description[5].style.display = 'block';
-                    description[5].style.opacity = '1';
-                    description[5].style.top = '200.2rem';
-                    description[5].style.setProperty('visibility', 'visible', 'important');
-            }
-        }
-    }
-}
-    
-    
-    function normalidad(e) {
-        if(window.innerWidth > 900) {
-            if(e.target.parentElement.className === 'invisible playerzone'){
-                const description = document.querySelectorAll('.invisible');
-                description[0].style.top = '207.2rem';
-                description[0].style.opacity = '0';
-                description[0].style.setProperty('visibility', 'hidden', 'important');
-            }else if(e.target.parentElement.className === 'invisible gifapp'){
-                const description = document.querySelectorAll('.invisible');
-                description[1].style.top = '207.2rem';
-                description[1].style.opacity = '0';
-                description[1].style.setProperty('visibility', 'hidden', 'important');
-            }else if(e.target.parentElement.className === 'invisible apuntadorDeTareas'){
-                const description = document.querySelectorAll('.invisible');
-                description[2].style.top = '207.2rem';
-                description[2].style.opacity = '0';
-                description[2].style.setProperty('visibility', 'hidden', 'important');
-            }else if(e.target.parentElement.className === 'invisible rickyandmorty'){
-                const description = document.querySelectorAll('.invisible');
-                description[3].style.top = '225.2rem';
-                description[3].style.opacity = '0';
-                description[3].style.setProperty('visibility', 'hidden', 'important');
-            }else if(e.target.parentElement.className === 'invisible formulario'){
-                const description = document.querySelectorAll('.invisible');
-                description[4].style.top = '225.2rem';
-                description[4].style.opacity = '0';
-                description[4].style.setProperty('visibility', 'hidden', 'important');
-            }else if(e.target.parentElement.className === 'invisible expresionesRegulares'){
-                const description = document.querySelectorAll('.invisible');
-                description[5].style.top = '225.2rem';
-                description[5].style.opacity = '0';
-                description[5].style.setProperty('visibility', 'hidden', 'important');
-            }
-        }else {
-            if(e.target.parentElement.className === 'invisible playerzone'){
-                const description = document.querySelectorAll('.invisible');
-                description[0].style.top = '207.2rem';
-                description[0].style.opacity = '0';
-                description[0].style.setProperty('visibility', 'hidden', 'important');
-            }else if(e.target.parentElement.className === 'invisible gifapp'){
-                const description = document.querySelectorAll('.invisible');
-                description[1].style.top = '207.2rem';
-                description[1].style.opacity = '0';
-                description[1].style.setProperty('visibility', 'hidden', 'important');
-            }else if(e.target.parentElement.className === 'invisible apuntadorDeTareas'){
-                const description = document.querySelectorAll('.invisible');
-                description[2].style.top = '207.2rem';
-                description[2].style.opacity = '0';
-                description[2].style.setProperty('visibility', 'hidden', 'important');
-            }else if(e.target.parentElement.className === 'invisible rickyandmorty'){
-                const description = document.querySelectorAll('.invisible');
-                description[3].style.top = '225.2rem';
-                description[3].style.opacity = '0';
-                description[3].style.setProperty('visibility', 'hidden', 'important');
-            }else if(e.target.parentElement.className === 'invisible formulario'){
-                const description = document.querySelectorAll('.invisible');
-                description[4].style.top = '225.2rem';
-                description[4].style.opacity = '0';
-                description[4].style.setProperty('visibility', 'hidden', 'important');
-            }else if(e.target.parentElement.className === 'invisible expresionesRegulares'){
-                const description = document.querySelectorAll('.invisible');
-                description[5].style.top = '225.2rem';
-                description[5].style.opacity = '0';
-                description[5].style.setProperty('visibility', 'hidden', 'important');
-            }
-        }
+
+    function mostrarDescripcion(e) {
+        const description = document.querySelectorAll('.description');
+        console.log(description[e.target.getAttribute('datatype')]);
+        // e.target.getAttribute('datatype'
+        description[e.target.getAttribute('datatype')].style.transform = 'translateY(-100%)';
+        description[e.target.getAttribute('datatype')].style.opacity = '1';
     }
 
+    function cerrarDescripcion(e) {
+        const description = document.querySelectorAll('.description');
+        description[e.target.getAttribute('datatype')].style.transform = 'translateY(0)';
+        description[e.target.getAttribute('datatype')].style.opacity = '0';
+        description[e.target.getAttribute('datatype')].style.transition = 'all 1s';
+        // description[e.target.getAttribute('datatype')].style.display = 'none';
+    }
 
     return (
         <section className="container__section projects" id="projects">
@@ -179,127 +36,196 @@ function Projects({ theme }) {
             <div className="list__projects">
                 <div className="container__card" id="playerZone">
                     <h2 className="subtitle">PlayerZone</h2>
-                    {/* <a className="link" href="https://playerzone.netlify.app/" target='_blank' rel="noreferrer" title="watch project"> */}
-                        <div className="container__img" onTouchStart={mostrarImg}>
-                            <img className="img__projects" src={playerzone} alt="encryptor" onMouseOver={mostrarImg} />
+                    <div className="container__img">
+                        <img className="img__projects" src={playerzone} alt="playerzone" />
+                        <div className="container__detail">
+                            <div className="back__circle" title="ver mas" onClick={mostrarDescripcion} datatype="0">
+                                <span id="vertical__bar" datatype="0"></span>
+                                <span id="horizontal__bar" datatype="0"></span>
+                            </div>
                         </div>
-                    {/* </a> */}
+                    </div>
                     <div className="container__link">
-                        <a className="link" href="https://playerzone.netlify.app/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Watch</p></a>
+                        <a className="link" href="https://playerzone.netlify.app/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/PlayerZone" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
-                    <div className="invisible playerzone" onMouseLeave={normalidad}>
+                    <div className="description player">
                         <p id="playerzone">
-                        PlayerZone es un emocionante proyecto de comercio electrónico basado en tecnología y productos de PC. 
-                        Desarrollado con HTML, CSS y JavaScript, brinda a los usuarios una experiencia de compra en línea fácil y conveniente.
-                        <ul className="list__caracteristicas__playerzone">
+                            PlayerZone es un emocionante proyecto de comercio electrónico basado en tecnología y productos de PC.
+                            Desarrollado con HTML, CSS y JavaScript, brinda a los usuarios una experiencia de compra en línea fácil y conveniente.
+                        </p>
+                        <ul className="list__caracteristicas">
                             <li>Amplio catálogo de productos de tecnología y PC.</li>
                             <li>Navegación intuitiva.</li>
-                            <li>Funcionalidad de búsqueda robusta para encontrar rápidamente los productos deseados.</li>
+                            <li>Barra de búsqueda para los productos deseados.</li>
                             <li>Carrito de compras.</li>
                         </ul>
-                        </p>
+                        <div className="container__close__description" onClick={cerrarDescripcion} datatype="0">
+                            <span id="close__bar__left" datatype="0"></span>
+                            <span id="close__bar__right" datatype="0"></span>
+                        </div>
                     </div>
                 </div>
                 <div className="container__card" id="gifapp">
                     <h2 className="subtitle">GifApp</h2>
-                    <a className="link" href="https://gipfapp.netlify.app/" target='_blank' rel="noreferrer" title="watch project">
-                        <div className="container__img">
-                            <img className="img__projects" src={gifapp} alt="calculator" onMouseOver={mostrarImg}/>
+                    <div className="container__img">
+                        <img className="img__projects" src={gifapp} alt="gifapp" />
+                        <div className="container__detail">
+                            <div className="back__circle" title="ver mas" onClick={mostrarDescripcion} datatype="1">
+                                <span id="vertical__bar" datatype="1"></span>
+                                <span id="horizontal__bar" datatype="1"></span>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     <div className="container__link">
-                        <a className="link" href="https://gipfapp.netlify.app/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Watch</p></a>
+                        <a className="link" href="https://gipfapp.netlify.app/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/GifApp" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
-                    <div className="invisible gifapp" onMouseLeave={normalidad}>
+                    <div className="description gifapp">
                         <p id="gifApp">
-                        GifApp es un proyecto web desarrollado con React, HTML, CSS y JavaScript, 
-                        que consume una API de Giphy para mostrar los primeros 10 GIFs relacionados a través de un buscador interactivo. 
-                        Esta aplicación ofrece una experiencia de búsqueda y visualización de GIFs de manera sencilla y divertida.
-                        <ul className="list__caracteristicas__playerzone">
+                            GifApp es un proyecto web desarrollado con React, HTML, CSS y JavaScript,
+                            que consume una API de Giphy para mostrar los primeros 10 GIFs relacionados a través de un buscador interactivo.
+                            Esta aplicación ofrece una experiencia de búsqueda y visualización de GIFs de manera sencilla y divertida.
+                        </p>
+                        <ul className="list__caracteristicas">
                             <li>Consumo de la API de Giphy.</li>
                             <li>Búsqueda de GIFs.</li>
                             <li>Interfaz interactiva.</li>
                             <li>Visualización de GIFs.</li>
                         </ul>
-                        </p>
+                        <div className="container__close__description" onClick={cerrarDescripcion} datatype="1">
+                            <span id="close__bar__left" datatype="1"></span>
+                            <span id="close__bar__right" datatype="1"></span>
+                        </div>
                     </div>
                 </div>
                 <div className="container__card" id="task-pointer">
                     <h2 className="subtitle">Task Pointer</h2>
-                    <a className="link" href="https://juliorivasz.github.io/Apuntador-de-Tareas/" target='_blank' rel="noreferrer" title="watch project">
-                        <div className="container__img">
-                            <img className="img__projects" src={task} alt="task pointer" onMouseOver={mostrarImg}/>
+                    <div className="container__img">
+                        <img className="img__projects" src={task} alt="task pointer" />
+                        <div className="container__detail">
+                            <div className="back__circle" title="ver mas" onClick={mostrarDescripcion} datatype="2">
+                                <span id="vertical__bar" datatype="2"></span>
+                                <span id="horizontal__bar" datatype="2"></span>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     <div className="container__link">
-                        <a className="link" href="https://juliorivasz.github.io/Apuntador-de-Tareas/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Watch</p></a>
+                        <a className="link" href="https://juliorivasz.github.io/Apuntador-de-Tareas/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Apuntador-de-Tareas" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
-                    <div className="invisible apuntadorDeTareas" onMouseLeave={normalidad}>
+                    <div className="description apuntadorDeTareas" >
                         <p id="apuntadorDeTareas">
-                        La aplicación de Lista de Tareas es un proyecto web desarrollado con HTML, CSS y JavaScript que permite a los usuarios agregar tareas a una lista, establecer una fecha para cada tarea y eliminar las tareas seleccionadas. Esta aplicación proporciona una interfaz sencilla y funcional para administrar y completar tareas diarias.
-                        <ul className="list__caracteristicas__playerzone">
+                            TaskPointer es un proyecto web desarrollado con HTML, CSS y JavaScript que permite a los usuarios agregar tareas a una lista,
+                            establecer una fecha para cada tarea y eliminar las tareas seleccionadas. Esta aplicación proporciona una interfaz sencilla y funcional para administrar y completar tareas diarias.
+                        </p>
+                        <ul className="list__caracteristicas">
                             <li>Creación de tareas.</li>
                             <li>Establecimiento de fechas.</li>
+                            <li>Indicador de tarea realizada.</li>
                             <li>Eliminación de tareas.</li>
                         </ul>
-                        </p>
+                        <div className="container__close__description" onClick={cerrarDescripcion} datatype="2">
+                            <span id="close__bar__left" datatype="2"></span>
+                            <span id="close__bar__right" datatype="2"></span>
+                        </div>
                     </div>
                 </div>
-                <div className="container__card" id="encryptor">
+                <div className="container__card" id="rickyAndMorty">
                     <h2 className="subtitle">Ricky&Morty</h2>
-                    <a className="link" href="https://rickyandmorthy.netlify.app/" target='_blank' rel="noreferrer" title="watch project">
-                        <div className="container__img">
-                            <img className="img__projects" src={rickyAndMorty} alt="encryptor" onMouseOver={mostrarImg}/>
+                    <div className="container__img">
+                        <img className="img__projects" src={rickyAndMorty} alt="ricky&morty" />
+                        <div className="container__detail">
+                            <div className="back__circle" title="ver mas" onClick={mostrarDescripcion} datatype="3">
+                                <span id="vertical__bar" datatype="3"></span>
+                                <span id="horizontal__bar" datatype="3"></span>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     <div className="container__link">
-                        <a className="link" href="https://rickyandmorthy.netlify.app/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Watch</p></a>
+                        <a className="link" href="https://rickyandmorthy.netlify.app/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Ricky-Morty" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
-                    <div className="invisible rickyandmorty" onMouseLeave={normalidad}>
-                        <p id="encriptador">
-                            PlayerZone es un emocionante eCommerce que se especializa en productos y accesorios para gamers. Nuestro objetivo es ofrecer a los 
-                            entusiastas de los videojuegos una plataforma completa para satisfacer todas sus necesidades relacionadas con el mundo gamer.
+                    <div className="description rickyandmorty" >
+                        <p id="rickyandmorty">
+                            Ricky&Morty es una página web desarrollada con React.js y Vite que utiliza la API de Rick & Morty para mostrar información sobre los personajes de la serie.
+                            La página presenta una serie de tarjetas, una por cada personaje, que incluyen detalles como el nombre, la imagen, las características y el estado de vida del personaje.
                         </p>
+                        <ul className="list__caracteristicas">
+                            <li>Consumo de la API de Rick & Morty</li>
+                            <li>Diseño de tarjetas de personajes.</li>
+                            <li>Indicador de estado de vida.</li>
+                            <li>Diseño responsivo</li>
+                        </ul>
+                        <div className="container__close__description" onClick={cerrarDescripcion} datatype="3">
+                            <span id="close__bar__left" datatype="3"></span>
+                            <span id="close__bar__right" datatype="3"></span>
+                        </div>
                     </div>
                 </div>
                 <div className="container__card" id="form">
-                    <h2 className="subtitle">Aplication Form</h2>
-                    <a className="link" href="https://juliorivasz.github.io/Formulario/" target='_blank' rel="noreferrer" title="watch project">
-                        <div className="container__img">
-                            <img className="img__projects" src={form} alt="form" onMouseOver={mostrarImg}/>
+                    <h2 className="subtitle">PetShop</h2>
+                    <div className="container__img">
+                        <img className="img__projects" src={form} alt="form" />
+                        <div className="container__detail">
+                            <div className="back__circle" title="ver mas" onClick={mostrarDescripcion} datatype="4">
+                                <span id="vertical__bar" datatype="4"></span>
+                                <span id="horizontal__bar" datatype="4"></span>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     <div className="container__link">
-                        <a className="link" href="https://juliorivasz.github.io/Formulario/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Watch</p></a>
+                        <a className="link" href="https://juliorivasz.github.io/Formulario/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Formulario" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
-                    <div className="invisible formulario" onMouseLeave={normalidad}>
+                    <div className="description formulario" >
                         <p id="formulario">
-                            PlayerZone es un emocionante eCommerce que se especializa en productos y accesorios para gamers. Nuestro objetivo es ofrecer a los 
-                            entusiastas de los videojuegos una plataforma completa para satisfacer todas sus necesidades relacionadas con el mundo gamer.
+                        PetShop es un formulario interactivo que utiliza HTML, CSS y JavaScript para recopilar información de los clientes interesados en reservar en una tienda de mascotas. 
+                        Implementa validaciones para asegurar que los datos ingresados sean correctos y completos antes de enviar el formulario.
                         </p>
+                        <ul className="list__caracteristicas">
+                            <li>Verificación de campos obligatorios.</li>
+                            <li>Validación de formato.</li>
+                            <li>Validación de longitud de caracteres.</li>
+                            <li>Verificación de selección</li>
+                        </ul>
+                        <div className="container__close__description" onClick={cerrarDescripcion} datatype="4">
+                            <span id="close__bar__left" datatype="4"></span>
+                            <span id="close__bar__right" datatype="4"></span>
+                        </div>
                     </div>
                 </div>
                 <div className="container__card" id="regex">
                     <h2 className="subtitle">Regex</h2>
-                    <a className="link" href="https://juliorivasz.github.io/Regex/" target='_blank' rel="noreferrer" title="watch project">
-                        <div className="container__img">
-                            <img className="img__projects" src={regex} alt="regex" onMouseOver={mostrarImg}/>
+                    <div className="container__img">
+                        <img className="img__projects" src={regex} alt="regex" />
+                        <div className="container__detail">
+                            <div className="back__circle" title="ver mas" onClick={mostrarDescripcion} datatype="5">
+                                <span id="vertical__bar" datatype="5"></span>
+                                <span id="horizontal__bar" datatype="5"></span>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     <div className="container__link">
-                        <a className="link" href="https://juliorivasz.github.io/Regex/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Watch</p></a>
+                        <a className="link" href="https://juliorivasz.github.io/Regex/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Regex" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
-                    <div className="invisible expresionesRegulares" onMouseLeave={normalidad}>
+                    <div className="description expresionesRegulares" >
                         <p id="expresionesRegulares">
-                            PlayerZone es un emocionante eCommerce que se especializa en productos y accesorios para gamers. Nuestro objetivo es ofrecer a los 
-                            entusiastas de los videojuegos una plataforma completa para satisfacer todas sus necesidades relacionadas con el mundo gamer.
+                        Regex es una página web diseñada específicamente para practicar y experimentar con expresiones regulares, utiliza HTML, 
+                        CSS y JavaScript para proporcionar a los usuarios una herramienta interactiva y educativa 
+                        donde pueden practicar sobre expresiones regulares.
                         </p>
+                        <ul className="list__caracteristicas">
+                            <li>Interfaz intuitiva y fácil de usar.</li>
+                            <li>Pruebas en tiempo real.</li>
+                            <li>Mostrar un índice y los grupos encontrados.</li>
+                            <li>Indicador de coincidencia encontrada</li>
+                        </ul>
+                        <div className="container__close__description" onClick={cerrarDescripcion} datatype="5">
+                            <span id="close__bar__left" datatype="5"></span>
+                            <span id="close__bar__right" datatype="5"></span>
+                        </div>
                     </div>
                 </div>
             </div>

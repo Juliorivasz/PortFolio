@@ -30,19 +30,96 @@
 }
 
 .container__img, .container__link {
-    margin: 1rem 0;
     color: black;
-    font-weight: bold;
-
+    position: relative;
 }
+
+.container__img:hover .container__detail{
+    transform: translateY(-100%);
+    opacity: 1;
+    visibility: visible;
+}
+
+.container__img:hover .img__projects {
+    filter: blur(2px);
+}
+
+/* .container__img:hover .invisible {
+    opacity: 1;
+    visibility: visible !important;
+    top: 0;
+} */
 
 .img__projects {
     width: 100%;
 }
 
+.container__img .container__detail {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    transition: all .5s ease;
+}
 
+.back__circle {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #999999;
+    opacity: .8;
+    cursor: pointer;
+}
+
+#vertical__bar {
+    padding: 2rem 0.6rem;
+    border-radius: 10px;
+    background-color: #000;
+    position: absolute;
+    width: 10px;
+}
+
+#horizontal__bar {
+    padding: 0.6rem 2rem;
+    border-radius: 10px;
+    background-color: #000;
+    position: absolute;
+    width: 10px;
+}
+
+.ocultar {
+    display: none;
+}
+
+.back__circle:hover #vertical__bar{
+    animation: rotationLoop 1.5s infinite linear;
+}
+.back__circle:hover #horizontal__bar{
+    animation: rotationLoop 1.5s infinite linear;
+}
+
+@keyframes rotationLoop {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 .container__link {
+    padding: 1rem;
+    background-color: tomato;
+    border-radius: 100%;
     display: flex;
     justify-content: space-evenly;
 
@@ -66,56 +143,60 @@ a:hover {
     color: inherit !important;
 }
 
-
-
 .link__img {
     display: flex;
     width: 100%;
     height: 3rem;
 }
 
-.invisible {
-    display: block;
-    width: 309px;
+.container__card .description {
+    left: 0;
     position: absolute;
-    top: 159.2rem;
     background-color: orange;
     border-radius: 30px;
+    transition: all .7s cubic-bezier(0.01, 0.66, 0.54, 1.12);
     visibility: visible !important;
-    transition: all 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);;
+    opacity: 0;
 }
 
-#playerzone {
-    padding: 2.5rem 2rem;
+.container__close__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33px;
+    margin-bottom: 1rem;
+}
+
+.container__close__description:hover {
+    cursor: pointer;
+}
+
+#close__bar__left {
+    width: 33px;
+    rotate: 45deg;
+    position: absolute;
+}
+
+#close__bar__right {
+    width: 33px;
+    rotate: -45deg;
+    position: absolute;
+}
+
+#playerzone, #gifApp, #apuntadorDeTareas, #rickyandmorty, #formulario, #expresionesRegulares {
+    padding: 2rem 2rem 0;
     margin: 0;
     text-align: justify;
     font-size: 1.1rem;
 }
 
-.list__caracteristicas__playerzone {
-    margin-top: .5rem;
-}
-
-#gifApp {
-    padding: 3.3rem 2rem;
-    text-align: justify;
+.list__caracteristicas {
+    padding: 1rem 4rem 2.4rem;
     margin: 0;
+    text-align: justify;
     font-size: 1.1rem;
 }
-
-#apuntadorDeTareas {
-    padding: 3.3rem 2rem;
-    text-align: justify;
-    margin: 0;
-    font-size: 1.1rem;
-}
-
-#formulario {
-    padding: 3.6rem 2rem;
-    margin: 0;
-}
-
-/* mobile */
+/* desktop */
 
 @media screen and (min-width: 700px) and (max-width: 900px) {
     .list__projects {
@@ -147,11 +228,31 @@ a:hover {
     .container__card {
         margin: 4rem;
         width: 20%;
+        position: relative;
     }
-    
-    .invisible {
-        width: 375px;
-        top: 225.2rem;
+
+    .container__card .description {
+        width: 100%;
+        position: absolute;
+        background-color: orange;
+        border-radius: 30px;
+        visibility: visible !important;
+        transition: all .7s cubic-bezier(0.01, 0.66, 0.54, 1.12);
+        opacity: 0;
+    }
+
+    #playerzone, #gifApp, #apuntadorDeTareas, #rickyandmorty, #formulario, #expresionesRegulares {
+        padding: 2rem 2rem 0;
+        margin: 0;
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+
+    .list__caracteristicas {
+        padding: 1rem 4rem 3.4rem;
+        margin: 0;
+        text-align: justify;
+        font-size: 1.1rem;
     }
 }
 
