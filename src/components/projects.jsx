@@ -50,7 +50,7 @@ function Projects({ theme }) {
                         <a className="link" href="https://github.com/Juliorivasz/PlayerZone" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                     <div className="description player">
-                        <p id="playerzone">
+                        <p className="description__text">
                             PlayerZone es un emocionante proyecto de comercio electrónico basado en tecnología y productos de PC.
                             Desarrollado con HTML, CSS y JavaScript, brinda a los usuarios una experiencia de compra en línea fácil y conveniente,
                             ofrece una amplia gama de productos, como componentes de PC.
@@ -83,7 +83,7 @@ function Projects({ theme }) {
                         <a className="link" href="https://github.com/Juliorivasz/GifApp" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                     <div className="description gifapp">
-                        <p id="gifApp">
+                        <p className="description__text">
                             GifApp es un proyecto web desarrollado con React, HTML, CSS y JavaScript,
                             que consume una API de Giphy para mostrar los primeros 10 GIFs relacionados a través de un buscador interactivo.
                             Esta aplicación ofrece una experiencia de búsqueda y visualización de GIFs de manera sencilla y divertida.
@@ -116,7 +116,7 @@ function Projects({ theme }) {
                         <a className="link" href="https://github.com/Juliorivasz/Apuntador-de-Tareas" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                     <div className="description apuntadorDeTareas" >
-                        <p id="apuntadorDeTareas">
+                        <p className="description__text">
                             TaskPointer es un proyecto web desarrollado con HTML, CSS y JavaScript que permite a los usuarios agregar tareas a una lista,
                             establecer una fecha para cada tarea y eliminar las tareas seleccionadas. Esta aplicación proporciona una interfaz sencilla y funcional para administrar y completar tareas diarias.
                         </p>
@@ -148,7 +148,7 @@ function Projects({ theme }) {
                         <a className="link" href="https://github.com/Juliorivasz/Ricky-Morty" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                     <div className="description rickyandmorty" >
-                        <p id="rickyandmorty">
+                        <p className="description__text">
                             Ricky&Morty es una página web desarrollada con React.js y Vite que utiliza la API de Rick & Morty para mostrar información sobre los personajes de la serie.
                             La página presenta una serie de tarjetas, una por cada personaje, que incluyen detalles como el nombre, la imagen, las características y el estado de vida del personaje.
                         </p>
@@ -180,7 +180,7 @@ function Projects({ theme }) {
                         <a className="link" href="https://github.com/Juliorivasz/Formulario" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                     <div className="description formulario" >
-                        <p id="formulario">
+                        <p className="description__text">
                             PetShop es un formulario interactivo que utiliza HTML, CSS y JavaScript para recopilar información de los clientes interesados en reservar en una tienda de mascotas.
                             Implementa validaciones para asegurar que los datos ingresados sean correctos y completos antes de enviar el formulario,
                             mejorando la experiencia del usuario.
@@ -213,7 +213,7 @@ function Projects({ theme }) {
                         <a className="link" href="https://github.com/Juliorivasz/Regex" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
                     <div className="description expresionesRegulares" >
-                        <p id="expresionesRegulares">
+                        <p className="description__text">
                             Regex es una página web diseñada específicamente para practicar y experimentar con expresiones regulares, utiliza HTML,
                             CSS y JavaScript para proporcionar a los usuarios una herramienta interactiva y educativa
                             donde pueden practicar sobre expresiones regulares, resaltando las coincidencias encontradas.
