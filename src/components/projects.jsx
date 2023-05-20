@@ -28,7 +28,7 @@ function Projects({ theme }) {
     }
 
     return (
-        <section className="container__section projects" id="projects">
+        <section className={`container__section projects ${theme === "LightTheme" ? "bg__gray" : "bg__black"}`} id="projects">
             <a href={window.location.pathname + '#projects'}><div className="title__div">
                 <h2 className={`title ${theme === "LightTheme" ? "b" : "w"}`}>Projects</h2>
             </div>

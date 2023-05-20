@@ -5,7 +5,7 @@
 }
 
 .DarkTheme {
-    background-color: #484848;
+    background-color: lightgray;
     color: #fff;
     transition: 0.5s all ease-in;
 }
@@ -16,7 +16,17 @@
     z-index: 100;
     width: 100%;
     background: linear-gradient(0deg, rgb(62 62 62 / 80%), rgb(205 205 205) 70.71%);
-    color: #000;   
+    color: #000;
+}
+
+.gradient__bot {
+    background: linear-gradient(0deg, rgb(62 62 62 / 80%), rgb(205 205 205) 70.71%);
+    transition: all .5s ease;
+}
+
+.gradient__top {
+    background: linear-gradient(0deg, rgb(205 205 205 / 80%), rgb(62 62 62) 70.71%);
+    transition: all .5s ease;
 }
 
 .container__nav {
@@ -46,10 +56,10 @@
 
 .navegation__bar:hover {
     animation: width  1s ease-out;
-    transition: all 0.3s ease-in-out;
-    border-bottom: 2px solid #ffe600;
+    transition: all 0.1s ease-in-out;
+    border-bottom: 2px solid #101010;
     white-space: nowrap;
-    color: #fff;
+    color: #fff !important;
 }
 
 @keyframes width {
@@ -63,8 +73,8 @@
 
 .cv:hover{
     border: none;
-    background-color: #ff9900;
-    color: #fff;
+    background-color: #101010;
+    color: #fff !important;
 }
 
 .desktop {
@@ -241,7 +251,7 @@ span{
     }
 
     .navegation__bar:hover {
-        border-bottom: 2px solid #ffe600;
+        border-bottom: 2px solid #101010;
         color: #fff;
     }
 

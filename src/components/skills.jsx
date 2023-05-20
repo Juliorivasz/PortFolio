@@ -7,7 +7,7 @@ import CarouselSecond from './carousel_second';
 
 function Skills({theme}) {
     return (
-        <section className='container__section' id='skills'>
+        <section className={`container__section ${theme === "LightTheme" ? "bg__gray" : "bg__black"}`} id='skills'>
             <a href={window.location.pathname+'#skills'}><div className='title__div'>
                 <h2 className={`title ${theme === "LightTheme" ? "b":"w"}`}>Skills</h2>
             </div>

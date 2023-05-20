@@ -19,20 +19,20 @@ function Nav({ urlLink, diss, dissemble, theme, setDissemble, changes, setChange
     setDissemble('dissemble');
   }
     return (
-        <nav className={`mobile ${theme}`}>
+        <nav className={`mobile ${theme === 'LightTheme' ? 'gradient__bot' : 'gradient__top'}`}>
           <div className="container__nav">
             <div className="container__img__perfil">
               <a className="link__perfil" href={window.location.pathname+'#main'}>
                 <img src={profile} className={`name__portfolio`} onClick={changesImg} alt='Home'/>
-                <p className="navegation__bar desktop">Home</p>
+                <p className={`navegation__bar desktop ${theme === "LightTheme" ? "b" : "w"}`}>Home</p>
               </a>
             </div>
             <div className="container__bar">
-              <a className="desktop" href={urlLink+'#about-me'}><p className="navegation__bar">About me</p></a>
-              <a className="desktop" href={urlLink+'#skills'}><p className="navegation__bar">Skills</p></a>
-              <a className="desktop" href={urlLink+'#projects'}><p className="navegation__bar">Projects</p></a>
-              <a className="desktop" href={urlLink+'#contact'}><p className="navegation__bar">Contact me</p></a>
-              <a href="./Julio Rivas Front End Developer.pdf" download><p className="navegation__bar cv">Download CV</p></a>
+              <a className="desktop" href={urlLink+'#about-me'}><p className={`navegation__bar ${theme === "LightTheme" ? "b" : "w"}`}>About me</p></a>
+              <a className="desktop" href={urlLink+'#skills'}><p className={`navegation__bar ${theme === "LightTheme" ? "b" : "w"}`}>Skills</p></a>
+              <a className="desktop" href={urlLink+'#projects'}><p className={`navegation__bar ${theme === "LightTheme" ? "b" : "w"}`}>Projects</p></a>
+              <a className="desktop" href={urlLink+'#contact'}><p className={`navegation__bar ${theme === "LightTheme" ? "b" : "w"}`}>Contact me</p></a>
+              <a href="./Julio Rivas Front End Developer.pdf" download><p className={`navegation__bar cv ${theme === "LightTheme" ? "b" : "w"}`}>Download CV</p></a>
             </div>
             <div className={`btn__menu ${changes}`} onClick={changesMenu}>
               <span></span>

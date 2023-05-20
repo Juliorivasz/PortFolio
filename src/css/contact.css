@@ -30,12 +30,21 @@
 
 .input__form {
     margin: 1rem 0;
-    border: 2px solid #ff6347;
+    border: none;
+    background-color: #999;
     color: #000;
     resize: none;
     height: 3rem;
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 1em 1em 1em -10px gray;
+    transition: all .5s ease-out;
+}
+
+.input__form:focus {
+    background-color: #fff;
+    box-shadow: 1em 1em 1em -10px black;
+    outline: none;
 }
 
 .input__form::placeholder{
@@ -47,7 +56,7 @@
 }
 
 #submit {
-    background: #ff6347;
+    background: #999;
     color: #000;
     border-radius: .8rem;
     padding: 0;
@@ -56,9 +65,9 @@
 }
 
 #submit:hover {
-    background-color: #ff9900;
+    background-color: #000;
     color: #fff;
-    border: none;
+    box-shadow: 1em 1em 1em -10px black;
 }
 
 @media screen and (min-width: 975px) and (max-width: 1400px) {

@@ -5,7 +5,7 @@ import email from '../img/svg/bx-envelope.svg';
 
 function Contact({theme}){    
     return (
-        <section className="container__section" id="contact">
+        <section className={`container__section ${theme === "LightTheme" ? "bg__gray" : "bg__black"}`} id="contact">
             <a href={window.location.pathname+'#contact'}><div className="title__div">
                 <h2 className={`title ${theme === "LightTheme" ? "b":"w"}`}>Contact me</h2>
             </div>

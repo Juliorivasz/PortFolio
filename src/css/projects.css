@@ -125,6 +125,7 @@
     background-color: #b9b9b982;
     display: flex;
     justify-content: space-evenly;
+    border-radius: 0 0 20px 20px;
 }
 
 .link {
