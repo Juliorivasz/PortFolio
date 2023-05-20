@@ -13,11 +13,16 @@ body {
     height: 100vh;
 }
 
-
-
 .App__header {
     animation: presentation 1s linear 0s normal;
-    /* height: 100vh; */
+    margin-bottom: 2rem;
+}
+
+.container__presentation {
+    margin: 0 1rem 1rem 1rem;
+    padding: 3rem 3rem 0 3rem;
+    background: lightgrey;
+    border-radius: 20px;
 }
 
 @keyframes presentation {
@@ -104,40 +109,6 @@ body {
 .pitch {
     width: 100%;
     display: block;
-}
-
-.container__button__down {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    animation: animation .5s linear 1s infinite alternate;
-}
-
-@keyframes animation {
-    from {transform: translateY(0);}
-    to {transform: translateY(10px);}
-}
-
-.circle {
-    display: flex;
-    flex-direction: column;
-    width: 130px;
-    height: 130px;
-    border-radius: 100%;
-    background-color: tomato;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-}
-
-.text__down {
-    margin: 10px 0;
-}
-
-.img__down {
-    width: 50px;
-    height: 50px;
 }
 
 .menu__mobile {
@@ -237,6 +208,8 @@ a {
     .container__presentation {
         margin: 0 1rem 1rem 1rem;
         padding: 3rem 3rem 0 3rem;
+        background: lightgrey;
+        border-radius: 20px;
     }
 
     .title__portfolio {

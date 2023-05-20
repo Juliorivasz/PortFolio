@@ -52,7 +52,8 @@ function Projects({ theme }) {
                     <div className="description player">
                         <p id="playerzone">
                             PlayerZone es un emocionante proyecto de comercio electrónico basado en tecnología y productos de PC.
-                            Desarrollado con HTML, CSS y JavaScript, brinda a los usuarios una experiencia de compra en línea fácil y conveniente.
+                            Desarrollado con HTML, CSS y JavaScript, brinda a los usuarios una experiencia de compra en línea fácil y conveniente,
+                            ofrece una amplia gama de productos, como componentes de PC.
                         </p>
                         <ul className="list__caracteristicas">
                             <li>Amplio catálogo de productos de tecnología y PC.</li>
@@ -180,8 +181,9 @@ function Projects({ theme }) {
                     </div>
                     <div className="description formulario" >
                         <p id="formulario">
-                        PetShop es un formulario interactivo que utiliza HTML, CSS y JavaScript para recopilar información de los clientes interesados en reservar en una tienda de mascotas. 
-                        Implementa validaciones para asegurar que los datos ingresados sean correctos y completos antes de enviar el formulario.
+                            PetShop es un formulario interactivo que utiliza HTML, CSS y JavaScript para recopilar información de los clientes interesados en reservar en una tienda de mascotas.
+                            Implementa validaciones para asegurar que los datos ingresados sean correctos y completos antes de enviar el formulario,
+                            mejorando la experiencia del usuario.
                         </p>
                         <ul className="list__caracteristicas">
                             <li>Verificación de campos obligatorios.</li>
@@ -212,9 +214,9 @@ function Projects({ theme }) {
                     </div>
                     <div className="description expresionesRegulares" >
                         <p id="expresionesRegulares">
-                        Regex es una página web diseñada específicamente para practicar y experimentar con expresiones regulares, utiliza HTML, 
-                        CSS y JavaScript para proporcionar a los usuarios una herramienta interactiva y educativa 
-                        donde pueden practicar sobre expresiones regulares.
+                            Regex es una página web diseñada específicamente para practicar y experimentar con expresiones regulares, utiliza HTML,
+                            CSS y JavaScript para proporcionar a los usuarios una herramienta interactiva y educativa
+                            donde pueden practicar sobre expresiones regulares, resaltando las coincidencias encontradas.
                         </p>
                         <ul className="list__caracteristicas">
                             <li>Interfaz intuitiva y fácil de usar.</li>

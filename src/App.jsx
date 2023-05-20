@@ -58,14 +58,6 @@ function App() {
             <img className='pitch' src={pitching} alt='pitching'/>
           </div>
         </div>
-        <div className='container__button__down'>
-          <a href={window.location.pathname+'#about-me'}>
-            <div className='circle'>
-              <p className='text__down'>Press Down</p>
-              <img src={down} className='img__down' alt='down' />
-            </div>
-          </a>
-        </div>
         <section className={`menu__mobile ${dissemble}`}>
           <ul className='list__nav'>
               <a href={`${window.location.pathname+'#about-me'}`} onClick={swap} ><li className="item__list">About Me</li></a>
