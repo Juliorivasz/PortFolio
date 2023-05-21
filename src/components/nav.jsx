@@ -39,11 +39,6 @@ function Nav({ urlLink, diss, dissemble, theme, setDissemble, changes, setChange
               <span></span>
               <span></span>
             </div>
-            {/* menu with img */}
-            {/* <img className={`img__menu ${diss === 'dissemble'? '' : 'dissemble'}`} src={menu} alt="menu" title="menu"
-             onClick={dissemble}/>
-            <img className={`img__menu x ${diss === 'dissemble'? 'dissemble' : ''}`} src={eks} alt="menu" title="menu"
-             onClick={dissemble}/> */}
           </div>
         </nav>
     );

@@ -57,12 +57,12 @@ function App() {
             <img className='pitch' src={pitching} alt='pitching'/>
           </div>
         </div>
-        <section className={`menu__mobile ${dissemble}`}>
+        <section className={`menu__mobile ${dissemble} ${switchTheme === 'LightTheme' ? 'gradient__top' : 'gradient__bot'}`}>
           <ul className='list__nav'>
-              <a href={`${window.location.pathname+'#about-me'}`} onClick={swap} ><li className="item__list">About Me</li></a>
-              <a href={`${window.location.pathname+'#skills'}`} onClick={swap}><li className="item__list">Skills</li></a>
-              <a href={`${window.location.pathname+'#projects'}`} onClick={swap}><li className="item__list">Projects</li></a>
-              <a href={`${window.location.pathname+'#contact'}`} onClick={swap}><li className="item__list">Contact me</li></a>
+              <a href={`${window.location.pathname+'#about-me'}`} onClick={swap} ><li className={`item__list ${switchTheme === "LightTheme" ? "w" : "b"}`}>About Me</li></a>
+              <a href={`${window.location.pathname+'#skills'}`} onClick={swap}><li className={`item__list ${switchTheme === "LightTheme" ? "w" : "b"}`}>Skills</li></a>
+              <a href={`${window.location.pathname+'#projects'}`} onClick={swap}><li className={`item__list ${switchTheme === "LightTheme" ? "w" : "b"}`}>Projects</li></a>
+              <a href={`${window.location.pathname+'#contact'}`} onClick={swap}><li className={`item__list ${switchTheme === "LightTheme" ? "w" : "b"}`}>Contact me</li></a>
           </ul>
         </section>
       </header>
