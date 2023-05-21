@@ -95,8 +95,8 @@ function App() {
           </div>
       </footer>
       <a href='https://bit.ly/Juliorivasdev' target="_blank" rel="noreferrer">
-        <div className='button__up'>
-          <img className='button__up__2' src={whatsapp} alt="whatsapp"/>
+        <div className='button__ws'>
+          <img className='button__ws__2' src={whatsapp} alt="whatsapp"/>
         </div>
       </a>
     </div>

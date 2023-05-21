@@ -1,7 +1,10 @@
 import React from "react";
 import "../css/contact.css";
-import location from '../img/svg/bx-map.svg';
-import email from '../img/svg/bx-envelope.svg';
+import locationBlack from '../img/svg/bx-map-black.svg';
+import locationWhite from '../img/svg/bx-map-white.svg';
+import emailBlack from '../img/svg/bx-envelope-black.svg';
+import emailWhite from '../img/svg/bx-envelope-white.svg';
+
 
 function Contact({theme}){    
     return (
@@ -15,11 +18,11 @@ function Contact({theme}){
                 <h3 className="sub">! Contact your favorite developer ¡</h3>
                 <br />
                 <div className="container__location">
-                    <img src={location} alt="location" className="img__location"/>
+                    <img src={theme === "LightTheme" ? locationBlack : locationWhite} alt="location" className="img__location"/>
                     <p>Mendoza, Argentina</p>
                 </div>
                 <div className="container__email">
-                    <img src={email} alt="email" className="img__email"/>
+                    <img src={theme === "LightTheme" ? emailBlack : emailWhite} alt="email" className="img__email"/>
                     <p>juliorivasdev@gmail.com</p>
                 </div>
             </div>
