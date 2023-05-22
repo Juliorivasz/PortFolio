@@ -33,6 +33,7 @@
     display: flex;
     padding: 10px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .container__img__perfil {
@@ -55,7 +56,7 @@
 
 
 .navegation__bar:hover {
-    animation: width  1s ease-out;
+    animation: width .3s ease-out;
     transition: all 0.1s ease-in-out;
     border-bottom: 2px solid #101010;
     white-space: nowrap;
@@ -67,7 +68,7 @@
         width: 0%;
     }
     to {
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -246,13 +247,12 @@ span{
     .navegation__bar {
         border: none;
         margin: 0 4px;
-        height: 33px;
-        width: 100%;
+        display: flex;
+        align-items: center;
     }
-
-    .navegation__bar:hover {
-        border-bottom: 2px solid #101010;
-        color: #fff;
+    
+    .cv {
+        height: 33px;
     }
 
     .cv:hover{
@@ -262,5 +262,6 @@ span{
 
     .container__nav {
         display: flex;
+        justify-content: space-around;
     }
 }

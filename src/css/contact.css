@@ -38,6 +38,8 @@
     resize: none;
     height: 3rem;
     padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
     border-radius: 5px;
     box-shadow: 1em 1em 1em -10px gray;
     transition: all .5s ease-out;
@@ -71,6 +73,7 @@
     background-color: #000;
     color: #fff;
     box-shadow: 1em 1em 1em -10px black;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 975px) and (max-width: 1400px) {
@@ -83,7 +86,6 @@
     .container__contact {
         width: 100%;
         display: flex;
-        padding: 0 10%;
     }
     .extra {
         padding: 4rem;

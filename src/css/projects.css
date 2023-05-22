@@ -17,6 +17,8 @@
     height: 100%;
     box-shadow: 1em 1em 1em -1em gray;
     transition: all .5s ease;
+    z-index: 5;
+    position: relative;
 }
 
 .subtitle {
@@ -167,6 +169,7 @@ a:hover {
     transition: all .7s cubic-bezier(0.01, 0.66, 0.54, 1.12);
     visibility: visible !important;
     opacity: 0;
+    height: 100%;
 }
 
 
@@ -188,7 +191,6 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 33px;
     margin-bottom: 1rem;
 }
 
@@ -263,6 +265,7 @@ a:hover {
         visibility: visible !important;
         transition: all .7s cubic-bezier(0.01, 0.66, 0.54, 1.12);
         opacity: 0;
+        height: 100%;
     }
 
     .description__text {

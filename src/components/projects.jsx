@@ -2,7 +2,7 @@ import React from "react";
 import '../css/projects.css';
 import playerzone from '../img/projects/playerZone.png';
 import rickyAndMorty from '../img/projects/rickandmorthy.png';
-import logogithub from '../img/svg/bxl-github.svg';
+import logogithub from '../img/skills/bxl-github.svg';
 import demo from '../img/svg/bx-desktop.svg';
 import task from '../img/projects/task-pointer.png';
 import gifapp from '../img/projects/gifApp.png';
