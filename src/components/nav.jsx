@@ -1,6 +1,7 @@
 import React from "react";
 import '../css/nav.css';
-import profile from '../img/julio.png';
+import home from '../img/svg/home.svg';
+import home2 from '../img/svg/home-2.svg';
 
 function Nav({ urlLink, diss, dissemble, theme, setDissemble, changes, setChanges }) {
 
@@ -23,7 +24,7 @@ function Nav({ urlLink, diss, dissemble, theme, setDissemble, changes, setChange
           <div className="container__nav">
             <div className="container__img__perfil">
               <a className="link__perfil" href={window.location.pathname+'#main'}>
-                <img src={profile} className={`name__portfolio`} onClick={changesImg} alt='Home'/>
+                <img src={theme === 'LightTheme' ? home : home2} className={`name__portfolio`} onClick={changesImg} alt='Home'/>
                 <p className={`navegation__bar desktop ${theme === "LightTheme" ? "b" : "w"}`}>Home</p>
               </a>
             </div>

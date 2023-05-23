@@ -36,15 +36,6 @@
     align-items: center;
 }
 
-.container__img__perfil {
-    width: 33px;
-    height: 33px;
-}
-
-.link__perfil {
-    width: auto;
-    height: 33px;
-}
 
 .navegation__bar {
     margin: 0;
@@ -85,8 +76,9 @@
 .name__portfolio {
     font-size: 20px;
     text-transform: uppercase;
-    width: 33px;
+    width: 50px;
     border-radius: 1rem;
+    /* transition: all 1s ease-out; */
 }
 
 .img__menu {
@@ -230,6 +222,7 @@ span{
 
     .link__perfil {
         display: flex;
+        align-items: center;
     }
 
     .btn__menu {
