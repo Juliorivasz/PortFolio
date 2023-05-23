@@ -63,10 +63,15 @@
     }
 }
 
+#download__cv__home {
+    display: none;
+}
+
 .cv:hover{
     border: none;
     background-color: #101010;
     color: #fff !important;
+    border-radius: 10px;
 }
 
 .desktop {
@@ -245,9 +250,25 @@ span{
         font-size: 1.3rem;
         text-transform: uppercase;
     }
+
+    .cv__dark {
+        height: 33px;
+        color: #fff;
+        transition: all .5s;
+    }
+
+    .cv__dark:hover {
+        border: none;
+        background-color: gray;
+        color: #000 !important;
+        border: none;
+        border-radius: 10px;
+        transition: all .5s;
+    }
     
     .cv {
         height: 33px;
+        transition: all .5s;
     }
 
     .cv:hover{
@@ -258,5 +279,9 @@ span{
     .container__nav {
         display: flex;
         justify-content: space-around;
+    }
+
+    #download__cv__home {
+        display: block;
     }
 }

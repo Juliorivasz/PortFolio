@@ -37,6 +37,9 @@ function Home({ theme, setTheme }) {
                 <img className='img__social__networks' align="center" width="40" heigth="40" title="Githuh" src="https://assets.ifttt.com/images/channels/2107379463/icons/monochrome_large.png" alt='GitHub' />
               </a>
             </li>
+            <li id='download__cv__home'>
+              <a href="./Julio Rivas Front End Developer.pdf" download><p className={`navegation__bar ${theme === "LightTheme" ? "cv" : "cv__dark" }`}>Download CV</p></a>
+            </li>
           </ul>
         </div>
         <div className='container__img__pitch'>
