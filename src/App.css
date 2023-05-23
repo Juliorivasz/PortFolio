@@ -73,31 +73,58 @@ body {
 	outline: none;
 }
 
-.container__title {
-    display: flex;
-    height: 75%;
-    text-align: center;
+.container__home {
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.container__home__title {
+    margin: 2rem;
+}
+
+.container__title {
+    text-align: justify;
     margin: 0 10px 10px 10px;
     font-family: 'Oswald', sans-serif;
-    overflow: hidden;
-    
+    overflow: hidden;    
 }
 
 .title__portfolio {
+    font-size: 3rem;
+}
+
+.subtitle__portfolio {
     text-transform: uppercase;
-    margin: 4rem 0 5rem 0;
     width: 100%;
     color: black;
     font-weight: bold;
-    font-size: 2.5rem;
     overflow: hidden;
-    animation: typewriter 2s ease-in 1s infinite alternate both;
+    font-size: 2rem;
+    animation: typewriter 4s ease-in-out 1s infinite alternate both;
     position: relative;
     border-right: 2px solid rgba(0, 0, 0, 0.75);
     white-space: nowrap;
+}
+
+.text__portfolio {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-family: 'Oswald';
+    margin: 10px;
+}
+
+.list__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 2rem;
 }
 
 .br__black {
@@ -139,6 +166,7 @@ body {
     list-style: none;
     width: 100%;
     height: 100%;
+    text-transform: uppercase;
 }
 
 .item__list {
@@ -235,6 +263,19 @@ a {
         padding-top: 0;
     }
 
+    .container__home {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5rem 0;
+        width: 100%;
+    }
+
+    .container__home__title {
+        width: 50%;
+    }
+
     .container__presentation {
         margin: 0 1rem 1rem 1rem;
         padding: 3rem 3rem 0 3rem;
@@ -242,8 +283,16 @@ a {
         border-radius: 20px;
     }
 
-    .title__portfolio {
-        animation: typewriter 4s ease-in 0s infinite alternate both;
+    .subtitle__portfolio {
+        animation: typewriter 3s ease-in-out 1s infinite alternate both;
+    }
+
+    .list__social {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        list-style: none;
+        margin: 1rem 0;
     }
 
     .container__img__pitch {
@@ -254,7 +303,7 @@ a {
     }
 
     .pitch {
-        width: 50%;
+        width: 100%;
     }
 
     .circle:hover {

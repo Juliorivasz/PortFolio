@@ -13,8 +13,6 @@ function Projects({ theme }) {
 
     function mostrarDescripcion(e) {
         const description = document.querySelectorAll('.description');
-        console.log(description[e.target.getAttribute('datatype')]);
-        // e.target.getAttribute('datatype'
         description[e.target.getAttribute('datatype')].style.transform = 'translateY(-100%)';
         description[e.target.getAttribute('datatype')].style.opacity = '1';
     }
@@ -24,7 +22,6 @@ function Projects({ theme }) {
         description[e.target.getAttribute('datatype')].style.transform = 'translateY(0)';
         description[e.target.getAttribute('datatype')].style.opacity = '0';
         description[e.target.getAttribute('datatype')].style.transition = 'all 1s';
-        // description[e.target.getAttribute('datatype')].style.display = 'none';
     }
 
     return (
@@ -49,13 +46,13 @@ function Projects({ theme }) {
                         <a className="link" href="https://playerzone.netlify.app/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/PlayerZone" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
-                    <div className="description player">
-                        <p className="description__text">
+                    <div className={`description player ${theme === "LightTheme" ? "bg__black" : "bg__gray"}`}>
+                        <p className={`description__text ${theme === "LightTheme" ? "" : "b"}`}>
                             PlayerZone es un emocionante proyecto de comercio electrónico basado en tecnología y productos de PC.
                             Desarrollado con HTML, CSS y JavaScript, brinda a los usuarios una experiencia de compra en línea fácil y conveniente,
                             ofrece una amplia gama de productos, como componentes de PC.
                         </p>
-                        <ul className="list__caracteristicas">
+                        <ul className={`list__caracteristicas ${theme === "LightTheme" ? "" : "b"}`}>
                             <li>Amplio catálogo de productos de tecnología y PC.</li>
                             <li>Navegación intuitiva.</li>
                             <li>Barra de búsqueda para los productos deseados.</li>
@@ -82,13 +79,13 @@ function Projects({ theme }) {
                         <a className="link" href="https://gipfapp.netlify.app/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/GifApp" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
-                    <div className="description gifapp">
-                        <p className="description__text">
+                    <div className={`description gifapp ${theme === "LightTheme" ? "bg__black" : "bg__gray"}`}>
+                        <p className={`description__text ${theme === "LightTheme" ? "" : "b"}`}>
                             GifApp es un proyecto web desarrollado con React, HTML, CSS y JavaScript,
                             que consume una API de Giphy para mostrar los primeros 10 GIFs relacionados a través de un buscador interactivo.
                             Esta aplicación ofrece una experiencia de búsqueda y visualización de GIFs de manera sencilla y divertida.
                         </p>
-                        <ul className="list__caracteristicas">
+                        <ul className={`list__caracteristicas ${theme === "LightTheme" ? "" : "b"}`}>
                             <li>Consumo de la API de Giphy.</li>
                             <li>Búsqueda de GIFs.</li>
                             <li>Interfaz interactiva.</li>
@@ -115,12 +112,12 @@ function Projects({ theme }) {
                         <a className="link" href="https://juliorivasz.github.io/Apuntador-de-Tareas/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Apuntador-de-Tareas" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
-                    <div className="description apuntadorDeTareas" >
-                        <p className="description__text">
+                    <div className={`description apuntadorDeTareas ${theme === "LightTheme" ? "bg__black" : "bg__gray"}`} >
+                        <p className={`description__text ${theme === "LightTheme" ? "" : "b"}`}>
                             TaskPointer es un proyecto web desarrollado con HTML, CSS y JavaScript que permite a los usuarios agregar tareas a una lista,
                             establecer una fecha para cada tarea y eliminar las tareas seleccionadas. Esta aplicación proporciona una interfaz sencilla y funcional para administrar y completar tareas diarias.
                         </p>
-                        <ul className="list__caracteristicas">
+                        <ul className={`list__caracteristicas ${theme === "LightTheme" ? "" : "b"}`}>
                             <li>Creación de tareas.</li>
                             <li>Establecimiento de fechas.</li>
                             <li>Indicador de tarea realizada.</li>
@@ -147,12 +144,12 @@ function Projects({ theme }) {
                         <a className="link" href="https://rickyandmorthy.netlify.app/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Ricky-Morty" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
-                    <div className="description rickyandmorty" >
-                        <p className="description__text">
+                    <div className={`description rickyandmorty ${theme === "LightTheme" ? "bg__black" : "bg__gray"}`} >
+                        <p className={`description__text ${theme === "LightTheme" ? "" : "b"}`}>
                             Ricky&Morty es una página web desarrollada con React.js y Vite que utiliza la API de Rick & Morty para mostrar información sobre los personajes de la serie.
                             La página presenta una serie de tarjetas, una por cada personaje, que incluyen detalles como el nombre, la imagen, las características y el estado de vida del personaje.
                         </p>
-                        <ul className="list__caracteristicas">
+                        <ul className={`list__caracteristicas ${theme === "LightTheme" ? "" : "b"}`}>
                             <li>Consumo de la API de Rick & Morty</li>
                             <li>Diseño de tarjetas de personajes.</li>
                             <li>Indicador de estado de vida.</li>
@@ -179,13 +176,13 @@ function Projects({ theme }) {
                         <a className="link" href="https://juliorivasz.github.io/Formulario/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Formulario" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
-                    <div className="description formulario" >
-                        <p className="description__text">
+                    <div className={`description formulario ${theme === "LightTheme" ? "bg__black" : "bg__gray"}`} >
+                        <p className={`description__text ${theme === "LightTheme" ? "" : "b"}`}>
                             PetShop es un formulario interactivo que utiliza HTML, CSS y JavaScript para recopilar información de los clientes interesados en reservar en una tienda de mascotas.
                             Implementa validaciones para asegurar que los datos ingresados sean correctos y completos antes de enviar el formulario,
                             mejorando la experiencia del usuario.
                         </p>
-                        <ul className="list__caracteristicas">
+                        <ul className={`list__caracteristicas ${theme === "LightTheme" ? "" : "b"}`}>
                             <li>Verificación de campos obligatorios.</li>
                             <li>Validación de formato.</li>
                             <li>Validación de longitud de caracteres.</li>
@@ -212,13 +209,13 @@ function Projects({ theme }) {
                         <a className="link" href="https://juliorivasz.github.io/Regex/" target='_blank' rel="noreferrer"><img className="link__img" src={demo} alt="demo" /><p>Demo</p></a>
                         <a className="link" href="https://github.com/Juliorivasz/Regex" target='_blank' rel="noreferrer"><img className="link__img" src={logogithub} alt="github" /><p>GitHub</p></a>
                     </div>
-                    <div className="description expresionesRegulares" >
-                        <p className="description__text">
+                    <div className={`description expresionesRegulares ${theme === "LightTheme" ? "bg__black" : "bg__gray"}`} >
+                        <p className={`description__text ${theme === "LightTheme" ? "" : "b"}`}>
                             Regex es una página web diseñada específicamente para practicar y experimentar con expresiones regulares, utiliza HTML,
                             CSS y JavaScript para proporcionar a los usuarios una herramienta interactiva y educativa
                             donde pueden practicar sobre expresiones regulares, resaltando las coincidencias encontradas.
                         </p>
-                        <ul className="list__caracteristicas">
+                        <ul className={`list__caracteristicas ${theme === "LightTheme" ? "" : "b"}`}>
                             <li>Interfaz intuitiva y fácil de usar.</li>
                             <li>Pruebas en tiempo real.</li>
                             <li>Mostrar un índice y los grupos encontrados.</li>

@@ -242,6 +242,8 @@ span{
         margin: 0 4px;
         display: flex;
         align-items: center;
+        font-size: 1.3rem;
+        text-transform: uppercase;
     }
     
     .cv {
