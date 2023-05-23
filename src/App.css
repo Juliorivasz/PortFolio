@@ -20,7 +20,7 @@ body {
 
 .container__presentation {
     margin: 0 1rem 1rem 1rem;
-    padding: 3rem 3rem 0 3rem;
+    padding: 1rem;
     background: lightgrey;
     border-radius: 20px;
 }
@@ -74,7 +74,6 @@ body {
 }
 
 .container__home {
-    align-items: center;
     display: flex;
     flex-direction: column;
     padding: 2rem 0;
@@ -82,7 +81,7 @@ body {
 }
 
 .container__home__title {
-    margin: 2rem;
+    margin: 0;
 }
 
 .container__title {
@@ -102,7 +101,7 @@ body {
     color: black;
     font-weight: bold;
     overflow: hidden;
-    font-size: 2rem;
+    font-size: 1.5rem;
     animation: typewriter 4s ease-in-out 1s infinite alternate both;
     position: relative;
     border-right: 2px solid rgba(0, 0, 0, 0.75);
@@ -285,6 +284,7 @@ a {
 
     .subtitle__portfolio {
         animation: typewriter 3s ease-in-out 1s infinite alternate both;
+        font-size: 2rem;
     }
 
     .list__social {

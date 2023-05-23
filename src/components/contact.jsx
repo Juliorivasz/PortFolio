@@ -22,7 +22,7 @@ function Contact({theme}){
                     <p>Mendoza, Argentina</p>
                 </div>
                 <div className="container__email">
-                    <img src={theme === "LightTheme" ? emailBlack : emailWhite} alt="email" className="img__email"/>
+                    <a href="https://mail.google.com/mail/?view=cm&to=juliorivasdev%40gmail.com" target="blank"><img src={theme === "LightTheme" ? emailBlack : emailWhite} alt="email" className="img__email"/></a>
                     <p>juliorivasdev@gmail.com</p>
                 </div>
             </div>
