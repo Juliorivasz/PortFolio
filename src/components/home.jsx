@@ -38,7 +38,7 @@ function Home({ theme, setTheme }) {
               </a>
             </li>
             <li id='download__cv__home'>
-              <a href="https://drive.google.com/file/d/1n8JqzJkEgfn_l58xkqwUzpFsZmzU74Yx/view?usp=sharing" target='blank' download><p className={`navegation__bar ${theme === "LightTheme" ? "cv" : "cv__dark" }`}>Download CV</p></a>
+              <a href="https://drive.google.com/file/d/1-CNOEoD0Jdn4840tbiua1AsLEiQfKJYc/view" target='blank' download><p className={`navegation__bar ${theme === "LightTheme" ? "cv" : "cv__dark" }`}>Download CV</p></a>
             </li>
           </ul>
         </div>
