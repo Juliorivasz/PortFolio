@@ -11,6 +11,11 @@ import figma from '../img/skills/bxl-figma.svg';
 import trello from '../img/skills/bxl-trello.svg';
 import git from '../img/skills/bxl-git.svg';
 import github from '../img/skills/bxl-github.svg';
+import nodeJs from '../img/skills/bxl-nodejs.svg';
+import npm from '../img/skills/bxl-npm.svg';
+import tailwind from '../img/skills/bxl-tailwind-css.svg';
+import sass from '../img/skills/bxl-sass.svg';
+import redux from '../img/skills/bxl-redux.svg';
 
 
 
@@ -62,6 +67,26 @@ function Skills({theme}) {
                 <Tecnology 
                     route={github}
                     nameAlt="github"
+                />
+                <Tecnology
+                    route={nodeJs}
+                    nameAlt="node js"
+                />
+                <Tecnology
+                    route={npm}
+                    nameAlt="npm"
+                />
+                <Tecnology
+                    route={tailwind}
+                    nameAlt="tailwind"
+                />
+                <Tecnology
+                    route={sass}
+                    nameAlt="sass"
+                />
+                <Tecnology
+                    route={redux}
+                    nameAlt="redux"
                 />
             </div>
         </section>

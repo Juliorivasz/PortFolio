@@ -76,7 +76,7 @@
     
     .img__tecnology {
         width: 50%;
-        filter: grayscale(1);
+        filter: grayscale(.8);
         transition: all .3s;
     }
     
