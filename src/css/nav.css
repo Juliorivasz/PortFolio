@@ -1,0 +1,287 @@
+.LightTheme {
+    background: #101010;
+    color: #000;
+    transition: 0.5s all ease-in;
+}
+
+.DarkTheme {
+    background-color: lightgray;
+    color: #fff;
+    transition: 0.5s all ease-in;
+}
+
+.mobile {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(62 62 62 / 80%), rgb(205 205 205) 70.71%);
+    color: #000;
+}
+
+.gradient__bot {
+    background: linear-gradient(0deg, rgb(62 62 62 / 80%), rgb(205 205 205) 70.71%);
+    transition: all .5s ease;
+}
+
+.gradient__top {
+    background: linear-gradient(0deg, rgb(205 205 205 / 80%), rgb(62 62 62) 70.71%);
+    transition: all .5s ease;
+}
+
+.container__nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navegation__bar {
+    margin: 0;
+    padding: 2px 6px;
+    font-weight: bold;
+    border: 2px solid black;
+    color: #000;
+}
+
+
+.navegation__bar:hover {
+    animation: width .3s ease-out;
+    transition: all 0.1s ease-in-out;
+    border-bottom: 2px solid #101010;
+    white-space: nowrap;
+    color: #fff !important;
+}
+
+@keyframes width {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+#download__cv__home {
+    display: none;
+}
+
+.cv:hover{
+    border: none;
+    background-color: #101010;
+    color: #fff !important;
+    border-radius: 10px;
+}
+
+.desktop {
+    display: none;
+}
+
+.name__portfolio {
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 50px;
+    border-radius: 1rem;
+    /* transition: all 1s ease-out; */
+}
+
+.img__menu {
+    width: 33px;
+}
+
+.x{
+    width: 20px;
+    height: 20px;
+    margin: 7px;
+}
+.btn__menu{
+    width: 33px;
+    cursor: pointer;
+    height: 33px;
+}
+
+span{
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    height: 6px;
+    background: black;
+    transition: all .3s;
+    position: relative;
+    margin: 4px 0;
+}
+
+.active span:nth-child(1) {
+    animation: ease .7s top forwards;
+}
+
+.not-active span:nth-child(1) {
+    animation: ease .7s top-2 forwards;
+}
+
+.active span:nth-child(2) {
+    animation: ease .7s scaled forwards;
+}
+
+.not-active span:nth-child(2) {
+    animation: ease .7s scaled-2 forwards;
+}
+
+.active span:nth-child(3) {
+    animation: ease .7s bottom forwards;
+}
+
+.not-active span:nth-child(3) {
+    animation: ease .7s bottom-2 forwards;
+}
+
+@keyframes top {
+    0% {
+        top: 0;
+        transform: rotate(0);
+    }
+    50% {
+        top: 1rem;
+        transform: rotate(0);
+    }
+    100% {
+        top: 0.7rem;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes top-2 {
+    0% {
+        top: .8rem;
+        transform: rotate(45deg);
+    }
+    50% {
+        top: .8rem;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 0;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bottom {
+    0% {
+        bottom: 0;
+        transform: rotate(0);
+    }
+    50% {
+        bottom: .8rem;
+        transform: rotate(0);
+    }
+    100% {
+        bottom: .6rem;
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes bottom-2 {
+    0% {
+        bottom: .8rem;
+        transform: rotate(135deg);
+    }
+    50% {
+        bottom: .8rem;
+        transform: rotate(0);
+    }
+    100% {
+        bottom: 0;
+        transform: rotate(0);
+    }
+}
+
+@keyframes scaled {
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes scaled-2 {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* mobile */
+
+@media screen and (min-width: 975px) {
+
+    .container__img__perfil {
+        width: 66px;
+    }
+
+    .link__perfil {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn__menu {
+        display: none;
+    }
+
+    .container__bar {
+        display: flex;
+    }
+
+    .desktop {
+        display: flex;
+    }
+
+    .navegation__bar {
+        border: none;
+        margin: 0 4px;
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+
+    .cv__dark {
+        height: 33px;
+        color: #fff;
+        transition: all .5s;
+    }
+
+    .cv__dark:hover {
+        border: none;
+        background-color: gray;
+        color: #000 !important;
+        border: none;
+        border-radius: 10px;
+        transition: all .5s;
+    }
+    
+    .cv {
+        height: 33px;
+        transition: all .5s;
+    }
+
+    .cv:hover{
+        border: none;
+        border-radius: 10px;
+    }
+
+    .container__nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #download__cv__home {
+        display: block;
+    }
+}
