@@ -45,7 +45,7 @@ function Nav({ urlLink, diss, dissemble, theme, setDissemble, changes, setChange
               <a className="desktop" href={urlLink+'#skills'}><p className={`navegation__bar ${theme === "LightTheme" ? "b" : "w"}`}>Skills</p></a>
               <a className="desktop" href={urlLink+'#projects'}><p className={`navegation__bar ${theme === "LightTheme" ? "b" : "w"}`}>Projects</p></a>
               <a className="desktop" href={urlLink+'#contact'}><p className={`navegation__bar ${theme === "LightTheme" ? "b" : "w"}`}>Contact me</p></a>
-              <a href="https://drive.google.com/file/d/1U7ubSKkWexsvRhgc3oAloZw_v3B8vC8A/view?usp=drive_link" target='blank' download><p className={`navegation__bar cv ${theme === "LightTheme" ? "b" : "w"}`}>Download CV</p></a>
+              <a href="https://drive.google.com/file/d/18VyAYkD0bz7YBKD4VFjHC_XjuVmi2vqe/view?usp=sharing" target='blank' download><p className={`navegation__bar cv ${theme === "LightTheme" ? "b" : "w"}`}>Download CV</p></a>
             </div>
             <div className={`btn__menu ${changes}`} onClick={changesMenu}>
               <span></span>
