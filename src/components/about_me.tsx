@@ -1,5 +1,5 @@
 import '../css/about_me.css';
-import profile from '../img/julio.png';
+import profile from '../img/julioRivas.webp';
 import { ThemeType } from './styled/themes';
 
 interface ThemeProps {
