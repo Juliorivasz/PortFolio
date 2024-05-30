@@ -15,7 +15,7 @@ function AboutMe({theme}: ThemeProps) {
             </div>
             </a>
             <div className='container__review__about_me'>
-                <img className='img__about_me' src={profile} alt='profile' title='profile'/>
+                <div className='div__img__about_me'><img className='img__about_me' src={profile} alt='profile' title='profile'/></div>
                 <div className='text__about_me'>
                     <p className={`${theme === "LightTheme" ? "text__about_me_child__b" : "text__about_me_child__w"}`}>
                         " Hello, my name is Julio, I consider myself enthusiastic, proactive, responsible, detail-oriented, 
