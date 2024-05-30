@@ -32,12 +32,10 @@
     width: 50%;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 100%;
-    filter: grayscale(.5);
     transition: all .5s ease;
 }
 
 .img__about_me:hover {
-    filter: grayscale(0);
     transform: scale(1.1);
 }
 
