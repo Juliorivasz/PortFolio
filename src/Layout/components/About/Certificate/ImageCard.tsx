@@ -10,7 +10,7 @@ interface ImageCardProps {
 export const ImageCard = ({ certificate, isLoaded, setIsLoaded }: ImageCardProps) => {
   return (
     <Zoom>
-      <div className="w-full h-full relative">
+      <div className="w-full min-h-screen h-full relative">
         {!isLoaded && <div className="absolute inset-0 w-full h-full bg-gray-300 animate-pulse rounded-2xl z-0" />}
         <img
           src={certificate.img}

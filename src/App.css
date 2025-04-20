@@ -28,7 +28,6 @@ body {
     height: 200px;
     position: absolute;
     top: 17%;
-    /* left: 43%; */
     left: 13%;
     transform: translate(-50%, -50%);
     transform-style: preserve-3d;
@@ -56,10 +55,8 @@ body {
 }
 
 .container__presentation {
-    margin: 0rem 1rem;
     padding: 1rem;
     padding-top: 4rem;
-    border-radius: 20px;
     animation: presentation .5s linear 0s normal
 }
 
@@ -224,10 +221,8 @@ a {
     }
 
     .container__presentation {
-        margin: 0 1rem 0rem 1rem;
-        padding: 3rem 3rem 0 3rem;
+        padding: 6rem 3rem 3rem;
         background: lightgrey;
-        border-radius: 20px;
     }
 
     .subtitle__portfolio {

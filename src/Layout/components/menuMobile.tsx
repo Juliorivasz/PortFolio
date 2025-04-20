@@ -1,14 +1,9 @@
 import { Link } from "react-router-dom";
 import { useTheme } from "../../context/useTheme";
-import { useEffect } from "react";
 import { DownloadButton } from "./Profile/DownloadButton";
 
 function MenuMobile() {
   const { themeState, onMenu, setOnMenu } = useTheme();
-
-  useEffect(() => {
-    document.body.style.overflow = onMenu ? "hidden" : "auto";
-  }, [onMenu]);
 
   const toggleMenu = () => setOnMenu(!onMenu);
 

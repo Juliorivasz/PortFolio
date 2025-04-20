@@ -30,7 +30,7 @@ export const projectList = [
     demoUrl: "",
     isPrivate: false,
     repoUrl: "https://github.com/Juliorivasz/ProyectoTKK",
-    tech: ["React", "SpringBoot", "MySQL", "Figma", "TypeScript", "Tailwind, Mercado pago, Binance"],
+    tech: ["React", "SpringBoot", "MySQL", "Figma", "TypeScript", "Tailwind", "Express"],
   },
   {
     title: "Inventory manager - Classkit",

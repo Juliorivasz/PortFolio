@@ -24,7 +24,7 @@ export default function TimelineNavigationButton({ direction, onClick, disabled 
       } top-1/2 -translate-y-1/2 text-2xl sm:text-3xl ${baseStyles}`}
       onClick={onClick}
       disabled={disabled}>
-      {isLeft ? "←" : "→"}
+      {isLeft ? "↑" : "↓"}
     </motion.button>
   );
 }

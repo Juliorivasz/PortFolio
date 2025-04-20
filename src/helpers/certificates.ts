@@ -1,3 +1,13 @@
+import programacion from "/src/img/certificates/UTN-TUP.webp";
+import frontend from "/src/img/certificates/Alura-certificado-Frontend.webp";
+import bachelor from "/src/img/certificates/titulo-bachiller.webp";
+import nodejs from "/src/img/certificates/nodeJs.webp";
+import mern from "/src/img/certificates/react-MERN.webp";
+import js from "/src/img/certificates/javascript-web.webp";
+import arquitect from "/src/img/certificates/html5-css3.webp";
+import controlVersion from "/src/img/certificates/git-and-github.webp";
+import frontDeveloper from "/src/img/certificates/pasantia.webp";
+
 export const certificates = {
   careers: [
     {
@@ -5,7 +15,7 @@ export const certificates = {
       title: "University Technician in Programming",
       institution: "National Technological University",
       issueDate: "2025",
-      img: "/src/img/certificates/UTN-TUP.webp",
+      img: programacion,
       url: "https://www4.frm.utn.edu.ar/tecnicatura-superior-programacion/",
     },
     {
@@ -13,7 +23,7 @@ export const certificates = {
       title: "Frontend Developer",
       institution: "Oracle + Alura",
       issueDate: "2022",
-      img: "/src/img/certificates/Alura-certificado-Frontend.webp",
+      img: frontend,
       url: "https://app.aluracursos.com/degree/certificate/295cb033-40a3-4f66-a9dc-99c002c55bbc",
     },
     {
@@ -21,7 +31,7 @@ export const certificates = {
       title: "Bachelor of Science",
       institution: "UEC Mario Lezama Esquivel",
       issueDate: "2017",
-      img: "/src/img/certificates/titulo-bachiller.webp",
+      img: bachelor,
       url: "/src/img/certificates/titulo-bachiller.webp",
     },
   ],
@@ -31,7 +41,7 @@ export const certificates = {
       title: "NodeJs",
       institution: "Udemy - Fernando Herrera",
       issueDate: "2024",
-      img: "/src/img/certificates/nodeJs.webp",
+      img: nodejs,
       url: "https://www.udemy.com/certificate/UC-918a15a9-b947-468e-b2c9-2769048bf895/",
     },
     {
@@ -39,7 +49,7 @@ export const certificates = {
       title: "React (MERN)",
       institution: "Udemy - Fernando Herrera",
       issueDate: "2024",
-      img: "/src/img/certificates/react-MERN.webp",
+      img: mern,
       url: "https://www.udemy.com/certificate/UC-a367ec0d-b509-4ec2-916b-4cc1aa47649a/",
     },
     {
@@ -47,7 +57,7 @@ export const certificates = {
       title: "JavaScript",
       institution: "Alura Latam",
       issueDate: "2022",
-      img: "/src/img/certificates/javascript-web.webp",
+      img: js,
       url: "https://app.aluracursos.com/user/julioandresrivas/course/javascript-parte2-introduccion-lenguaje-web/formalCertificate",
     },
     {
@@ -55,7 +65,7 @@ export const certificates = {
       title: "Html5 & Css3",
       institution: "Alura Latam",
       issueDate: "2022",
-      img: "/src/img/certificates/html5-css3.webp",
+      img: arquitect,
       url: "https://app.aluracursos.com/user/julioandresrivas/course/html5-css3-avanzando-css/formalCertificate",
     },
     {
@@ -63,7 +73,7 @@ export const certificates = {
       title: "Git & Github",
       institution: "Alura Latam",
       issueDate: "2022",
-      img: "/src/img/certificates/git-and-github.webp",
+      img: controlVersion,
       url: "https://app.aluracursos.com/user/julioandresrivas/course/git-github-control-version/formalCertificate",
     },
   ],
@@ -73,7 +83,7 @@ export const certificates = {
       title: "Frontend Developer",
       institution: "Semillero - Quinto Impacto",
       issueDate: "2023-2023",
-      img: "/src/img/certificates/pasantia.webp",
+      img: frontDeveloper,
       url: "/src/img/certificates/pasantia.webp",
     },
     {
