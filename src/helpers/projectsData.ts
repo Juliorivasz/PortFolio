@@ -36,7 +36,7 @@ export const projectList = [
     title: "Inventory manager - Classkit",
     description: "Dashboard with user and inventory control",
     image: classkit,
-    demoUrl: "",
+    demoUrl: "https://techbooker.netlify.app/",
     isPrivate: false,
     repoUrl: "https://github.com/Juliorivasz/TechBooker",
     tech: ["React", "SpringBoot", "MySQL", "Figma", "TypeScript", "Tailwind"],
