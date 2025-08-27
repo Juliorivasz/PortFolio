@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://juliorivasz.github.io/PortFolio",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
