@@ -19,6 +19,7 @@ import FigmaIcon from "../img/skills/bxl-figma.svg";
 import Group from "../img/skills/Group.svg";
 import Chat from "../img/skills/chat.gif";
 import Solved from "../img/skills/solved.svg";
+import WordPressIcon from "../img/skills/bxl-wordPress.svg";
 import { SkillCategory } from "../Layout/types/skill";
 
 export const iconMap: Record<string, string> = {
@@ -42,6 +43,7 @@ export const iconMap: Record<string, string> = {
   "Trabajo en equipo": Group,
   Comunicación: Chat,
   "Resolución de problemas": Solved,
+  WordPress: WordPressIcon,
 };
 
 export const skillData: SkillCategory[] = [
@@ -55,6 +57,7 @@ export const skillData: SkillCategory[] = [
       { name: "JavaScript", level: "Avanzado" },
       { name: "Tailwind", level: "Avanzado" },
       { name: "Material-UI", level: "Intermedio" },
+      { name: "WordPress", level: "Intermedio" },
     ],
   },
   {
