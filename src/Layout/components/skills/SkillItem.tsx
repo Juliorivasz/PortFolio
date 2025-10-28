@@ -1,9 +1,10 @@
 import { FC } from "react";
 import { useTheme } from "../../../context/useTheme";
+import { SkillLevel } from "../../types/skill";
 
 interface SkillItemProps {
   name: string;
-  level: "Básico" | "Intermedio" | "Avanzado";
+  level: SkillLevel;
   icon: string;
 }
 
@@ -26,9 +27,9 @@ const SkillItem: FC<SkillItemProps> = ({ name, level, icon }) => {
       </div>
       <span
         className={`text-xs font-semibold px-2 py-1 rounded-full uppercase ${
-          level === "Básico"
+          level === "Basic"
             ? "bg-orange-100 text-orange-700"
-            : level === "Intermedio"
+            : level === "Intermediate"
             ? "bg-blue-100 text-blue-700"
             : "bg-green-100 text-green-700"
         }`}>
