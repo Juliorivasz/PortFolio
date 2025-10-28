@@ -7,6 +7,7 @@ import js from "/src/img/certificates/javascript-web.webp";
 import arquitect from "/src/img/certificates/html5-css3.webp";
 import controlVersion from "/src/img/certificates/git-and-github.webp";
 import frontDeveloper from "/src/img/certificates/pasantia.webp";
+import inncome from "/src/img/certificates/inncome.jpeg";
 
 export const certificates = {
   careers: [
@@ -80,6 +81,14 @@ export const certificates = {
   internships: [
     {
       id: "9",
+      title: "Software Developer",
+      institution: "INNCOME",
+      issueDate: "2025-2025",
+      img: inncome,
+      url: "https://inncome.net/",
+    },
+    {
+      id: "10",
       title: "Frontend Developer",
       institution: "Semillero - Quinto Impacto",
       issueDate: "2023-2023",
@@ -87,7 +96,7 @@ export const certificates = {
       url: "/src/img/certificates/pasantia.webp",
     },
     {
-      id: "10",
+      id: "11",
       title: "Computer Technician",
       institution: "Familia Andrada SAS",
       issueDate: "2020-2022",

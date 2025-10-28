@@ -117,7 +117,7 @@
     position: absolute;
 }
 
-@media (max-width: 975px) {
+@media (max-width: 768px) {
     .nav__title {
         display: none;
     }

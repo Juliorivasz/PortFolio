@@ -4,7 +4,8 @@ import { ListSocial } from "./social_networks/ListSocial";
 function Footer() {
   const { themeState } = useTheme();
   return (
-    <footer className={`flex justify-center ${themeState.theme === "LightTheme" ? "bg__black" : "bg__gray"} w-full`}>
+    <footer className={`flex flex-col justify-center ${themeState.theme === "LightTheme" ? "bg__black" : "bg__gray"} w-full`}>
+      <div className="flex py-0.5 bg-gray-500"></div>
       <div
         className={`flex flex-col pb-4 items-center justify-center w-full text-white ${
           themeState.theme === "LightTheme" ? "bg__gray" : "bg__black"

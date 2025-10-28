@@ -83,7 +83,7 @@ export const ProjectCard = ({ project }: Props) => {
             startIcon={<GitHubIcon />}
             size="small"
             variant={isDark ? "contained" : "outlined"}
-            disabled={project.isPrivate}
+            disabled={project.isPrivate || !project.repoUrl}
             sx={{
               color: isDark ? "#fff" : "#10172f",
               backgroundColor: isDark ? "#00196b" : "#dbe9ed",

@@ -1,7 +1,7 @@
 import "../../css/nav.css";
 import homeLight from "../../img/svg/home-2.svg";
 import homeDark from "../../img/svg/home.svg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Switch from "./theme/switch";
 import { useTheme } from "../../context/useTheme";
 
@@ -16,34 +16,37 @@ function Nav() {
         <div
           className="nav__logo"
           onClick={() => setOnMenu(!onMenu)}>
-          <Link
-            className="nav__link"
-            to="/">
+          <NavLink
+            className={({ isActive }) => isActive ? `nav__link ${isLight ? "nav__link--active" : "nav__link--active-dark"}` : "nav__link"}
+            to="/"
+            end>
             <img
               src={homeIcon}
               alt="Inicio"
               className="nav__home-icon"
             />
             <span className="nav__title">Home</span>
-          </Link>
+          </NavLink>
         </div>
 
         <div className="nav__menu">
           {["about", "skills", "projects"].map((item, i) => (
-            <Link
-              className="nav__link"
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? `nav__link ${isLight ? "nav__link--active" : "nav__link--active-dark"}` : "nav__link"
+              }
               key={i}
               to={`/${item}`}>
               <span className="nav__item">{item.toUpperCase()}</span>
-            </Link>
+            </NavLink>
           ))}
-          <Link
-            to="https://drive.google.com/file/d/18VyAYkD0bz7YBKD4VFjHC_XjuVmi2vqe/view?usp=sharing"
+          <NavLink
+            to="https://drive.google.com/file/d/1nt7iZ1wsMDJ12GzpCK0DsuV_cGqUqk56/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="nav__link">
             <span className="nav__cv">CV</span>
-          </Link>
+          </NavLink>
         </div>
 
         <Switch theme={themeState.theme} />

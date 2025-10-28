@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useTheme } from "../../context/useTheme";
 import { DownloadButton } from "./Profile/DownloadButton";
 
@@ -25,20 +25,18 @@ function MenuMobile() {
         } ${themeState.theme === "LightTheme" ? "bg__black" : "bg__gray"}`}>
         <ul className="flex flex-col p-6 space-y-6 mt-12">
           {links.map(({ path, label }) => (
-            <li key={path}>
-              <Link
+            <li key={path} className={`${themeState.theme === "LightTheme" ? "w" : "b"}`}>
+              <NavLink
                 to={path}
                 onClick={toggleMenu}
-                className={`text-lg font-semibold text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors ${
-                  themeState.theme === "LightTheme" ? "w" : "b"
-                }`}>
+                className={({ isActive }) => `${isActive ? `nav__link ${themeState.theme === "LightTheme" ? "nav__link--active" : "nav__link--active-dark"}` : "nav__link"} text-lg font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors`}>
                 {label}
-              </Link>
+              </NavLink>
             </li>
           ))}
           <DownloadButton
-            fileUrl="https://drive.google.com/uc?export=download&id=18VyAYkD0bz7YBKD4VFjHC_XjuVmi2vqe"
-            fileName="Julio_Portfolio.pdf"
+            fileUrl="https://drive.google.com/uc?export=download&id=1nt7iZ1wsMDJ12GzpCK0DsuV_cGqUqk56"
+            fileName="cv-software-developer.pdf"
           />
         </ul>
       </aside>

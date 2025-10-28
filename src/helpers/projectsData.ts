@@ -2,8 +2,28 @@ import playerzone from "../img/projects/playerZone.png";
 import metabici from "../img/projects/metabici.webp";
 import tkk from "../img/projects/TKK.webp";
 import classkit from "../img/projects/classkit.webp";
+import planPilares from "../img/projects/planPilares.webp";
+import inncome from "../img/projects/inncome.webp";
 
 export const projectList = [
+  {
+    title: "Inncome",
+    description: "Inncome digitizes access control and manages daily insurance for communities seeking frictionless security.",
+    image: inncome,
+    demoUrl: "https://inncome.net/",
+    isPrivate: true,
+    repoUrl: "",
+    tech: ["Next.js", "TypeScript", "Spring", "Mysql", "Tailwind"],
+  },
+  {
+    title: "Plan Pilares Foundation",
+    description: "Pioneering foundation in Mendoza seeks shared vision and State policy for sustainable mining.",
+    image: planPilares,
+    demoUrl: "https://fundacionplanpilares.com.ar/",
+    isPrivate: true,
+    repoUrl: "",
+    tech: ["Wordpress", "Css", "JavaScript", "php"],
+  },
   {
     title: "E-commerce - PlayerZone",
     description: "Online store with login, registration, and cart",

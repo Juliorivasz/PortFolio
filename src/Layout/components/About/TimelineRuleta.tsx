@@ -40,7 +40,7 @@ export default function TimelineRuleta() {
 
   useEffect(() => {
     const originalOverflow = document.body.style.overflow;
-    const isDesktop = window.innerWidth >= 768;
+    const isDesktop = window.innerWidth >= 1470;
 
     if (isDesktop && index !== timelineData.length - 1) {
       document.body.style.overflow = "hidden";
@@ -59,7 +59,7 @@ export default function TimelineRuleta() {
 
   return (
     <section>
-      <div className="text-center md:text-left">
+      <div className="text-center md:text-left pb-8">
         <div
           onWheel={handleWheel}
           className="flex flex-col items-center justify-center w-full max-w-2xl px-4 py-8 min-h-[420px] overflow-hidden relative sm:px-6 md:px-10 lg:px-16">

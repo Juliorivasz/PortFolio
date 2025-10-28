@@ -20,7 +20,7 @@ import Group from "../img/skills/Group.svg";
 import Chat from "../img/skills/chat.gif";
 import Solved from "../img/skills/solved.svg";
 import WordPressIcon from "../img/skills/bxl-wordPress.svg";
-import { SkillCategory } from "../Layout/types/skill";
+import { SKILL_LEVELS, SkillCategory } from "../Layout/types/skill";
 
 export const iconMap: Record<string, string> = {
   React: ReactIcon,
@@ -40,52 +40,53 @@ export const iconMap: Record<string, string> = {
   GitHub: GitHubIcon,
   Postman: PostmanIcon,
   Figma: FigmaIcon,
-  "Trabajo en equipo": Group,
-  Comunicación: Chat,
-  "Resolución de problemas": Solved,
-  WordPress: WordPressIcon,
+  "Teamwork": Group,
+  "Communication": Chat,
+  "Problem Solving": Solved,
+  "WordPress": WordPressIcon,
 };
 
+// Tu data, ahora usando las constantes
 export const skillData: SkillCategory[] = [
   {
     title: "Frontend",
     skills: [
-      { name: "React", level: "Avanzado" },
-      { name: "TypeScript", level: "Intermedio" },
-      { name: "HTML", level: "Avanzado" },
-      { name: "CSS", level: "Avanzado" },
-      { name: "JavaScript", level: "Avanzado" },
-      { name: "Tailwind", level: "Avanzado" },
-      { name: "Material-UI", level: "Intermedio" },
-      { name: "WordPress", level: "Intermedio" },
+      { name: "React", level: SKILL_LEVELS.ADVANCED },
+      { name: "TypeScript", level: SKILL_LEVELS.INTERMEDIATE },
+      { name: "HTML", level: SKILL_LEVELS.ADVANCED },
+      { name: "CSS", level: SKILL_LEVELS.ADVANCED },
+      { name: "JavaScript", level: SKILL_LEVELS.ADVANCED },
+      { name: "Tailwind", level: SKILL_LEVELS.ADVANCED },
+      { name: "Material-UI", level: SKILL_LEVELS.INTERMEDIATE },
+      { name: "WordPress", level: SKILL_LEVELS.INTERMEDIATE },
     ],
   },
   {
     title: "Backend",
     skills: [
-      { name: "Spring Boot", level: "Intermedio" },
-      { name: "Node.js", level: "Intermedio" },
-      { name: "Express", level: "Intermedio" },
-      { name: "Firebase", level: "Avanzado" },
-      { name: "MySQL", level: "Avanzado" },
-      { name: "MongoDB", level: "Intermedio" },
+      { name: "Spring Boot", level: SKILL_LEVELS.INTERMEDIATE },
+      { name: "Node.js", level: SKILL_LEVELS.INTERMEDIATE },
+      { name: "Express", level: SKILL_LEVELS.INTERMEDIATE },
+      { name: "Firebase", level: SKILL_LEVELS.ADVANCED },
+      { name: "MySQL", level: SKILL_LEVELS.ADVANCED },
+      { name: "MongoDB", level: SKILL_LEVELS.INTERMEDIATE },
     ],
   },
   {
     title: "Tools",
     skills: [
-      { name: "Git", level: "Avanzado" },
-      { name: "GitHub", level: "Avanzado" },
-      { name: "Postman", level: "Avanzado" },
-      { name: "Figma", level: "Avanzado" },
+      { name: "Git", level: SKILL_LEVELS.ADVANCED },
+      { name: "GitHub", level: SKILL_LEVELS.ADVANCED },
+      { name: "Postman", level: SKILL_LEVELS.ADVANCED },
+      { name: "Figma", level: SKILL_LEVELS.ADVANCED },
     ],
   },
   {
     title: "Soft Skills",
     skills: [
-      { name: "Trabajo en equipo", level: "Avanzado" },
-      { name: "Comunicación", level: "Avanzado" },
-      { name: "Resolución de problemas", level: "Avanzado" },
+      { name: "Teamwork", level: SKILL_LEVELS.ADVANCED },
+      { name: "Communication", level: SKILL_LEVELS.ADVANCED },
+      { name: "Problem Solving", level: SKILL_LEVELS.ADVANCED },
     ],
   },
 ];

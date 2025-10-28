@@ -57,7 +57,10 @@ body {
 .container__presentation {
     padding: 1rem;
     padding-top: 4rem;
-    animation: presentation .5s linear 0s normal
+    animation: presentation .5s linear 0s normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes presentation {
@@ -115,7 +118,7 @@ body {
 /* desplazamiento de escritura */
 @keyframes typewriter {
     from {
-        width: 24ch;
+        width: var(--typewriter-chars);
     }
 }
 

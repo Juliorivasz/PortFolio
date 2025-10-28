@@ -73,6 +73,20 @@
     box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
 }
 
+.nav__link--active {
+  font-weight: 900;
+  color: cyan; 
+  
+  border-bottom: 2px solid cyan;
+}
+
+.nav__link--active-dark {
+  font-weight: 900;
+  color: #8b22d6;
+  
+  border-bottom: 2px solid #8b22d6;
+}
+
 /* desktop */
 
 @media (min-width: 700px) {
