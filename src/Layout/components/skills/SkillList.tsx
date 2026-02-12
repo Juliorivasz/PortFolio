@@ -1,6 +1,6 @@
 import { FC } from "react";
 import SkillItem from "./SkillItem";
-import { iconMap } from "../../../helpers/skillData";
+import { iconMap } from "../../../helpers/skills";
 import { Skill } from "../../types/skill";
 
 interface SkillListProps {

@@ -1,7 +1,5 @@
-import { stateProps } from "../../context/reducer/ThemeReducer";
-
 export interface ThemeContextProps {
-  themeState: stateProps;
+  themeState: { theme: string };
   onMenu: boolean;
   setOnMenu: (value: boolean) => void;
   handleDark: () => void;

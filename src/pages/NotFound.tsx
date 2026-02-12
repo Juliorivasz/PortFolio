@@ -3,10 +3,12 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTheme } from "../context/useTheme";
 import notFound from "../img/svg/not-found.svg";
+import { useTranslation } from "react-i18next";
 
 export const NotFound = () => {
   const navigate = useNavigate();
   const { themeState } = useTheme();
+  const { t } = useTranslation();
   const isDark = themeState.theme === "DarkTheme";
 
   return (
@@ -46,12 +48,12 @@ export const NotFound = () => {
         <Typography
           variant="h4"
           className={`font-semibold ${isDark ? "text-zinc-200" : "text-zinc-800"}`}>
-          ¡Ups! Página no encontrada
+          {t("notfound.title")}
         </Typography>
 
         {/* Descripción */}
         <Typography className={`text-base leading-relaxed ${isDark ? "text-zinc-400" : "text-zinc-600"}`}>
-          La página que buscás no existe o fue movida. Tranquilo, podés volver al inicio y seguir navegando.
+          {t("notfound.description")}
         </Typography>
 
         {/* Botón */}
@@ -72,7 +74,7 @@ export const NotFound = () => {
               backgroundColor: isDark ? "#e4e4e7" : "#1565c0",
             },
           }}>
-          Volver al inicio
+          {t("notfound.button")}
         </Button>
       </motion.div>
     </div>

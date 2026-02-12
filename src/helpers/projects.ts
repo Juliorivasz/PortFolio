@@ -7,6 +7,7 @@ import inncome from "../img/projects/inncome.webp";
 
 export const projectList = [
   {
+    id: "inncome",
     title: "Inncome",
     description: "Inncome digitizes access control and manages daily insurance for communities seeking frictionless security.",
     image: inncome,
@@ -16,6 +17,7 @@ export const projectList = [
     tech: ["Next.js", "TypeScript", "Spring", "Mysql", "Tailwind"],
   },
   {
+    id: "planPilares",
     title: "Plan Pilares Foundation",
     description: "Pioneering foundation in Mendoza seeks shared vision and State policy for sustainable mining.",
     image: planPilares,
@@ -25,6 +27,7 @@ export const projectList = [
     tech: ["Wordpress", "Css", "JavaScript", "php"],
   },
   {
+    id: "playerZone",
     title: "E-commerce - PlayerZone",
     description: "Online store with login, registration, and cart",
     image: playerzone,
@@ -34,6 +37,7 @@ export const projectList = [
     tech: ["Html", "Firebase", "Css", "JavaScript"],
   },
   {
+    id: "metabici",
     title: "Content manager - MetaBici",
     description: "Landing page with company news, Dashboard with user and news control",
     image: metabici,
@@ -43,6 +47,7 @@ export const projectList = [
     tech: ["JavaScript", "SpringBoot", "MySQL", "Figma", "Html", "Css"],
   },
   {
+    id: "tkk",
     title: "E-commerce - The Krusty Krab",
     description:
       "Online store with login, registration, cart, payment gateway, dashboard with full control of products, users, accounting",
@@ -53,6 +58,7 @@ export const projectList = [
     tech: ["React", "SpringBoot", "MySQL", "Figma", "TypeScript", "Tailwind", "Express"],
   },
   {
+    id: "classkit",
     title: "Inventory manager - Classkit",
     description: "Dashboard with user and inventory control",
     image: classkit,

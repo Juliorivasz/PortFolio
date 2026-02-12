@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { timelineData } from "../../../helpers/timeLineData";
+import { timelineData } from "../../../helpers/timeline";
 import TimelineNavigationButton from "./TimeLine/TimeLineNavigationButton";
 import TimelineCard from "./TimeLine/TimeLineCard";
 import TimelineDots from "./TimeLine/TimeLineDots";

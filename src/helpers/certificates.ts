@@ -1,13 +1,13 @@
-import programacion from "/src/img/certificates/UTN-TUP.webp";
-import frontend from "/src/img/certificates/Alura-certificado-Frontend.webp";
-import bachelor from "/src/img/certificates/titulo-bachiller.webp";
-import nodejs from "/src/img/certificates/nodeJs.webp";
-import mern from "/src/img/certificates/react-MERN.webp";
-import js from "/src/img/certificates/javascript-web.webp";
-import arquitect from "/src/img/certificates/html5-css3.webp";
-import controlVersion from "/src/img/certificates/git-and-github.webp";
-import frontDeveloper from "/src/img/certificates/pasantia.webp";
-import inncome from "/src/img/certificates/inncome.jpeg";
+import programacion from "../img/certificates/UTN-TUP.webp";
+import frontend from "../img/certificates/Alura-certificado-Frontend.webp";
+import bachelor from "../img/certificates/titulo-bachiller.webp";
+import nodejs from "../img/certificates/nodeJs.webp";
+import mern from "../img/certificates/react-MERN.webp";
+import js from "../img/certificates/javascript-web.webp";
+import arquitect from "../img/certificates/html5-css3.webp";
+import controlVersion from "../img/certificates/git-and-github.webp";
+import frontDeveloper from "../img/certificates/pasantia.webp";
+import inncome from "../img/certificates/inncome.jpeg";
 
 export const certificates = {
   careers: [
@@ -33,7 +33,7 @@ export const certificates = {
       institution: "UEC Mario Lezama Esquivel",
       issueDate: "2017",
       img: bachelor,
-      url: "/src/img/certificates/titulo-bachiller.webp",
+      url: bachelor, // Use the imported image variable
     },
   ],
   courses: [
@@ -93,7 +93,7 @@ export const certificates = {
       institution: "Semillero - Quinto Impacto",
       issueDate: "2023-2023",
       img: frontDeveloper,
-      url: "/src/img/certificates/pasantia.webp",
+      url: frontDeveloper, // Use imported image variable
     },
     {
       id: "11",

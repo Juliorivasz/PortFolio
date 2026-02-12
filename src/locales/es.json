@@ -1,0 +1,123 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "¡Hola! 👋 Bienvenido a mi portafolio. Siéntete libre de echar un vistazo a mi trabajo y experiencia. ¡Gracias por pasar!",
+    "titles": [
+      "Desarrollador Front End",
+      "Desarrollador de Software",
+      "Desarrollador Back End",
+      "Desarrollador Full Stack"
+    ],
+    "download_cv": "Descargar CV"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Soy un apasionado desarrollador de software con experiencia en la construcción de aplicaciones web.",
+    "certificates": "Certificados",
+    "experience": "Experiencia"
+  },
+  "timeline": {
+    "remote": "Remoto",
+    "hybrid": "Híbrido",
+    "onsite": "Presencial",
+    "dev_2025_mix": {
+      "title": "Desarrollador de Software",
+      "description": "Participé en el desarrollo de múltiples proyectos, manejando tareas de frontend con Next.js y backend con Spring."
+    },
+    "dev_2025_pilares": {
+      "title": "Desarrollador Frontend",
+      "description": "Desarrollo integral de sitio web corporativo en WordPress, incluyendo personalización técnica y optimización UX/UI. Aseguré un diseño responsive y una carga eficiente mediante la configuración estratégica de plugins y contenidos."
+    },
+    "dev_2025_team": {
+      "title": "Desarrollador Frontend",
+      "description": "Desarrollé un sistema de gestión de equipos usando React TS, Spring y MySQL."
+    },
+    "dev_2023": {
+      "title": "Desarrollador Frontend",
+      "description": "Desarrollé interfaces responsivas y sitios web usando JS, HTML y CSS."
+    },
+    "tech_2020": {
+      "title": "Técnico en Computación",
+      "description": "Trabajé en la instalación, configuración y mantenimiento de hardware y software."
+    }
+  },
+  "projects": {
+    "title": "Proyectos en los que he trabajado",
+    "view_more": "Ver Más",
+    "code": "Código",
+    "demo": "Demo",
+    "inncome": {
+      "title": "Inncome",
+      "description": "Inncome digitaliza el control de acceso y gestiona seguros diarios para comunidades que buscan seguridad sin fricción."
+    },
+    "planPilares": {
+      "title": "Fundación Plan Pilares",
+      "description": "Fundación pionera en Mendoza busca visión compartida y política de Estado para la minería sostenible."
+    },
+    "playerZone": {
+      "title": "E-commerce - PlayerZone",
+      "description": "Tienda online con inicio de sesión, registro y carrito"
+    },
+    "metabici": {
+      "title": "Gestor de contenido - MetaBici",
+      "description": "Landing page con noticias de la empresa, Dashboard con control de usuarios y noticias"
+    },
+    "tkk": {
+      "title": "E-commerce - The Krusty Krab",
+      "description": "Tienda en línea con inicio de sesión, registro, carrito, pasarela de pago, dashboard con control total de productos, usuarios, contabilidad"
+    },
+    "classkit": {
+      "title": "Gestor de inventario - Classkit",
+      "description": "Dashboard con control de usuarios e inventario"
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "categories": {
+      "Frontend": "Frontend",
+      "Backend": "Backend",
+      "Tools": "Herramientas",
+      "Soft Skills": "Habilidades Blandas"
+    },
+    "names": {
+      "Teamwork": "Trabajo en Equipo",
+      "Communication": "Comunicación",
+      "Problem Solving": "Resolución de Problemas"
+    },
+    "levels": {
+      "Basic": "Básico",
+      "Intermediate": "Intermedio",
+      "Advanced": "Avanzado"
+    }
+  },
+  "certificates": {
+    "tabs": {
+      "careers": "Carreras",
+      "courses": "Cursos",
+      "internships": "Pasantías"
+    }
+  },
+  "cv": {
+    "download": "Descargar CV",
+    "selectLanguage": "Selecciona Idioma",
+    "spanish": "Español (PDF)",
+    "english": "Inglés (PDF)",
+    "cancel": "Cancelar",
+    "downloading": "Descargando...",
+    "downloaded": "¡Descargado!"
+  },
+  "notfound": {
+    "title": "¡Ups! Página no encontrada",
+    "description": "La página que buscás no existe o fue movida. Tranquilo, podés volver al inicio y seguir navegando.",
+    "button": "Volver al inicio"
+  },
+  "footer": {
+    "copyright": "Julio A. Rivas Garcia. © Copyright {{year}} - Todos los derechos reservados"
+  }
+}

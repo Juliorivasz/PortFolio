@@ -1,9 +1,11 @@
-import { CardContent, CardMedia, Chip, Button, Typography, Stack } from "@mui/material";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import { useTheme } from "../../../context/useTheme";
+import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 type Project = {
+  id?: string;
   title: string;
   description: string;
   image: string;
@@ -19,107 +21,97 @@ interface Props {
 
 export const ProjectCard = ({ project }: Props) => {
   const { themeState } = useTheme();
-  const isDark = themeState.theme === "DarkTheme";
+  const { t } = useTranslation();
+  const isLight = themeState.theme === "LightTheme";
+
+  // Use translation if id exists, otherwise fallback to prop
+  const title = project.id ? t(`projects.${project.id}.title`) : project.title;
+  const description = project.id ? t(`projects.${project.id}.description`) : project.description;
 
   return (
-    <article
-      className={`w-full max-w-sm transition-transform flex flex-col justify-between duration-300 hover:scale-[1.02] min-h-[24rem] ${
-        isDark ? "bg__gray" : "bg__black"
-      } shadow-lg`}
-      style={{ borderRadius: "1rem" }}>
-      <figure className="overflow-hidden rounded-t-[1rem] h-1/2">
-        <CardMedia
-          component="img"
-          image={project.image}
-          alt={`Screenshot of ${project.title}`}
-          className="w-full h-50 object-cover object-top"
+    <motion.article
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      whileHover={{ y: -8 }}
+      transition={{ duration: 0.3 }}
+      className={`group w-full max-w-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full border ${
+        isLight ? "bg-white border-gray-100" : "bg-gray-800 border-gray-700"
+      }`}
+    >
+      {/* Image Container */}
+      <div className="relative h-48 overflow-hidden">
+        <img
+          src={project.image}
+          alt={`Screenshot of ${title}`}
+          className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
         />
-        <figcaption className="sr-only">{project.title} preview</figcaption>
-      </figure>
+        <div className={`absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300 ${isLight ? 'bg-black' : 'bg-white'}`}></div>
+      </div>
 
-      <CardContent className="my-auto">
-        <header>
-          <Typography
-            variant="h6"
-            component="h3"
-            className={isDark ? "b" : "w"}>
-            {project.title}
-          </Typography>
-        </header>
+      {/* Content */}
+      <div className="p-6 flex flex-col flex-grow">
+        <h3 className={`text-xl font-bold mb-2 ${isLight ? "text-gray-900" : "text-white"}`}>
+          {title}
+        </h3>
+        
+        <p className={`text-sm mb-4 line-clamp-3 flex-grow ${isLight ? "text-gray-600" : "text-gray-300"}`}>
+          {description}
+        </p>
 
-        <Typography
-          variant="body2"
-          className={`my-2 ${isDark ? "b" : "w"}`}>
-          {project.description}
-        </Typography>
-
-        <Stack
-          direction="row"
-          spacing={1}
-          flexWrap="wrap"
-          className="my-2 gap-2"
-          aria-label="Technologies used">
+        {/* Tech Stack */}
+        <div className="flex flex-wrap gap-2 mb-6">
           {project.tech.map((tech, index) => (
-            <Chip
+            <span
               key={index}
-              label={tech}
-              size="small"
-              sx={{
-                bgcolor: isDark ? "#3f3f46" : "#e0e0e0",
-                color: isDark ? "#fff" : "#000",
-                fontSize: "0.75rem",
-              }}
-            />
+              className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${
+                isLight 
+                  ? "bg-blue-50 text-blue-700 border border-blue-100" 
+                  : "bg-blue-900/30 text-blue-300 border border-blue-800/50"
+              }`}
+            >
+              {tech}
+            </span>
           ))}
-        </Stack>
+        </div>
 
-        <nav
-          className="flex justify-between my-2"
-          aria-label="Project links">
-          <Button
+        {/* Buttons */}
+        <div className="flex gap-3 mt-auto">
+          <a
             href={project.repoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            startIcon={<GitHubIcon />}
-            size="small"
-            variant={isDark ? "contained" : "outlined"}
-            disabled={project.isPrivate || !project.repoUrl}
-            sx={{
-              color: isDark ? "#fff" : "#10172f",
-              backgroundColor: isDark ? "#00196b" : "#dbe9ed",
-              fontWeight: "bold",
-              "&:hover": {
-                backgroundColor: isDark ? "#10172f" : "#b9c9ff",
-              },
-            }}>
-            Code
-          </Button>
+            className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-sm font-bold transition-colors duration-300 border ${
+              project.isPrivate || !project.repoUrl
+                ? "opacity-50 cursor-not-allowed border-gray-300 text-gray-400"
+                : isLight
+                ? "border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white"
+                : "border-white text-white hover:bg-white hover:text-gray-900"
+            }`}
+            aria-disabled={project.isPrivate || !project.repoUrl}
+            onClick={(e) => (project.isPrivate || !project.repoUrl) && e.preventDefault()}
+          >
+            <GitHubIcon fontSize="small" />
+            {t('projects.code')}
+          </a>
 
-          <Button
+          <a
             href={project.demoUrl || "#"}
             target="_blank"
             rel="noopener noreferrer"
-            startIcon={<OpenInNewIcon />}
-            size="small"
-            variant="contained"
-            disabled={!project.demoUrl}
-            sx={{
-              color: isDark ? "#fff" : "#10172f",
-              backgroundColor: isDark ? "#00196b" : "#dbe9ed",
-              fontWeight: "bold",
-              "&:hover": {
-                backgroundColor: isDark ? "#10172f" : "#b9c9ff",
-              },
-              "&.Mui-disabled": {
-                color: isDark ? "#ccc" : "#aaa",
-                backgroundColor: isDark ? "#3a3a3a" : "#f0f0f0",
-                opacity: 1,
-              },
-            }}>
-            Demo
-          </Button>
-        </nav>
-      </CardContent>
-    </article>
+            className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-sm font-bold shadow-md transition-all duration-300 transform hover:-translate-y-0.5 ${
+              !project.demoUrl
+                ? "opacity-50 cursor-not-allowed bg-gray-300 text-gray-500"
+                : "bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:shadow-blue-500/30 hover:from-blue-700 hover:to-indigo-700"
+            }`}
+            aria-disabled={!project.demoUrl}
+            onClick={(e) => !project.demoUrl && e.preventDefault()}
+          >
+            <OpenInNewIcon fontSize="small" />
+            {t('projects.demo')}
+          </a>
+        </div>
+      </div>
+    </motion.article>
   );
 };

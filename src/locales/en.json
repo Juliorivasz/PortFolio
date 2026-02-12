@@ -1,0 +1,123 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi there! 👋 Welcome to my portfolio. Feel free to take a look at my work and experience. Thanks for stopping by!",
+    "titles": [
+      "Front End Developer",
+      "Software Developer",
+      "Back End Developer",
+      "Full Stack Developer"
+    ],
+    "download_cv": "Download CV"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a passionate software developer with experience in building web applications manually.",
+    "certificates": "Certificates",
+    "experience": "Experience"
+  },
+  "timeline": {
+    "remote": "Remote",
+    "hybrid": "Hybrid",
+    "onsite": "On-site",
+    "dev_2025_mix": {
+      "title": "Software Developer",
+      "description": "I participated in the development of multiple projects, handling frontend tasks with Next.js and backend tasks with Spring."
+    },
+    "dev_2025_pilares": {
+      "title": "Frontend Developer",
+      "description": "Comprehensive development of a corporate website in WordPress, including technical customization and UX/UI optimization. Ensured responsive design and efficient loading through strategic configuration of plugins and content."
+    },
+    "dev_2025_team": {
+      "title": "Frontend Developer",
+      "description": "I developed a team management system using React TS, Spring, and MySQL."
+    },
+    "dev_2023": {
+      "title": "Frontend Developer",
+      "description": "I developed responsive interfaces and websites using JS, HTML, and CSS."
+    },
+    "tech_2020": {
+      "title": "Computer Technician",
+      "description": "I worked on the installation, configuration, and maintenance of hardware and software."
+    }
+  },
+  "projects": {
+    "title": "Projects I have worked on",
+    "view_more": "View More",
+    "code": "Code",
+    "demo": "Demo",
+    "inncome": {
+      "title": "Inncome",
+      "description": "Inncome digitizes access control and manages daily insurance for communities seeking frictionless security."
+    },
+    "planPilares": {
+      "title": "Plan Pilares Foundation",
+      "description": "Pioneering foundation in Mendoza seeks shared vision and State policy for sustainable mining."
+    },
+    "playerZone": {
+      "title": "E-commerce - PlayerZone",
+      "description": "Online store with login, registration, and cart"
+    },
+    "metabici": {
+      "title": "Content manager - MetaBici",
+      "description": "Landing page with company news, Dashboard with user and news control"
+    },
+    "tkk": {
+      "title": "E-commerce - The Krusty Krab",
+      "description": "Online store with login, registration, cart, payment gateway, dashboard with full control of products, users, accounting"
+    },
+    "classkit": {
+      "title": "Inventory manager - Classkit",
+      "description": "Dashboard with user and inventory control"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": {
+      "Frontend": "Frontend",
+      "Backend": "Backend",
+      "Tools": "Tools",
+      "Soft Skills": "Soft Skills"
+    },
+    "names": {
+      "Teamwork": "Teamwork",
+      "Communication": "Communication",
+      "Problem Solving": "Problem Solving"
+    },
+    "levels": {
+      "Basic": "Basic",
+      "Intermediate": "Intermediate",
+      "Advanced": "Advanced"
+    }
+  },
+  "certificates": {
+    "tabs": {
+      "careers": "Careers",
+      "courses": "Courses",
+      "internships": "Internships"
+    }
+  },
+  "cv": {
+    "download": "Download CV",
+    "selectLanguage": "Select Language / Selecciona Idioma",
+    "spanish": "Spanish (PDF)",
+    "english": "English (PDF)",
+    "cancel": "Cancel",
+    "downloading": "Downloading...",
+    "downloaded": "Downloaded!"
+  },
+  "notfound": {
+    "title": "Oops! Page not found",
+    "description": "The page you are looking for doesn't exist or has been moved. Don't worry, you can go back to home and keep browsing.",
+    "button": "Back to Home"
+  },
+  "footer": {
+    "copyright": "Julio A. Rivas Garcia. © Copyright {{year}} - All rights reserved"
+  }
+}

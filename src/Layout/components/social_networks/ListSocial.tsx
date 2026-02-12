@@ -1,4 +1,4 @@
-import { socialNetworks } from "../../../helpers/social-networks";
+import { socialNetworks } from "../../../helpers/socialNetworks";
 import { ItemSocial } from "./ItemSocial";
 
 export const ListSocial = () => {

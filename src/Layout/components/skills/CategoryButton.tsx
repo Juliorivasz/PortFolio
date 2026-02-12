@@ -3,11 +3,11 @@ import { useTheme } from "../../../context/useTheme";
 
 interface CategoryButtonProps {
   title: string;
-  selectedCategory: string;
+  isActive: boolean;
   onClick: () => void;
 }
 
-const CategoryButton: FC<CategoryButtonProps> = ({ title, selectedCategory, onClick }) => {
+const CategoryButton: FC<CategoryButtonProps> = ({ title, isActive, onClick }) => {
   const { themeState } = useTheme();
   const isDark = themeState.theme === "DarkTheme";
 
@@ -16,7 +16,7 @@ const CategoryButton: FC<CategoryButtonProps> = ({ title, selectedCategory, onCl
       <button
         onClick={onClick}
         className={`w-full text-left px-5 py-3 cursor-pointer rounded-lg font-semibold transition duration-300 ease-in-out flex items-center gap-2 min-h-[60px] overflow-wrap break-words ${
-          selectedCategory === title
+          isActive
             ? isDark
               ? "bg-blue-600 text-white shadow-md scale-[1.02]"
               : "bg-blue-800 text-white shadow-md scale-[1.02]"

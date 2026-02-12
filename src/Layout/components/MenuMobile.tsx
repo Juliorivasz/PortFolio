@@ -1,17 +1,19 @@
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../../context/useTheme";
 import { DownloadButton } from "./Profile/DownloadButton";
+import { useTranslation } from "react-i18next";
 
 function MenuMobile() {
   const { themeState, onMenu, setOnMenu } = useTheme();
+  const { t } = useTranslation();
 
   const toggleMenu = () => setOnMenu(!onMenu);
 
   const links = [
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About Me" },
-    { path: "/skills", label: "Skills" },
-    { path: "/projects", label: "Projects" },
+    { path: "/", label: t("header.home") },
+    { path: "/about", label: t("header.about") },
+    { path: "/skills", label: t("header.skills") },
+    { path: "/projects", label: t("header.projects") },
   ];
 
   return (
@@ -34,10 +36,13 @@ function MenuMobile() {
               </NavLink>
             </li>
           ))}
-          <DownloadButton
-            fileUrl="https://drive.google.com/uc?export=download&id=1nt7iZ1wsMDJ12GzpCK0DsuV_cGqUqk56"
-            fileName="cv-software-developer.pdf"
-          />
+          <li className="flex flex-col gap-4">
+            <DownloadButton
+              englishCvUrl="https://drive.google.com/uc?export=download&id=1nt7iZ1wsMDJ12GzpCK0DsuV_cGqUqk56"
+              spanishCvUrl="https://drive.google.com/uc?export=download&id=1ZMg51_PyEuSQcDMyi6Vy5zPlG9OcsbcT"
+              fileName="CV_Julio_Rivas.pdf"
+            />
+          </li>
         </ul>
       </aside>
 
