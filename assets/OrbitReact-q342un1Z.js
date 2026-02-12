@@ -1,0 +1,1 @@
+import{j as t}from"./mui-sml42Ruv.js";import{i as r}from"./index-BpMWgQS9.js";import"./react-BtP0CW_r.js";import"./router-CCdvGsjY.js";const o=()=>t.jsx(t.Fragment,{children:t.jsx("img",{src:r,alt:"react",className:"orbiting-object"})});export{o as default};
